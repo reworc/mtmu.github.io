@@ -1,49 +1,53 @@
 ---
 ---
 
+@import "base";
+@import "variables";
+
+
 h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: $font-primary;
   font-weight: 400;
   text-transform: uppercase;
 
-  color: #0084ba;
+  color: $color-primary;
 
   font-size: 1.6rem;
 }
 
 h2 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: $font-secondary;
   font-weight: 200;
 
-  color: #000;
+  color: $color-black;
 
   font-size: 0.8rem;
 }
 
 h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: $font-primary;
     font-weight: 200;
     text-transform: uppercase;
   
-    color: #000;
+    color: $color-black;
   
     font-size: 1.2rem;
 }
 
 h4 {
-    font-family: 'Raleway', sans-serif;
+  font-family: $font-primary;
     font-weight: 200;
   
-    color: #333;
+    color: $color-grey-dark;
   
     font-size: 1rem;
 }
 
 p {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: $font-secondary;
     font-weight: 200;
   
-    color: #333;
+    color: $color-grey-dark;
   
     font-size: 1rem;
 }
