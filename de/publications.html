@@ -11,6 +11,20 @@ title: Publikationen
   </head>
   <body>
     <h1>{{ page.title }}</h1>
-    <p>TEST</p>
+    <ul>
+        {% for year in site.data.year %}
+        <li>
+            <h2>{{ year.name }}</h2>
+            <ul>
+                {% for element in year.elements %}
+                <li>
+                    <h3>{{ element.title }}</h3>
+                    <h4>{{ element.authors }}</h4>
+                    <p>{{ element.reference }}</p>
+                    <img src="../img/{{ element.image }}" alt="{{ element.title }}">
+                </li>
+            </ul>
+        </li>
+    </ul>
   </body>
 </html>
