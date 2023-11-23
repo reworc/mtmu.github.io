@@ -1,24 +1,26 @@
-- year: 2023
-  - title: "Konzepte für die Organisation von Lerninhalten und -zielen für Studierende"
-    authors: "Mathias Müller & Dietrich Kammer"    
-    reference: "WeL - Workshop on e-Learning 2023, Leipzig"
-    image: "2023_WeL.jpg"
-    preview: "2023_WeL_prev.jpg"
-
-  - title: "Exploring Dynamic Vibrotactile Feedback for Layer-Based Interaction on Elastic Displays"
-    authors: "Mathias Müller, Alexander Ramian, Dennis Wittchen, Georg Freitag & Dietrich Kammer"
-    reference: "Mensch und Computer 2023, Zürich"
-    image: "2023_MuC.jpg"
-    preview: "2023_MuC_prev.jpg"
-- year: 2022
-  - title: "ReFlex - A Framework for Research on Elastic Displays"
-    authors: "Mathias Müller & Dietrich Kammer"    
-    reference: "25th Bilateral Student Workshop CTU Prague - HTW Dresden - User Interfaces & Visualization 2022, Dresden"
-    image: "2022_CTU-Prag.jpg"
-    preview: "2022_CTU-Prag_prev.jpg"
-
-  - title: "LEAC: Learning Analytics Conckpit"
-    authors: "Dietrich Kammer & Mathias Müller"
-    reference: "WeL - Workshop on e-Learning 2022, Görlitz"
-    image: "2022_WeL.jpg"
-    preview: "2022_WeL_prev.jpg"
+- year: 
+  - name: 2023
+    elements:
+    - title: "Konzepte für die Organisation von Lerninhalten und -zielen für Studierende"
+      authors: "Mathias Müller & Dietrich Kammer"    
+      reference: "WeL - Workshop on e-Learning 2023, Leipzig"
+      image: "2023_WeL.jpg"
+      preview: "2023_WeL_prev.jpg"
+    - title: "Exploring Dynamic Vibrotactile Feedback for Layer-Based Interaction on Elastic Displays"
+      authors: "Mathias Müller, Alexander Ramian, Dennis Wittchen, Georg Freitag & Dietrich Kammer"
+      reference: "Mensch und Computer 2023, Zürich"
+      image: "2023_MuC.jpg"
+      preview: "2023_MuC_prev.jpg"
+- year: 
+  - name: 2022
+    elements:
+    - title: "ReFlex - A Framework for Research on Elastic Displays"
+      authors: "Mathias Müller & Dietrich Kammer"    
+      reference: "25th Bilateral Student Workshop CTU Prague - HTW Dresden - User Interfaces & Visualization 2022, Dresden"
+      image: "2022_CTU-Prag.jpg"
+      preview: "2022_CTU-Prag_prev.jpg"
+    - title: "LEAC: Learning Analytics Conckpit"
+      authors: "Dietrich Kammer & Mathias Müller"
+      reference: "WeL - Workshop on e-Learning 2022, Görlitz"
+      image: "2022_WeL.jpg"
+      preview: "2022_WeL_prev.jpg"
