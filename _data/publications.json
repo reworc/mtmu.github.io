@@ -289,6 +289,75 @@
           "preview": "2014_IFF_prev.jpg"
         }
       ]
+    },
+    { 
+      "name": 2013,
+      "elements": [
+        {
+          "title": "Shaping Sound - A Vision for Tangible Music Interaction",
+          "authors": "Sebastian Walther, Mathias Müller, Marius Brade & Rainer Groh",
+          "reference": "Mensch und Computer 2013: Interaktive Vielfalt, Bremen",
+          "image": "2013_MuC_Sound.jpg",
+          "preview": "2013_MuC_Sound_prev.jpg"
+        },
+        {
+          "title": "NUBSL - A Freely Placeable, Low-Cost Notification Utility",
+          "authors": "Marius Brade, Mathias Müller, Sebastian Walther & Rainer Groh",
+          "reference": "Mensch und Computer 2013: Interaktive Vielfalt, Bremen",
+          "image": "2013_MuC_NUBSL.jpg",
+          "preview": "2013_MuC_NUBSL_prev.jpg"
+        },
+        {
+          "title": "Natural Interface Exploration",
+          "authors": "Marius Brade, Mandy Keck, Thomas Gründer, Mathias Müller & Rainer Groh",
+          "reference": "International Conference on Tangible, Embedded and Embodied Interaction (TEI 2013), Barcelona",
+          "image": "2013_TEI.jpg",
+          "preview": "2013_TEI_prev.jpg"
+        }
+      ]
+    },
+    { 
+      "name": 2012,
+      "elements": [
+        {
+          "title": "Business-Oriented Design of Collaborative Applications",
+          "authors": "Mathias Müller, Ingmar S. Franke, Dietrich Kammer & Rainer Groh",
+          "reference": "AVI - Advanced Visual Interfaces 2012, Workshop Designing Collaborative Interactive Spaces (DCIS 2012), Capri",
+          "image": "2012_DCIS.jpg",
+          "preview": "2012_DCIS_prev.jpg"
+        },
+        {
+          "title": "Repräsentation von Tiefeninformationen zur Unterstützung des Wahrnehmungsprozesses bei der gestenbasierten Interaktion in system- und aggregaträumlichen Bildstrukturen",
+          "authors": "Mathias Müller",
+          "reference": "Diplomarbeit, TU Dresden",
+          "image": "2012_DA.jpg",
+          "preview": "2012_DA_prev.jpg"
+        }
+      ]
+    },
+    { 
+      "name": 2011,
+      "elements": [
+        {
+          "title": "Anwendungsfälle einer Gestensteuerung auf Basis von Tiefeninformationen",
+          "authors": "Mathias Müller",
+          "reference": "Belegarbeit, TU Dresden",
+          "image": "2011_BA.jpg",
+          "preview": "2011_BA_prev.jpg"
+        }
+      ]
+    },
+    { 
+      "name": 2010,
+      "elements": [
+        {
+          "title": "Konzept zur Visualisierung des Baufortschritts und Abweichungen vom Bauablaufplan am 3D-Modell",
+          "authors": "Mathias Müller",
+          "reference": "HS Visualisierung 2010, TU Dresden",
+          "image": "2010_HS_Sound.jpg",
+          "preview": "2010_HS_prev.jpg"
+        }
+      ]
     }
   ]
 }
