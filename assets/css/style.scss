@@ -12,16 +12,18 @@ h1 {
   color: $color-primary;
 
   font-size: $font-size-large;
+
+  margin-left: 2rem;
 }
 
 .timeline {
   position: relative;
-  margin-left: 8rem;
+  margin-left: 2rem;
 
   &__line {
-    border-left:1px solid $color-grey-dark;
+    border-left:1px dotted $color-grey-dark;
 	  position: absolute;
-	  margin-left:90px;
+	  margin: 6rem 0 0 rem;
 	  z-index: -1;
 	  height:100%;
 	  min-height:100%;
@@ -37,9 +39,6 @@ h1 {
     }
 
     &--element {
-      margin: 10px 0;
-	    margin-left: 20px;
-      padding-left: 20px;
       z-index: 0;
       list-style: none;
       padding: 0;
@@ -47,13 +46,18 @@ h1 {
       transition: all 1s;
       /*Flex for the win*/
       display: flex;
-      align-items: center;
+      align-items: flex-start;
     }    
 
     &--date {
+      
       width: 5rem;
-      min-width: 5rem;
-      translate: -8rem;
+      min-width: 5rem;    
+      font-size: 1.6rem;
+      transform: translateX(-1.1rem);
+      display: inline-block;
+
+      margin-top: 4.5rem;
 
       font-family: $font-secondary;
       font-weight: $font-weight-default;
@@ -62,14 +66,16 @@ h1 {
 
       font-size: $font-size-default;
 
-      &::after {
-        content: "&nbsp";
-        position: relative;
-        width: 1.6rem;
-        height: 1.6rem;
+      &::after {       
+        content: "";
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
         background-color: $color-white;
         border: 2px solid $color-black;
         border-radius: 100%;
+        display: inline-block;
+        margin-left: 3rem;
       }
     }
 
@@ -82,30 +88,43 @@ h1 {
 
   &__publication {
     &--list {
-      margin-left: 2rem;
+      margin: 2rem 0 0 0;
 	    padding: 0;
       list-style: none;
     }
 
+    &--element {
+      margin: 0 0 2rem 0;
+    }
+
     &--content {
       display: grid;
-      grid-template-columns: 4rem 1fr;
+      grid-template-columns: 7rem 1fr;
+      align-items: center;
     }
 
     &--image {
-      border: 1px solid $color-grey-dark;
-      padding: 0.2rem;
+      border: 2px solid $color-grey-dark;
+      height: 7rem;
+
+      display: flex;
+    
+      align-items: center;
+      justify-content: center;
 
       & img {
-        width: 3.6rem;
-        max-width: 3.6rem;
-        height: 3.6rem;
-        max-height: 3.6rem;        
+        width: 6.2rem;
+        max-width: 6.2rem;
+        height: 6.2rem;
+        max-height: 6.2rem;
+
+        border: 1px solid $color-black;
+
       }
     }
 
     &--description {
-      margin: 2rem 0 1rem 0;
+      margin: 0 2rem;
     }
 
     &--title {
