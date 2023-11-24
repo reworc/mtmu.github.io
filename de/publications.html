@@ -50,6 +50,9 @@ title: Publikationen
     <div id="dataVis_numPubYear">
     </div>
     <script>
+      Array.prototype.max = function() {
+        return Math.max.apply(null, this);
+      };
 
       // set the dimensions and margins of the graph
       const margin = {top: 30, right: 30, bottom: 70, left: 60},
