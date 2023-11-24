@@ -6,48 +6,145 @@
 
 h1 {
   font-family: $font-primary;
-  font-weight: 400;
+  font-weight: $font-weight-bold;
   text-transform: uppercase;
 
   color: $color-primary;
 
-  font-size: 1.6rem;
+  font-size: $font-size-large;
 }
 
-h2 {
-  font-family: $font-secondary;
-  font-weight: 200;
+.timeline {
+  position: relative;
+  margin-left: 8rem;
 
-  color: $color-black;
+  &__line {
+    border-left:1px solid $color-grey-dark;
+	  position: absolute;
+	  margin-left:90px;
+	  z-index: -1;
+	  height:100%;
+	  min-height:100%;
+  }    
 
-  font-size: 0.8rem;
+  &__year {
+
+    &--list {
+      margin: 0 0 0 20px;
+	    padding: 0;
+      list-style: none;
+    
+    }
+
+    &--element {
+      margin: 10px 0;
+	    margin-left: 20px;
+      padding-left: 20px;
+      z-index: 0;
+      list-style: none;
+      padding: 0;
+      border-radius: 50px;
+      transition: all 1s;
+      /*Flex for the win*/
+      display: flex;
+      align-items: center;
+    }    
+
+    &--date {
+      width: 5rem;
+      min-width: 5rem;
+      translate: -8rem;
+
+      font-family: $font-secondary;
+      font-weight: $font-weight-default;
+
+      color: $color-black;
+
+      font-size: $font-size-default;
+
+      &::after {
+        content: "&nbsp";
+        position: relative;
+        width: 1.6rem;
+        height: 1.6rem;
+        background-color: $color-white;
+        border: 2px solid $color-black;
+        border-radius: 100%;
+      }
+    }
+
+    &--content {
+      margin-left: 4rem;
+      display:inline-block;
+
+    }
+  }
+
+  &__publication {
+    &--list {
+      margin-left: 2rem;
+	    padding: 0;
+      list-style: none;
+    }
+
+    &--content {
+      display: grid;
+      grid-template-columns: 4rem 1fr;
+    }
+
+    &--image {
+      border: 1px solid $color-grey-dark;
+      padding: 0.2rem;
+
+      & img {
+        width: 3.6rem;
+        max-width: 3.6rem;
+        height: 3.6rem;
+        max-height: 3.6rem;        
+      }
+    }
+
+    &--description {
+      margin: 2rem 0 1rem 0;
+    }
+
+    &--title {
+      font-family: $font-primary;
+      font-weight: $font-weight-default;
+      text-transform: uppercase;
+    
+      color: $color-black;
+    
+      font-size: $font-size-medium;
+    }
+
+    &--author {
+      font-family: $font-primary;
+      font-weight: $font-weight-default;
+    
+      color: $color-grey-dark;
+    
+      font-size: $font-size-default;
+    }
+
+    &--location {
+      font-family: $font-secondary;
+      font-weight: $font-weight-default;
+    
+      color: $color-grey-dark;
+    
+      font-size: $font-size-small;
+    }
+  }  
 }
 
-h3 {
-    font-family: $font-primary;
-    font-weight: 200;
-    text-transform: uppercase;
-  
-    color: $color-black;
-  
-    font-size: 1.2rem;
-}
-
-h4 {
-  font-family: $font-primary;
-    font-weight: 200;
-  
-    color: $color-grey-dark;
-  
-    font-size: 1rem;
-}
 
 p {
     font-family: $font-secondary;
-    font-weight: 200;
+    font-weight: $font-weight-default;
   
     color: $color-grey-dark;
   
-    font-size: 1rem;
+    font-size: $font-size-small;
 }
 
