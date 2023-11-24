@@ -162,7 +162,7 @@ title: Publikationen
         });
 
         dict.delete("Mathias Müller");
-        const sorted = new Map([...dict].sort((a,b) => b[1] - a[1]));
+        const sorted = dict; // new Map([...dict].sort((a,b) => b[1] - a[1]));
 
         const maxNum = Array.from(sorted.values()).max();
 
