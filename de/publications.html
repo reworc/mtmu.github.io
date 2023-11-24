@@ -12,40 +12,39 @@ title: Publikationen
   </head>
   <body>
     <h1>{{ page.title }}</h1>
-    <div class="timeline">
-      <div class="timeline__line" role="presentation"></div>
-        <ul class="timeline__year--list">
-          {% for year in site.data.publications.years %}
-          <li class="timeline__year--element">
-              <h2 class="timeline__year--date">{{ year.name }}</h2>
-              <div class="timeline__year--content">
-                <ul class="timeline__publication--list">
-                    {% for element in year.elements %}
-                    <li class="timeline__publication--element">
-                      <div class="timeline__publication--content">
-                        <div class="timeline__publication--image">                      
-                          <div class="timeline__publication--image-preview">                        
-                            <img src="../assets/img/{{ element.preview }}" alt="{{ element.title }} (Preview)">
-                          </div>
-                          <div class="timeline__publication--image-detail">                        
-                            <img src="../assets/img/{{ element.image }}" alt="{{ element.title }} (Detail)">
-                          </div>
+    <div class="timeline">      
+      <ul class="timeline__year--list">
+        {% for year in site.data.publications.years %}
+        <li class="timeline__year--element">
+          <div class="timeline__line" role="presentation"></div>
+            <h2 class="timeline__year--date">{{ year.name }}</h2>
+            <div class="timeline__year--content">
+              <ul class="timeline__publication--list">
+                  {% for element in year.elements %}
+                  <li class="timeline__publication--element">
+                    <div class="timeline__publication--content">
+                      <div class="timeline__publication--image">                      
+                        <div class="timeline__publication--image-preview">                        
+                          <img src="../assets/img/{{ element.preview }}" alt="{{ element.title }} (Preview)">
                         </div>
-                        <div class="timeline__publication--description">
-                          <h3 class="timeline__publication--title">{{ element.title }}</h3>
-                          <h4 class="timeline__publication--author">{{ element.authors }}</h4>
-                          <p class="timeline__publication--location">{{ element.reference }}</p>
+                        <div class="timeline__publication--image-detail">                        
+                          <img src="../assets/img/{{ element.image }}" alt="{{ element.title }} (Detail)">
                         </div>
                       </div>
-                    </li>
-                    {% endfor %}
-                </ul>
-              </div>
-              
-          </li>
-          {% endfor %}
-      </ul>
-    </div>
+                      <div class="timeline__publication--description">
+                        <h3 class="timeline__publication--title">{{ element.title }}</h3>
+                        <h4 class="timeline__publication--author">{{ element.authors }}</h4>
+                        <p class="timeline__publication--location">{{ element.reference }}</p>
+                      </div>
+                    </div>
+                  </li>
+                  {% endfor %}
+              </ul>
+            </div>
+            
+        </li>
+        {% endfor %}
+    </ul>
     <h1>Statistics</h1>
     <div id="dataVis_numPubYear">
     </div>
