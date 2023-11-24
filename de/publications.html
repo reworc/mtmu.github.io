@@ -85,10 +85,10 @@ title: Publikationen
       const arrayYears = arrayRange(minYear, maxYear, 1);
 
       // X axis
-        const x = d3.scaleBand()
+      const x = d3.scaleBand()
           .range([ 0, width ])
           .domain(arrayYears)
-          .padding(0.8);
+          .padding(0.6);
         svg.append("g")
           .attr("transform", `translate(0, ${height})`)
           .call(d3.axisBottom(x))
@@ -96,7 +96,7 @@ title: Publikationen
             .attr("transform", "translate(-10,0)rotate(-45)")
             .style("text-anchor", "end");
 
-        const maxPublications = data.years.map((y) => y.elements.length).max();
+      const maxPublications = data.years.map((y) => y.elements.length).max();
 
         // Add Y axis
         let y = d3.scaleLinear()
@@ -115,7 +115,7 @@ title: Publikationen
             .attr("width", x.bandwidth())
             .attr("height", d => height - y(d.elements.length))
             .attr("fill", "#0084ba")      
-      })
+      });
       </script>
   </body>
 </html>
