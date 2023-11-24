@@ -165,8 +165,8 @@
           "title": "Additional On-Demand Dimanesion for Data Visualization",
           "authors": "Natalie Hube, Mathias Müller & Rainer Groh",
           "reference": "Eurographics Conference on Visualization (EuroVis) 2017, Barcelona",
-          "image": "2018_EuroVis.jpg",
-          "preview": "2018_EuroVis_prev.jpg"
+          "image": "2017_EuroVis.jpg",
+          "preview": "2017_EuroVis_prev.jpg"
         },
         {
           "title": "Interaktive Bilder auf Elastischen Displays",
@@ -174,6 +174,119 @@
           "reference": "DGfGG Tagung 2017 “Lösungsbilder“, Erfurt",
           "image": "2017_DGfGG.jpg",
           "preview": "2017_DGfGG_prev.jpg"
+        }
+      ]
+    },
+    { 
+      "name": 2016,
+      "elements": [
+        {
+          "title": "Interface-Konzepte für präsente Assistenten",
+          "authors": "Anja Knöfel, Mathias Müller, Rainer Groh & Jens Krzywinski",
+          "reference": "USEWARE 2016, Dresden",
+          "image": "2016_UseWare.jpg",
+          "preview": "2016_UseWare_prev.jpg"
+        },
+        {
+          "title": "Depth Information from Binocular Disparity And Familiar Size is Combined when Reaching Towards Virtual Objects",
+          "authors": "Rebekka S. Schubert, Mathias Müller, Sebastian Pannasch & Jens R. Helmert",
+          "reference": "ACM VRST 2016, München",
+          "image": "2016_VRST.jpg",
+          "preview": "2016_VRST_prev.jpg"
+        },
+        {
+          "title": "Are Age Differences Missing in Relative and Absolute Distance Perception of Stereoscopically Presented Virtual Objects?",
+          "authors": "Rebekka S. Schubert, Josephine Hartwig, Mathias Müller, Rainer Groh & Sebastian Pannasch",
+          "reference": "ACM VRST 2016, München",
+          "image": "2016_VRST_Poster.jpg",
+          "preview": "2016_VRST_Poster_prev.jpg"
+        },
+        {
+          "title": "Elastische Displays im Einsatz",
+          "authors": "Mathias Müller, Dietrich Kammer & Rainer Groh",
+          "reference": "Mensch und Computer 2016, Workshop Begreifbare Interaktion, Aachen",
+          "image": "2016_MuC.jpg",
+          "preview": "2016_MuC_prev.jpg"
+        },
+        {
+          "title": "Smart Prototyping: Improving the Evaluation of Design Concepts using Virtual Reality",
+          "authors": "Mathias Müller, Tobias Günther, Jan Wojdziak, Dietrich Kammer, Sebastian Lorenz & Rainer Groh",
+          "reference": "HCI International 2016, Toronto",
+          "image": "2016_HCII.jpg",
+          "preview": "2016_HCII_prev.jpg"
+        },
+        {
+          "title": "Virtual UNREALity: Exploring Alternative Visualization Techniques for Virtual Reality",
+          "authors": "Natalie Hube, Hannes Grusla, Mathias Müller, Ingmar S. Franke, Tobias Günther & Rainer Groh",
+          "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2016), Bergamo",
+          "image": "2016_xCoAx.jpg",
+          "preview": "2016_xCoAx.jpg"
+        }
+      ]
+    },
+    { 
+      "name": 2015,
+      "elements": [
+        {
+          "title": "Data Exploration on Elastic Displays using Physical Metaphors",
+          "authors": "Mathias Müller, Thomas Gründer & Rainer Groh",
+          "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2015), Glasgow",
+          "image": "2015_xCoAx.jpg",
+          "preview": "2015_xCoAx.jpg"
+        },
+        {
+          "title": "Auf dem Weg zu mobilen, flexiblen Interaktionsoberflächen",
+          "authors": "Ingmar S. Franke, Mathias Müller & Rainer Groh",
+          "reference": "Die Zukunft interaktiver Oberflächen im Kontext durchgängigen digitalen Engineerings - 18. IFF-Wissenschaftstage 2015, Magdeburg",
+          "image": "2015_IFF.jpg",
+          "preview": "2015_IFF_prev.jpg"
+        },
+        {
+          "title": "The Influence of the Stereo Base on Blind and Sighted Reaches in a Virtual Environment",
+          "authors": "Rebekka S. Renner, Erik Steindecker, Mathias Müller, Boris M. Velichkovsky, Ralph Stelzer, Sebastian Pannasch & Jens R. Helmert",
+          "reference": "ACM Transactions on Applied Perception",
+          "image": "2015_TAP.jpg",
+          "preview": "2015_TAP_prev.jpg"
+        }
+      ]
+    },
+    { 
+      "name": 2014,
+      "elements": [
+        {
+          "title": "FlexiWall: Exploring Layered Data with Elastic Displays",
+          "authors": "Mathias Müller, Anja Knöfel, Thomas Gründer, Ingmar S. Franke & Rainer Groh",
+          "reference": "ITS - Interactive Surfaces and Systems 2014, Dresden",
+          "image": "2014_ITS.jpg",
+          "preview": "2014_ITS_prev.jpg"
+        },
+        {
+          "title": "Visualization of Spatial Relations in Virtual Environments with Artificial Depth Cues",
+          "authors": "Mathias Müller, Thomas Gründer, Ingmar S. Franke & Rainer Groh",
+          "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2014), porto",
+          "image": "2014_xCoAx.jpg",
+          "preview": "2014_xCoAx_prev.jpg"
+        },
+        {
+          "title": "\"Form Follows Function\" - Investigating Interactive Physical Objects in Virtual Environments",
+          "authors": "Mathias Müller, Katharina L. Maurer, Anja Knöfel, Ingmar S. Franke & Rainer Groh",
+          "reference": "Human-Computer Interaction: Design and Development Approaches, HCI International 2014, Heraklion",
+          "image": "2014_HCII_VR.jpg",
+          "preview": "2014_HCII_VR_prev.jpg"
+        },
+        {
+          "title": "FlexiWall: Interaction In-Between 2D and 3D Interfaces",
+          "authors": "Ingmar S. Franke, Mathias Müller, Thomas Gründer & Rainer Groh",
+          "reference": "Human-Computer Interaction: Design and Development Approaches, HCI International 2014, Heraklion",
+          "image": "2014_HCII_FlexiWall.jpg",
+          "preview": "2014_HCII_FlexiWall_prev.jpg"
+        },
+        {
+          "title": "Forschung und Anwendung auf dem Gebiet kognitiver Benutzerschnittstellen - Cognitive Interface Technologies",
+          "authors": "Ingmar S. Franke, Anja Knöfel, Mathias Müller & Rainer Groh",
+          "reference": "17. IFF-Wissenschaftstage 2014, Magdeburg",
+          "image": "2014_IFF.jpg",
+          "preview": "2014_IFF_prev.jpg"
         }
       ]
     }

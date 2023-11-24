@@ -110,10 +110,11 @@ h1 {
     &--image-detail {
       display: none;
       position: absolute;
-      left: 0;
+      left: 8rem;
       top: 0;
       width: 1200px;      
       z-index: -1;
+      pointer-events: none;
     }
 
     &--image-preview {
