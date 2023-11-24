@@ -104,6 +104,24 @@ h1 {
     }
 
     &--image {
+      position: relative;
+
+      &:hover + &--image-detail {
+        display: block;
+        z-index: 1000;
+      }
+    }
+    
+    &--image-detail {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1200px;      
+      z-index: -1;
+    }
+
+    &--image-preview {
       border: 2px solid $color-grey-dark;
       height: 7rem;
 
@@ -121,7 +139,7 @@ h1 {
         border: 1px solid $color-black;
 
       }
-    }
+    }    
 
     &--description {
       margin: 0 2rem;
@@ -132,7 +150,7 @@ h1 {
       font-weight: $font-weight-default;
       text-transform: uppercase;
     
-      color: $color-black;
+      color: $color-primary;
     
       font-size: $font-size-medium;
     }
