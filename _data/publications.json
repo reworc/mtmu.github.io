@@ -32,7 +32,7 @@
         {
           "title": "Bedarfsanalyse zur Darstellung von Daten im Bereich Learning Analytics aus Lernenden-Sicht",
           "authors": "Dietrich Kammer & Mathias Müller",
-          "reference": "GeNeMe 2022, Gemeinschaften in neuen Medien, Dresde",
+          "reference": "GeNeMe 2022, Gemeinschaften in neuen Medien, Dresden",
           "image": "2022_GeNeMe.jpg",
           "preview": "2022_GeNeMe_prev.jpg"
         },
@@ -53,7 +53,7 @@
         {
           "title": "ReFlex Framework: Rapid Prototyping for Elastic Displays",
           "authors": "Mathias Müller, Dietrich Kammer, Lasse Grimm, Konrad Fabian & Diana Simon",
-          "reference": "AVI - Advanced Visual Interfaces 2022, Rom (Poster)",
+          "reference": "AVI - Advanced Visual Interfaces 2022, Rom",
           "image": "2022_AVI_Poster.jpg",
           "preview": "2022_AVI_Poster_prev.jpg"
         },
@@ -74,7 +74,7 @@
           "authors": "Franziska Hannß , Mathias Müller, & Dietrich Kammer",
           "reference": "Mensch und Computer 2021, Workshop Begreifbare Interaktion, Ingolstad",
           "image": "2021_MuC.jpg",
-          "preview": "2021_MuC.jpg"
+          "preview": "2021_MuC_prev.jpg"
         }
       ]
     },
@@ -84,7 +84,7 @@
         {
           "title": "A Tangible Concept for Layered Map Visualization: Supporting On-Site Civil Engineering Construction Consultations using Elastic Displays",
           "authors": "Mathias Müller, Erik Liehr, Rainer Groh & Franziska Hannß",
-          "reference": "Mensch und Computer 2020, Workshop Begreifbare Interaktion, Magdebur",
+          "reference": "Mensch und Computer 2020, Workshop Begreifbare Interaktion, Magdeburg",
           "image": "2020_MuC.jpg",
           "preview": "2020_MuC_prev.jpg"
         },
@@ -101,6 +101,79 @@
           "reference": "Designing Digital Touch: Social and Sensory Aspects and Challenges. Workshop at EuroHaptics 2020, Leiden",
           "image": "2020_EuroHaptics.jpg",
           "preview": "2020_EuroHaptics_prev.jpg"
+        }
+      ]
+    },
+    { 
+      "name": 2018,
+      "elements": [
+        {
+          "title": "New Impressions in Interaction Design: A Task Taxonomy for Elastic Displays",
+          "authors": "Dietrich Kammer, Mathias Müller, Jan Wojdziak & Ingmar S. Franke",
+          "reference": "i-com, 17(3)",
+          "image": "2018_iCom.jpg",
+          "preview": "2018_iCom_prev.jpg"
+        },
+        {
+          "title": "Zoomable User Interfaces für Elastic Displays",
+          "authors": "Mathias Müller, Erik Lier & Thomas Gründer",
+          "reference": "Mensch und Computer 2018, Workshop Begreifbare Interaktion, Dresden",
+          "image": "2018_MuC.jpg",
+          "preview": "2018_MuC_prev.jpg"
+        },
+        {
+          "title": "Towards Augmented Reality in Quality Assurance Processes",
+          "authors": "Natalie Hube, Mathias Müller, Jan Wojdziak, Franziska Hannß & Rainer Groh",
+          "reference": "International Workshop on Immersive Mixed and Virtual Environment Systems (MMVE 2018), Amsterdam",
+          "image": "2018_MMVE.jpg",
+          "preview": "2018_MMVE_prev.jpg"
+        },
+        {
+          "title": "The Data in Your Hands: Exploring Novel Interaction Techniques and Data Visualization Approaches for Immersive Data Analytics",
+          "authors": "Natalie Hube & Mathias Müller",
+          "reference": "AVI - Advanced Visual Interfaces 2018, Workshop on Visual Interfaces for Big Data Environments in Industrial Applications (ViaBIA 2018), Grosseto",
+          "image": "2018_AVI.jpg",
+          "preview": "2018_AVI_prev.jpg"
+        },
+        {
+          "title": "Facilitating Exploration on Exhibits with Augmented Reality",
+          "authors": "Natalie Hube, Mathias Müller & Rainer Groh",
+          "reference": "AVI - Advanced Visual Interfaces 2018, Grosseto",
+          "image": "2018_AVI_Poster.jpg",
+          "preview": "2018_AVI_Poster_prev.jpg"
+        }
+      ]
+    },
+    { 
+      "name": 2017,
+      "elements": [
+        {
+          "title": "A Zoomable Product Browser for Elastic Displays",
+          "authors": "Mathias Müller, Mandy Keck, Thomas Gründer, Natalie Hube & Rainer Groh",
+          "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2017), Lissabon",
+          "image": "2017_xCoAx.jpg",
+          "preview": "2017_xCoAx_prev.jpg"
+        },
+        {
+          "title": "Exploring Big Data Landscapes with Elastic Displays",
+          "authors": "Dietrich Kammer, Mandy Keck, Mathias Müller, Thomas Gründer & Rainer Groh",
+          "reference": "Mensch und Computer 2017, Workshop Begreifbare Interaktion, Regensburg",
+          "image": "2017_MuC.jpg",
+          "preview": "2017_MuC_prev.jpg"
+        },
+        {
+          "title": "Additional On-Demand Dimanesion for Data Visualization",
+          "authors": "Natalie Hube, Mathias Müller & Rainer Groh",
+          "reference": "Eurographics Conference on Visualization (EuroVis) 2017, Barcelona",
+          "image": "2018_EuroVis.jpg",
+          "preview": "2018_EuroVis_prev.jpg"
+        },
+        {
+          "title": "Interaktive Bilder auf Elastischen Displays",
+          "authors": "Rainer Groh, Mathias Müller & Dietrich Kammer",
+          "reference": "DGfGG Tagung 2017 “Lösungsbilder“, Erfurt",
+          "image": "2017_DGfGG.jpg",
+          "preview": "2017_DGfGG_prev.jpg"
         }
       ]
     }

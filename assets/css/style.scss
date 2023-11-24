@@ -104,12 +104,7 @@ h1 {
     }
 
     &--image {
-      position: relative;
-
-      &:hover + &--image-detail {
-        display: block;
-        z-index: 1000;
-      }
+      position: relative;      
     }
     
     &--image-detail {
@@ -129,6 +124,11 @@ h1 {
     
       align-items: center;
       justify-content: center;
+      
+      &:hover + .timeline__publication--image-detail {
+        display: block;
+        z-index: 1000;
+      }
 
       & img {
         width: 6.2rem;
