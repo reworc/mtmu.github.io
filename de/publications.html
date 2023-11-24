@@ -21,8 +21,13 @@ title: Publikationen
                   {% for element in year.elements %}
                   <li class="timeline__publication--element">
                     <div class="timeline__publication--content">
-                      <div class="timeline__publication--image">
-                        <img src="../assets/img/{{ element.preview }}" alt="{{ element.title }}">
+                      <div class="timeline__publication--image">                      
+                        <div class="timeline__publication--image-preview">                        
+                          <img src="../assets/img/{{ element.preview }}" alt="{{ element.title }} (Preview)">
+                        </div>
+                        <div class="timeline__publication--image-detail">                        
+                          <img src="../assets/img/{{ element.image }}" alt="{{ element.title }} (Detail)">
+                        </div>
                       </div>
                       <div class="timeline__publication--description">
                         <h3 class="timeline__publication--title">{{ element.title }}</h3>
