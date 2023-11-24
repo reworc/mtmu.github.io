@@ -30,11 +30,77 @@
           "preview": "2022_CTU-Prag_prev.jpg"
         },
         {
-          "title": "LEAC: Learning Analytics Conckpit",
+          "title": "Bedarfsanalyse zur Darstellung von Daten im Bereich Learning Analytics aus Lernenden-Sicht",
+          "authors": "Dietrich Kammer & Mathias Müller",
+          "reference": "GeNeMe 2022, Gemeinschaften in neuen Medien, Dresde",
+          "image": "2022_GeNeMe.jpg",
+          "preview": "2022_GeNeMe_prev.jpg"
+        },
+        {
+          "title": "LEAC: Learning Analytics Cockpit",
           "authors": "Dietrich Kammer & Mathias Müller",
           "reference": "WeL - Workshop on e-Learning 2022, Görlitz",
           "image": "2022_WeL.jpg",
           "preview": "2022_WeL_prev.jpg"
+        },
+        {
+          "title": "Augmenting Elastic Displays with Active Vibrotactile Feedback",
+          "authors": "Mathias Müller, Dietrich Kammer, Alexander Ramian, Dennis Wittchen & Georg Freitag",
+          "reference": "Mensch und Computer 2022, Workshop Begreifbare Interaktion, Darmstadt",
+          "image": "2022_MuC.jpg",
+          "preview": "2022_MuC_prev.jpg"
+        },
+        {
+          "title": "ReFlex Framework: Rapid Prototyping for Elastic Displays",
+          "authors": "Mathias Müller, Dietrich Kammer, Lasse Grimm, Konrad Fabian & Diana Simon",
+          "reference": "AVI - Advanced Visual Interfaces 2022, Rom (Poster)",
+          "image": "2022_AVI_Poster.jpg",
+          "preview": "2022_AVI_Poster_prev.jpg"
+        },
+        {
+          "title": "Investigating Usability and User Experience of Layer-Based Interaction with a Deformable Elastic Display",
+          "authors": "Mathias Müller, Elena Stoll, Anna-Magdalena Krauß, Franziska Hannß & Dietrich Kammer",
+          "reference": "AVI - Advanced Visual Interfaces 2022, Rom",
+          "image": "2022_AVI.jpg",
+          "preview": "2022_AVI_prev.jpg"
+        }
+      ]
+    },
+    { 
+      "name": 2021,
+      "elements": [
+        {
+          "title": "Designing Interfaces for Elastic Displays using Workshop and Prototyping Methods",
+          "authors": "Franziska Hannß , Mathias Müller, & Dietrich Kammer",
+          "reference": "Mensch und Computer 2021, Workshop Begreifbare Interaktion, Ingolstad",
+          "image": "2021_MuC.jpg",
+          "preview": "2021_MuC.jpg"
+        }
+      ]
+    },
+    { 
+      "name": 2020,
+      "elements": [
+        {
+          "title": "A Tangible Concept for Layered Map Visualization: Supporting On-Site Civil Engineering Construction Consultations using Elastic Displays",
+          "authors": "Mathias Müller, Erik Liehr, Rainer Groh & Franziska Hannß",
+          "reference": "Mensch und Computer 2020, Workshop Begreifbare Interaktion, Magdebur",
+          "image": "2020_MuC.jpg",
+          "preview": "2020_MuC_prev.jpg"
+        },
+        {
+          "title": "What Color is this? Explaining Art Restoration Research Methods using Interactive Museum Installations",
+          "authors": "Franziska Hannß, Esther Lapczyna, Mathias Müller & Rainer Groh",
+          "reference": "AVI - Advanced Visual Interfaces 2020, Workshop on Visual Interface Design Methods, Ischia",
+          "image": "2020_AVI.jpg",
+          "preview": "2020_AVI_prev.jpg"
+        },
+        {
+          "title": "Research Agenda on Designing the Future of Eladtic Touch",
+          "authors": "Mathias Müller, Elena Stoll, Lukas Büschel, Stefan Gehrke, Franziska Hannß & Dietrich Kammer",
+          "reference": "Designing Digital Touch: Social and Sensory Aspects and Challenges. Workshop at EuroHaptics 2020, Leiden",
+          "image": "2020_EuroHaptics.jpg",
+          "preview": "2020_EuroHaptics_prev.jpg"
         }
       ]
     }
