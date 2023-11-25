@@ -1,50 +1,11 @@
----
-title: Publikationen
----
-
 <!DOCTYPE html>
 <html lang="DE-de">
   <head>
-    {%- include head.html -%}
     <!-- Load d3.js -->
     <script src="https://d3js.org/d3.v6.js"></script>
-    <title>{{ page.title }}</title>
+    <title>D3 Dev page</title>
   </head>
   <body>
-    <h1>{{ page.title }}</h1>
-    <div class="timeline">      
-      <ul class="timeline__year--list">
-        {% for year in site.data.publications.years %}
-        <li class="timeline__year--element">
-          <div class="timeline__line" role="presentation"></div>
-            <h2 class="timeline__year--date">{{ year.name }}</h2>
-            <div class="timeline__year--content">
-              <ul class="timeline__publication--list">
-                  {% for element in year.elements %}
-                  <li class="timeline__publication--element">
-                    <div class="timeline__publication--content">
-                      <div class="timeline__publication--image">                      
-                        <div class="timeline__publication--image-preview">                        
-                          <img src="../assets/img/{{ element.preview }}" alt="{{ element.title }} (Preview)">
-                        </div>
-                        <div class="timeline__publication--image-detail">                        
-                          <img src="../assets/img/{{ element.image }}" alt="{{ element.title }} (Detail)">
-                        </div>
-                      </div>
-                      <div class="timeline__publication--description">
-                        <h3 class="timeline__publication--title">{{ element.title }}</h3>
-                        <h4 class="timeline__publication--author">{{ element.authors }}</h4>
-                        <p class="timeline__publication--location">{{ element.reference }}</p>
-                      </div>
-                    </div>
-                  </li>
-                  {% endfor %}
-              </ul>
-            </div>
-            
-        </li>
-        {% endfor %}
-    </ul>
     <h1>Statistiken</h1>
     <h2>Publikationen nach Jahr</h2>
     <div id="dataVis_numPubYear">
@@ -65,6 +26,7 @@ title: Publikationen
       <div class="visualization__authors--diagram" id="dataVis_Authors">
       </div>
     </div>
+    
     
     <script>
       Array.prototype.max = function() {
@@ -225,7 +187,7 @@ title: Publikationen
           });
         };
 
-        const url = "../assets/data/publications.json";
+        const url = "https://reworc.github.io/mtmu.github.io/assets/data/publications.json";
 
         drawPublications(url);
         drawAuthors(url, 1);
