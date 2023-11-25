@@ -106,10 +106,18 @@
             .data(data.years)
             .join("rect")
               .attr("x", d => x(d.name))
-              .attr("y", d => y(d.elements.length))
               .attr("width", x.bandwidth())
-              .attr("height", d => height - y(d.elements.length))
-              .attr("fill", "#0084ba")      
+              .attr("fill", "#0084ba")
+              .attr("height", function(d) { return height - y(0); }) // always equal to 0
+              .attr("y", function(d) { return y(0); });
+
+          // Animation
+          svg.selectAll("rect")
+            .transition()
+            .duration(800)
+            .attr("y", d => y(d.elements.length))
+            .attr("height", d => height - y(d.elements.length))
+            .delay((d,i) => i*100 );     
         });
       };
 
@@ -121,7 +129,7 @@
             height2 = 800 - marginAuthors.top - marginAuthors.bottom;
         d3.select("#dataVis_Authors").selectAll("*").remove();
 
-        const svg2 = d3.select("#dataVis_Authors")
+        const svg = d3.select("#dataVis_Authors")
         .append("svg")
           .attr("width", width2 + marginAuthors.left + marginAuthors.right)
           .attr("height", height2 + marginAuthors.top + marginAuthors.bottom)
@@ -163,7 +171,7 @@
           let x = d3.scaleLinear()
             .domain([0, maxNum])
             .range([ 0, width2]);
-          svg2.append("g")
+          svg.append("g")
             .attr("transform", `translate(0, ${height2})`)
             .call(d3.axisBottom(x).ticks(maxNum).tickFormat(d3.format("d")))
             .selectAll("text")
@@ -176,21 +184,28 @@
                     .domain(Array.from(sorted.keys()))
                     .padding(0.2);
 
-          svg2.append("g")
+          svg.append("g")
             .call(d3.axisLeft(y));
 
           // Bars
-          svg2.selectAll("mybar")
+          svg.selectAll("mybar")
             .data(Array.from(sorted))
             .join("rect")
               .attr("x", d => 0)
               .attr("y", d => y(d[0]))
               .attr("height", y.bandwidth())
-              .attr("width", d => x(d[1]))
+              .attr("width", d => 0)
               .attr("fill", "#0084ba");
               
-          });
-        };
+          // Animation
+          svg.selectAll("rect")
+            .transition()
+            .duration(800)
+            .attr("x", d => 0)
+            .attr("width", d => x(d[1]))
+            .delay((d,i) => i*50 );     
+        });
+      };
 
         const drawAuthorPeriod = (url) => {
         
