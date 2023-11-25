@@ -49,7 +49,7 @@ title: Publikationen
     <h2>Publikationen nach Jahr</h2>
     <div id="dataVis_numPubYear">
     </div>
-    <h2>Co-Authoren</h2>
+    <h2>Co-Autoren</h2>
     <div class="visualization__authors">
     <div class="visualization__authors--buttons">
         <p>Sortierung</p>
@@ -65,12 +65,12 @@ title: Publikationen
       <div class="visualization__authors--diagram" id="dataVis_Authors">
       </div>
     </div>
-    <h2>Co-Author Timline</h2>
+    <h2>Co-Autor Timeline</h2>
     <div class="visualization__authors--diagram" id="dataVis_AuthorPeriod"></div>
     <h2>Keywords</h2>
     <div id="dataVis_Keywords"></div>
     
-    <script>
+    <script>      
       Array.prototype.max = function() {
         return Math.max.apply(null, this);
       };
@@ -111,24 +111,24 @@ title: Publikationen
         // Parse the Data
         d3.json(url).then( function(data) {
         
-        const minYear = data.years.map(d => d.name).min();
-        const maxYear = data.years.map(d => d.name).max();
+          const minYear = data.years.map(d => d.name).min();
+          const maxYear = data.years.map(d => d.name).max();
 
-        const arrayYears = arrayRange(minYear, maxYear, 1);
+          const arrayYears = arrayRange(minYear, maxYear, 1);
 
-        // X axis
-        const x = d3.scaleBand()
-            .range([ 0, width ])
-            .domain(arrayYears)
-            .padding(0.6);
-          svg.append("g")
-            .attr("transform", `translate(0, ${height})`)
-            .call(d3.axisBottom(x))
-            .selectAll("text")
-              .attr("transform", "translate(-10,0)rotate(-45)")
-              .style("text-anchor", "end");
+          // X axis
+          const x = d3.scaleBand()
+              .range([ 0, width ])
+              .domain(arrayYears)
+              .padding(0.6);
+            svg.append("g")
+              .attr("transform", `translate(0, ${height})`)
+              .call(d3.axisBottom(x))
+              .selectAll("text")
+                .attr("transform", "translate(-10,0)rotate(-45)")
+                .style("text-anchor", "end");
 
-        const maxPublications = data.years.map((y) => y.elements.length).max();
+          const maxPublications = data.years.map((y) => y.elements.length).max();
 
           // Add Y axis
           let y = d3.scaleLinear()
@@ -138,13 +138,13 @@ title: Publikationen
             .call(d3.axisLeft(y).ticks(maxPublications).tickFormat(d3.format("d"))
           );
 
-          // Bars
+          // Bars - start height with 0: correct height is set in animation
           svg.selectAll("mybar")
             .data(data.years)
             .join("rect")
               .attr("x", d => x(d.name))
               .attr("width", x.bandwidth())
-              .attr("fill", "#0084ba")
+              .attr("fill", barColor)
               .attr("height", function(d) { return height - y(0); }) // always equal to 0
               .attr("y", function(d) { return y(0); });
 
@@ -158,6 +158,8 @@ title: Publikationen
         });
       };
 
+      /// draw horizontal d3 bar plot with number of publications per co-author
+      /// can be sorted (@param order) by time (descending, 0), publication count (1) or name (2)
       const drawAuthors = (url, order) => {
         
         // set the dimensions and margins of the graph
@@ -193,7 +195,10 @@ title: Publikationen
             });
           });
 
+          // delete myself
           dict.delete("Mathias Müller");
+          
+          // if param is 1 or 2: sort map
           let sorted = dict; 
           if (Number(order) === 1) {
             sorted = new Map([...dict].sort((a,b) => b[1] - a[1]));
@@ -201,13 +206,14 @@ title: Publikationen
             sorted = new Map([...dict].sort((a,b) => a[0].localeCompare(b[0])));
           }
 
+          // get the highest number of co-authored publications
           const maxNum = Array.from(sorted.values()).max(); 
-          
           
           // X axis
           let x = d3.scaleLinear()
             .domain([0, maxNum])
             .range([ 0, width2]);
+
           svg.append("g")
             .attr("transform", `translate(0, ${height2})`)
             .call(d3.axisBottom(x).ticks(maxNum).tickFormat(d3.format("d")))
@@ -232,7 +238,7 @@ title: Publikationen
               .attr("y", d => y(d[0]))
               .attr("height", y.bandwidth())
               .attr("width", d => 0)
-              .attr("fill", "#0084ba");
+              .attr("fill", barColor);
               
           // Animation
           svg.selectAll("rect")
@@ -244,6 +250,9 @@ title: Publikationen
         });
       };
 
+      // draw a special bar plot visualizing the time between fist and last publication with a co-author
+      // bars start at the first year and end at te last year
+      // bars have circle at the start and the end, so that co-authors who appear only once are visible
       const drawAuthorPeriod = (url) => {
         
         // set the dimensions and margins of the graph
@@ -283,10 +292,10 @@ title: Publikationen
           const maxYear = Array.from(sorted.values()).map(v => v.maxYear).max(); 
           const minYear = Array.from(sorted.values()).map(v => v.minYear).min(); 
           
-          // X axis
+          // X axis: start half a year early so that teh circle does not overlap the y-axis
           let x = d3.scaleLinear()
-            .domain([minYear, maxYear])
-            .range([ 0, width2]);
+            .domain([minYear - 0.5, maxYear])
+            .range([0, width2]);
           svg.append("g")
             .attr("transform", `translate(0, ${height2})`)
             .call(d3.axisBottom(x).ticks(maxYear-minYear).tickFormat(d3.format("d")))
@@ -311,7 +320,7 @@ title: Publikationen
               .attr("y", d => y(d[0]))
               .attr("height", y.bandwidth())
               .attr("width", d => x(d[1].maxYear) - x(d[1].minYear))
-              .attr("fill", "#0084ba");
+              .attr("fill", barColor2);
 
           const circleRadius = 0.5 * y.bandwidth();
 
@@ -323,7 +332,8 @@ title: Publikationen
               .attr("cx", d => x(d[1].minYear))
               .attr("cy", d => y(d[0]) + circleRadius)
               .attr("r", `${circleRadius}`)
-              .style("fill", "#fff").style("stroke", "#000")
+              .style("fill", circleColor)
+              .style("stroke", circleOutline)
               .style("stroke-width", "2");
 
           // Circles of variable 2
@@ -334,13 +344,15 @@ title: Publikationen
               .attr("cx", d => x(d[1].maxYear))
               .attr("cy", d => y(d[0])+ circleRadius)
               .attr("r", `${circleRadius}`)
-              .style("fill", "#fff")
-              .style("stroke", "#000")
+              .style("fill", circleColor)
+              .style("stroke", circleOutline)
               .style("stroke-width", "2");
           });
         };
 
-        const drawKeywords = (url, order) => {
+      // horizontal bar plot visualizing how often specific key words were used
+      // ordered by number of appearances
+      const drawKeywords = (url, order) => {
         
         // set the dimensions and margins of the graph
         const marginKeywords = {top: 30, right: 30, bottom: 70, left: 200},
@@ -348,7 +360,7 @@ title: Publikationen
             height2 = 800 - marginKeywords.top - marginKeywords.bottom;
         d3.select("#dataVis_Keywords").selectAll("*").remove();
 
-        const svg2 = d3.select("#dataVis_Keywords")
+        const svg = d3.select("#dataVis_Keywords")
         .append("svg")
           .attr("width", width2 + marginKeywords.left + marginKeywords.right)
           .attr("height", height2 + marginKeywords.top + marginKeywords.bottom)
@@ -383,12 +395,12 @@ title: Publikationen
           }
 
           const maxNum = Array.from(sorted.values()).max(); 
-          
+            
           // X axis
           let x = d3.scaleLinear()
             .domain([0, maxNum])
             .range([ 0, width2]);
-          svg2.append("g")
+          svg.append("g")
             .attr("transform", `translate(0, ${height2})`)
             .call(d3.axisBottom(x).ticks(maxNum).tickFormat(d3.format("d")))
             .selectAll("text")
@@ -401,21 +413,33 @@ title: Publikationen
                     .domain(Array.from(sorted.keys()))
                     .padding(0.2);
 
-          svg2.append("g")
+          svg.append("g")
             .call(d3.axisLeft(y));
 
           // Bars
-          svg2.selectAll("mybar")
+          svg.selectAll("mybar")
             .data(Array.from(sorted))
             .join("rect")
               .attr("x", d => 0)
               .attr("y", d => y(d[0]))
               .attr("height", y.bandwidth())
-              .attr("width", d => x(d[1]))
-              .attr("fill", "#0084ba");
-              
+              .attr("width", d => 0)
+              .attr("fill", barColor);
+
+          // Animation
+          svg.selectAll("rect")
+            .transition()
+            .duration(800)
+            .attr("x", d => 0)
+            .attr("width", d => x(d[1]))
+            .delay((d,i) => i*20 );     
           });
         };
+
+        const barColor = "#0084ba";
+        const barColor2 = "#aaa"
+        const circleColor = "#0084ba";
+        const circleOutline = "#fff";
 
         const url = "../assets/data/publications.json";
 
