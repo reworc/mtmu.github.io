@@ -199,7 +199,7 @@
             width2 = 800 - marginAuthors.left - marginAuthors.right,
             height2 = 800 - marginAuthors.top - marginAuthors.bottom;
 
-        const svg2 = d3.select("#dataVis_AuthorPeriod")
+        const svg = d3.select("#dataVis_AuthorPeriod")
         .append("svg")
           .attr("width", width2 + marginAuthors.left + marginAuthors.right)
           .attr("height", height2 + marginAuthors.top + marginAuthors.bottom)
@@ -231,14 +231,11 @@
           const maxYear = Array.from(sorted.values()).map(v => v.maxYear).max(); 
           const minYear = Array.from(sorted.values()).map(v => v.minYear).min(); 
           
-          console.log(minYear);
-          console.log(maxYear);
-          
           // X axis
           let x = d3.scaleLinear()
             .domain([minYear, maxYear])
             .range([ 0, width2]);
-          svg2.append("g")
+          svg.append("g")
             .attr("transform", `translate(0, ${height2})`)
             .call(d3.axisBottom(x).ticks(maxYear-minYear).tickFormat(d3.format("d")))
             .selectAll("text")
@@ -251,16 +248,11 @@
                     .domain(Array.from(sorted.keys()))
                     .padding(0.2);
 
-          svg2.append("g")
+          svg.append("g")
             .call(d3.axisLeft(y));
 
-          let t = Array.from(sorted)
-          console.log(t[0][1].minYear);
-
-          
-
           // Bars
-          svg2.selectAll("mybar")
+          svg.selectAll("mybar")
             .data(Array.from(sorted))
             .join("rect")
               .attr("x", d => x(d[1].minYear))
@@ -268,7 +260,31 @@
               .attr("height", y.bandwidth())
               .attr("width", d => x(d[1].maxYear) - x(d[1].minYear))
               .attr("fill", "#0084ba");
-              
+
+          const circleRadius = 0.5 * y.bandwidth();
+
+          // Circles of variable 1
+          svg.selectAll("mycircle")
+            .data(Array.from(sorted))
+            .enter()
+            .append("circle")
+              .attr("cx", d => x(d[1].minYear))
+              .attr("cy", d => y(d[0]) + circleRadius)
+              .attr("r", `${circleRadius}`)
+              .style("fill", "#fff").style("stroke", "#000")
+              .style("stroke-width", "2");
+
+          // Circles of variable 2
+          svg.selectAll("mycircle")
+            .data(Array.from(sorted))
+            .enter()
+            .append("circle")
+              .attr("cx", d => x(d[1].maxYear))
+              .attr("cy", d => y(d[0])+ circleRadius)
+              .attr("r", `${circleRadius}`)
+              .style("fill", "#fff")
+              .style("stroke", "#000")
+              .style("stroke-width", "2");
           });
         };
 

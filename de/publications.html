@@ -65,9 +65,13 @@ title: Publikationen
       <div class="visualization__authors--diagram" id="dataVis_Authors">
       </div>
     </div>
+    <h2>Co-Author Timline</h2>
+    <div class="visualization__authors--diagram" id="dataVis_AuthorPeriod"></div>
+    <h2>Keywords</h2>
+    <div id="dataVis_Keywords"></div>
     
     <script>
-      Array.prototype.max = function() {
+            Array.prototype.max = function() {
         return Math.max.apply(null, this);
       };
 
@@ -225,10 +229,186 @@ title: Publikationen
           });
         };
 
+        const drawAuthorPeriod = (url) => {
+        
+        // set the dimensions and margins of the graph
+        const marginAuthors = {top: 30, right: 30, bottom: 70, left: 200},
+            width2 = 800 - marginAuthors.left - marginAuthors.right,
+            height2 = 800 - marginAuthors.top - marginAuthors.bottom;
+
+        const svg = d3.select("#dataVis_AuthorPeriod")
+        .append("svg")
+          .attr("width", width2 + marginAuthors.left + marginAuthors.right)
+          .attr("height", height2 + marginAuthors.top + marginAuthors.bottom)
+        .append("g")
+          .attr("transform", `translate(${marginAuthors.left},${marginAuthors.top})`);
+
+        // Parse the Data
+        d3.json(url).then( function(data) {
+
+          var dict = new Map(); 
+
+          data.years.forEach((y) => {
+            y.elements.forEach((e) => { 
+
+              var authors = extractAuthors(e.authors);
+              authors.forEach((a) => {
+                if (dict.has(a)) {
+                  let entry = dict.get(a);
+                  dict.set(a, {number: entry.number + 1, minYear: Number(y.name), maxYear: Number(entry.maxYear) });
+                } else {
+                  dict.set(a, { number: 1, minYear: Number(y.name), maxYear: Number(y.name)});
+                }
+              });
+            });
+          });
+
+          dict.delete("Mathias Müller");
+          const sorted = new Map([...dict].sort((a,b) => a[0].localeCompare(b[0])));
+          const maxYear = Array.from(sorted.values()).map(v => v.maxYear).max(); 
+          const minYear = Array.from(sorted.values()).map(v => v.minYear).min(); 
+          
+          // X axis
+          let x = d3.scaleLinear()
+            .domain([minYear, maxYear])
+            .range([ 0, width2]);
+          svg.append("g")
+            .attr("transform", `translate(0, ${height2})`)
+            .call(d3.axisBottom(x).ticks(maxYear-minYear).tickFormat(d3.format("d")))
+            .selectAll("text")
+            .attr("transform", "translate(-10,0)rotate(-45)")
+            .style("text-anchor", "end");
+
+          // Y axis
+          const y = d3.scaleBand()
+                    .range([ 0, height2 ])
+                    .domain(Array.from(sorted.keys()))
+                    .padding(0.2);
+
+          svg.append("g")
+            .call(d3.axisLeft(y));
+
+          // Bars
+          svg.selectAll("mybar")
+            .data(Array.from(sorted))
+            .join("rect")
+              .attr("x", d => x(d[1].minYear))
+              .attr("y", d => y(d[0]))
+              .attr("height", y.bandwidth())
+              .attr("width", d => x(d[1].maxYear) - x(d[1].minYear))
+              .attr("fill", "#0084ba");
+
+          const circleRadius = 0.5 * y.bandwidth();
+
+          // Circles of variable 1
+          svg.selectAll("mycircle")
+            .data(Array.from(sorted))
+            .enter()
+            .append("circle")
+              .attr("cx", d => x(d[1].minYear))
+              .attr("cy", d => y(d[0]) + circleRadius)
+              .attr("r", `${circleRadius}`)
+              .style("fill", "#fff").style("stroke", "#000")
+              .style("stroke-width", "2");
+
+          // Circles of variable 2
+          svg.selectAll("mycircle")
+            .data(Array.from(sorted))
+            .enter()
+            .append("circle")
+              .attr("cx", d => x(d[1].maxYear))
+              .attr("cy", d => y(d[0])+ circleRadius)
+              .attr("r", `${circleRadius}`)
+              .style("fill", "#fff")
+              .style("stroke", "#000")
+              .style("stroke-width", "2");
+          });
+        };
+
+        const drawKeywords = (url, order) => {
+        
+        // set the dimensions and margins of the graph
+        const marginKeywords = {top: 30, right: 30, bottom: 70, left: 200},
+            width2 = 800 - marginKeywords.left - marginKeywords.right,
+            height2 = 800 - marginKeywords.top - marginKeywords.bottom;
+        d3.select("#dataVis_Keywords").selectAll("*").remove();
+
+        const svg2 = d3.select("#dataVis_Keywords")
+        .append("svg")
+          .attr("width", width2 + marginKeywords.left + marginKeywords.right)
+          .attr("height", height2 + marginKeywords.top + marginKeywords.bottom)
+        .append("g")
+          .attr("transform", `translate(${marginKeywords.left},${marginKeywords.top})`);
+
+        // Parse the Data
+        d3.json(url).then( function(data) {
+
+          var dict = new Map(); 
+
+          data.years.forEach((y) => {
+            y.elements.forEach((e) => { 
+
+              var keywords = e.keywords;
+              keywords.forEach((k) => {
+                if (dict.has(k)) {
+                  let num = dict.get(k);
+                  dict.set(k, num + 1);
+                } else {
+                  dict.set(k, 1);
+                }
+              });
+            });
+          });
+
+          let sorted = dict; 
+          if (Number(order) === 1) {
+            sorted = new Map([...dict].sort((a,b) => b[1] - a[1]));
+          } else if (Number(order) === 2 ) {
+            sorted = new Map([...dict].sort((a,b) => a[0].localeCompare(b[0])));
+          }
+
+          const maxNum = Array.from(sorted.values()).max(); 
+          
+          
+          // X axis
+          let x = d3.scaleLinear()
+            .domain([0, maxNum])
+            .range([ 0, width2]);
+          svg2.append("g")
+            .attr("transform", `translate(0, ${height2})`)
+            .call(d3.axisBottom(x).ticks(maxNum).tickFormat(d3.format("d")))
+            .selectAll("text")
+            .attr("transform", "translate(-10,0)rotate(-45)")
+            .style("text-anchor", "end");
+
+          // Y axis
+          const y = d3.scaleBand()
+                    .range([ 0, height2 ])
+                    .domain(Array.from(sorted.keys()))
+                    .padding(0.2);
+
+          svg2.append("g")
+            .call(d3.axisLeft(y));
+
+          // Bars
+          svg2.selectAll("mybar")
+            .data(Array.from(sorted))
+            .join("rect")
+              .attr("x", d => 0)
+              .attr("y", d => y(d[0]))
+              .attr("height", y.bandwidth())
+              .attr("width", d => x(d[1]))
+              .attr("fill", "#0084ba");
+              
+          });
+        };
+
         const url = "../assets/data/publications.json";
 
         drawPublications(url);
         drawAuthors(url, 1);
+        drawAuthorPeriod(url);
+        drawKeywords(url, 1);
 
       </script>
   </body>
