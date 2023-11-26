@@ -70,19 +70,19 @@ title: Publikationen
         <div class="visualization__authors--diagram" id="dataVis_Authors"></div>
       </div>
       <div class="visualization__authors--timeline">
-        <h2>Co-Autor Timeline</h2>
+        <h2>Timeline</h2>
         <div class="visualization__authors--diagram" id="dataVis_AuthorPeriod"></div>
       </div>
     </div>
 
     <div class="visualization__keywords">
       <div class="visualization__keywords--simple">
-        <h2>Verteilung Keywords</h2>
-        <div id="dataVis_Keywords"></div>
-      </div>
-      <div class="visualization__keywords--spider">
         <h2>H&auml;ufigste Keywords</h2>
         <div id="dataVis_KeywordsSpider"></div>
+      </div>
+      <div class="visualization__keywords--spider">
+        <h2>Verteilung Keywords</h2>
+        <div id="dataVis_Keywords"></div>
       </div>
     </div>
 
@@ -112,7 +112,7 @@ title: Publikationen
       /// draw d3.js bar plot of publications
       const drawPublications = (url) => {  
         // set the dimensions and margins of the graph
-        const margin = {top: 30, right: 30, bottom: 70, left: 60},
+        const margin = {top: 50, right: 30, bottom: 30, left: 30},
             width = 600 - margin.left - margin.right,
             height = 200 - margin.top - margin.bottom;
         
@@ -558,6 +558,7 @@ title: Publikationen
                   enter => enter.append("text")
                       .attr("x", d => d.label_coord.x)
                       .attr("y", d => d.label_coord.y)
+                      .attr("class", "visualization__keywords--spider--axisLabel")
                       .text(d => d.name)
               );
               

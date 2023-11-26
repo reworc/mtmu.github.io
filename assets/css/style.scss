@@ -213,20 +213,19 @@ svg text {
   &__authors {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
     
     &--simple {
       position: relative;
-      width: 800px;
     }
 
     &--timeline {
-      width: 800px;
     }
 
     &--buttons {
       position: absolute;
       bottom: 14rem;
-      right: 20rem;
+      right: 10rem;
 
       padding: 1rem;
 
@@ -238,6 +237,24 @@ svg text {
   &__keywords {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    &--simple, &--spider {
+      display: grid;
+      grid-template-rows: 3rem 1fr;
+    }
+
+    &--spider {
+      text.ticklabel {
+        transform: translateY(-4px);
+      }
+
+      &--axislabel {
+         background-color: $color-white;
+         border: 1px solid $color-grey-dark;
+         font-size: $font-size-default;
+         font-weight: $font-weight-bold;
+      }
+    }
   }
 }
 

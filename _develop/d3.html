@@ -60,7 +60,7 @@
       /// draw d3.js bar plot of publications
       const drawPublications = (url) => {  
         // set the dimensions and margins of the graph
-        const margin = {top: 30, right: 30, bottom: 70, left: 60},
+        const margin = {top: 50, right: 30, bottom: 30, left: 30},
             width = 600 - margin.left - margin.right,
             height = 200 - margin.top - margin.bottom;
         
@@ -506,6 +506,7 @@
                   enter => enter.append("text")
                       .attr("x", d => d.label_coord.x)
                       .attr("y", d => d.label_coord.y)
+                      .attr("class", "visualization__keywords--spider--axisLabel")
                       .text(d => d.name)
               );
               
