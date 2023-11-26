@@ -69,8 +69,10 @@ title: Publikationen
     <div class="visualization__authors--diagram" id="dataVis_AuthorPeriod"></div>
     <h2>Keywords</h2>
     <div id="dataVis_Keywords"></div>
-    
-    <script>      
+    <h2>H&auml;ufigste Keywords</h2>
+    <div id="dataVis_KeywordsSpider"></div>
+
+    <script> 
       Array.prototype.max = function() {
         return Math.max.apply(null, this);
       };
@@ -97,8 +99,8 @@ title: Publikationen
       const drawPublications = (url) => {  
         // set the dimensions and margins of the graph
         const margin = {top: 30, right: 30, bottom: 70, left: 60},
-            width = 800 - margin.left - margin.right,
-            height = 300 - margin.top - margin.bottom;
+            width = 600 - margin.left - margin.right,
+            height = 200 - margin.top - margin.bottom;
         
         // append the svg object to the body of the page
         const svg = d3.select("#dataVis_numPubYear")
@@ -163,9 +165,9 @@ title: Publikationen
       const drawAuthors = (url, order) => {
         
         // set the dimensions and margins of the graph
-        const margin = {top: 30, right: 30, bottom: 70, left: 200},
-            width = 800 - margin.left - margin.right,
-            height = 800 - margin.top - margin.bottom;
+        const margin = {top: 30, right: 30, bottom: 70, left: 150},
+            width = 600 - margin.left - margin.right,
+            height = 600 - margin.top - margin.bottom;
         d3.select("#dataVis_Authors").selectAll("*").remove();
 
         const svg = d3.select("#dataVis_Authors")
@@ -256,8 +258,8 @@ title: Publikationen
       const drawAuthorPeriod = (url) => {
         
         // set the dimensions and margins of the graph
-        const margin = {top: 30, right: 30, bottom: 70, left: 200},
-            width = 800 - margin.left - margin.right,
+        const margin = {top: 30, right: 30, bottom: 70, left: 150},
+            width = 600 - margin.left - margin.right,
             height = 800 - margin.top - margin.bottom;
 
         const svg = d3.select("#dataVis_AuthorPeriod")
@@ -439,8 +441,8 @@ title: Publikationen
         const drawKeywordsSpider = (url) => {
           // set the dimensions and margins of the graph
           const margin = {top: 30, right: 30, bottom: 70, left: 30},
-            width = 600 - margin.left - margin.right,
-            height = 600 - margin.top - margin.bottom;
+            width = 400 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
 
           const svg = d3.select("#dataVis_KeywordsSpider")
             .append("svg")
@@ -474,7 +476,7 @@ title: Publikationen
 
             let radialScale = d3.scaleLinear()
               .domain([0, maxNum])
-              .range([0, 250]);
+              .range([0, 150]);
 
             let ticks = [Math.floor(0.2 * maxNum), Math.floor(0.4 * maxNum), Math.floor(0.6 * maxNum), Math.floor(0.8 * maxNum), maxNum];
           
