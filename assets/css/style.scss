@@ -16,7 +16,11 @@ h1 {
   margin-left: 2rem;
 }
 
-
+svg text {
+  font-family: $font-primary;
+  font-weight: $font-weight-default;
+  color: $color-grey-dark;
+}
 
 .timeline {
   position: relative;
