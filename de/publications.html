@@ -49,32 +49,42 @@ title: Publikationen
     <h2>Publikationen nach Jahr</h2>
     <div id="dataVis_numPubYear">
     </div>
-    <h2>Co-Autoren</h2>
     <div class="visualization__authors">
-      <div class="visualization__authors--buttons">
-        <p>Sortierung</p>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" id="d" name="sort" value="0" onchange="drawAuthors(url, this.value)">
-          <label class="form-check-label" for="d">Datum (neuste zuerst)</label>
+      <div class="visualization__authors--simple">
+        <h2>Co-Autoren</h2>
+        <div class="visualization__authors--buttons">
+          <p>Sortierung</p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="d" name="sort" value="0" onchange="drawAuthors(url, this.value)">
+            <label class="form-check-label" for="d">Datum (neuste zuerst)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="h" name="sort" value="1" onchange="drawAuthors(url, this.value)" checked>
+            <label class="form-check-label" for="h">Häufigkeit</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="n" name="sort" value="2" onchange="drawAuthors(url, this.value)">
+            <label class="form-check-label" for="n">Name</label>
+          </div>
         </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" id="h" name="sort" value="1" onchange="drawAuthors(url, this.value)" checked>
-          <label class="form-check-label" for="h">Häufigkeit</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" id="n" name="sort" value="2" onchange="drawAuthors(url, this.value)">
-          <label class="form-check-label" for="n">Name</label>
-        </div>
+        <div class="visualization__authors--diagram" id="dataVis_Authors"></div>
       </div>
-      <div class="visualization__authors--diagram" id="dataVis_Authors">
+      <div class="visualization__authors--timeline">
+        <h2>Co-Autor Timeline</h2>
+        <div class="visualization__authors--diagram" id="dataVis_AuthorPeriod"></div>
       </div>
     </div>
-    <h2>Co-Autor Timeline</h2>
-    <div class="visualization__authors--diagram" id="dataVis_AuthorPeriod"></div>
-    <h2>Keywords</h2>
-    <div id="dataVis_Keywords"></div>
-    <h2>H&auml;ufigste Keywords</h2>
-    <div id="dataVis_KeywordsSpider"></div>
+
+    <div class="visualization__keywords">
+      <div class="visualization__keywords--simple">
+        <h2>Verteilung Keywords</h2>
+        <div id="dataVis_Keywords"></div>
+      </div>
+      <div class="visualization__keywords--spider">
+        <h2>H&auml;ufigste Keywords</h2>
+        <div id="dataVis_KeywordsSpider"></div>
+      </div>
+    </div>
 
     <script> 
       Array.prototype.max = function() {
@@ -224,7 +234,7 @@ title: Publikationen
             .attr("transform", `translate(0, ${height})`)
             .call(d3.axisBottom(x).ticks(maxNum).tickFormat(d3.format("d")))
             .selectAll("text")
-            .attr("transform", "translate(-10,0)rotate(-45)")
+            .attr("transform", "translate(-10,5)rotate(-45)")
             .style("text-anchor", "end");
 
           // Y axis
@@ -234,7 +244,9 @@ title: Publikationen
                     .padding(0.2);
 
           svg.append("g")
-            .call(d3.axisLeft(y));
+            .call(d3.axisLeft(y))
+            .selectAll("text")
+            .attr("transform", "translate(-5,0)");
 
           // Bars
           svg.selectAll("mybar")
@@ -264,7 +276,7 @@ title: Publikationen
         // set the dimensions and margins of the graph
         const margin = {top: 30, right: 30, bottom: 70, left: 150},
             width = 600 - margin.left - margin.right,
-            height = 800 - margin.top - margin.bottom;
+            height = 600 - margin.top - margin.bottom;
 
         const svg = d3.select("#dataVis_AuthorPeriod")
         .append("svg")
@@ -306,7 +318,7 @@ title: Publikationen
             .attr("transform", `translate(0, ${height})`)
             .call(d3.axisBottom(x).ticks(maxYear-minYear).tickFormat(d3.format("d")))
             .selectAll("text")
-            .attr("transform", "translate(-10,0)rotate(-45)")
+            .attr("transform", "translate(-10,5)rotate(-45)")
             .style("text-anchor", "end");
 
           // Y axis
@@ -316,7 +328,9 @@ title: Publikationen
                     .padding(0.2);
 
           svg.append("g")
-            .call(d3.axisLeft(y));
+            .call(d3.axisLeft(y))
+            .selectAll("text")
+            .attr("transform", "translate(-5,0)");
 
           // Bars
           svg.selectAll("mybar")
@@ -362,8 +376,8 @@ title: Publikationen
         
         // set the dimensions and margins of the graph
         const margin = {top: 30, right: 30, bottom: 70, left: 200},
-            width = 800 - margin.left - margin.right,
-            height = 800 - margin.top - margin.bottom;
+            width = 600 - margin.left - margin.right,
+            height = 1000 - margin.top - margin.bottom;
         d3.select("#dataVis_Keywords").selectAll("*").remove();
 
         const svg = d3.select("#dataVis_Keywords")
@@ -410,7 +424,7 @@ title: Publikationen
             .attr("transform", `translate(0, ${height})`)
             .call(d3.axisBottom(x).ticks(maxNum).tickFormat(d3.format("d")))
             .selectAll("text")
-            .attr("transform", "translate(-10,0)rotate(-45)")
+            .attr("transform", "translate(-10,5)rotate(-45)")
             .style("text-anchor", "end");
 
           // Y axis
@@ -420,7 +434,9 @@ title: Publikationen
                     .padding(0.2);
 
           svg.append("g")
-            .call(d3.axisLeft(y));
+            .call(d3.axisLeft(y))
+            .selectAll("text")
+            .attr("transform", "translate(-5,0)");
 
           // Bars
           svg.selectAll("mybar")

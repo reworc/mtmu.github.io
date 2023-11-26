@@ -25,6 +25,8 @@ h2 {
   font-family: $font-secondary;
   font-weight: $font-weight-bold;
 
+  font-size: $font-size-default;
+
   color: $color-grey-dark;
 
   margin-left: 4rem;
@@ -209,15 +211,33 @@ svg text {
 
 .visualization {
   &__authors {
-    position: relative;
-    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    &--simple {
+      position: relative;
+      width: 800px;
+    }
+
+    &--timeline {
+      width: 800px;
+    }
 
     &--buttons {
       position: absolute;
-      top: 4rem;
-      right: -2rem;
-    }
+      bottom: 14rem;
+      right: 20rem;
 
+      padding: 1rem;
+
+      border: 1px solid $color-primary;
+      border-radius: 5px;
+    }
+  }
+
+  &__keywords {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

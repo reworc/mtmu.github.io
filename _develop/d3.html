@@ -182,7 +182,7 @@
             .attr("transform", `translate(0, ${height})`)
             .call(d3.axisBottom(x).ticks(maxNum).tickFormat(d3.format("d")))
             .selectAll("text")
-            .attr("transform", "translate(-10,0)rotate(-45)")
+            .attr("transform", "translate(-10,5)rotate(-45)")
             .style("text-anchor", "end");
 
           // Y axis
@@ -192,7 +192,9 @@
                     .padding(0.2);
 
           svg.append("g")
-            .call(d3.axisLeft(y));
+            .call(d3.axisLeft(y))
+            .selectAll("text")
+            .attr("transform", "translate(-5,0)");
 
           // Bars
           svg.selectAll("mybar")
@@ -222,7 +224,7 @@
         // set the dimensions and margins of the graph
         const margin = {top: 30, right: 30, bottom: 70, left: 150},
             width = 600 - margin.left - margin.right,
-            height = 800 - margin.top - margin.bottom;
+            height = 600 - margin.top - margin.bottom;
 
         const svg = d3.select("#dataVis_AuthorPeriod")
         .append("svg")
@@ -264,7 +266,7 @@
             .attr("transform", `translate(0, ${height})`)
             .call(d3.axisBottom(x).ticks(maxYear-minYear).tickFormat(d3.format("d")))
             .selectAll("text")
-            .attr("transform", "translate(-10,0)rotate(-45)")
+            .attr("transform", "translate(-10,5)rotate(-45)")
             .style("text-anchor", "end");
 
           // Y axis
@@ -274,7 +276,9 @@
                     .padding(0.2);
 
           svg.append("g")
-            .call(d3.axisLeft(y));
+            .call(d3.axisLeft(y))
+            .selectAll("text")
+            .attr("transform", "translate(-5,0)");
 
           // Bars
           svg.selectAll("mybar")
@@ -320,8 +324,8 @@
         
         // set the dimensions and margins of the graph
         const margin = {top: 30, right: 30, bottom: 70, left: 200},
-            width = 800 - margin.left - margin.right,
-            height = 800 - margin.top - margin.bottom;
+            width = 600 - margin.left - margin.right,
+            height = 1000 - margin.top - margin.bottom;
         d3.select("#dataVis_Keywords").selectAll("*").remove();
 
         const svg = d3.select("#dataVis_Keywords")
@@ -368,7 +372,7 @@
             .attr("transform", `translate(0, ${height})`)
             .call(d3.axisBottom(x).ticks(maxNum).tickFormat(d3.format("d")))
             .selectAll("text")
-            .attr("transform", "translate(-10,0)rotate(-45)")
+            .attr("transform", "translate(-10,5)rotate(-45)")
             .style("text-anchor", "end");
 
           // Y axis
@@ -378,7 +382,9 @@
                     .padding(0.2);
 
           svg.append("g")
-            .call(d3.axisLeft(y));
+            .call(d3.axisLeft(y))
+            .selectAll("text")
+            .attr("transform", "translate(-5,0)");
 
           // Bars
           svg.selectAll("mybar")
