@@ -207,6 +207,20 @@ svg text {
   }  
 }
 
+.visualization {
+  &__authors {
+    position: relative;
+    width: 800px;
+
+    &--buttons {
+      position: absolute;
+      top: 4rem;
+      right: -2rem;
+    }
+
+  }
+}
+
 
 p {
     font-family: $font-secondary;
