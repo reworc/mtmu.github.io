@@ -256,8 +256,7 @@ svg text {
       }
 
       &--axislabel {
-         background-color: $color-white;
-         border: 1px solid $color-grey-dark;
+         color: $color-primary;
          font-size: $font-size-default;
          font-weight: $font-weight-bold;
       }

@@ -455,7 +455,7 @@
                       .attr("cx", width / 2)
                       .attr("cy", height / 2)
                       .attr("fill", "none")
-                      .attr("stroke", "gray")
+                      .attr("stroke", "#999")
                       .attr("r", d => radialScale(d))
             );
 
@@ -482,7 +482,7 @@
                 return {
                     "name": f[0],
                     "angle": angle,
-                    "line_coord": angleToCoordinate(angle, maxNum),
+                    "line_coord": angleToCoordinate(angle, maxNum + 1),
                     "label_coord": angleToCoordinate(angle, maxNum + 2)
                 };
               });
@@ -496,7 +496,8 @@
                       .attr("y1", height / 2)
                       .attr("x2", d => d.line_coord.x)
                       .attr("y2", d => d.line_coord.y)
-                      .attr("stroke","black")
+                      .attr("stroke", barColor_light)
+                      .attr("stroke-width", "2")
               );
 
             // draw axis label
@@ -546,6 +547,7 @@
         };
 
         const barColor = "#0084ba";
+        const barColor_light = "#1cbefe";
         const barcolor_rgb = "0, 132, 184";
         const barColor2 = "#aaa"
         const circleColor = "#0084ba";
