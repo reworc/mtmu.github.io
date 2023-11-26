@@ -244,6 +244,13 @@ svg text {
     }
 
     &--spider {
+      align-items: center;
+      justify-items: start;
+
+      div {
+        justify-self: center;
+      }
+
       text.ticklabel {
         transform: translateY(-4px);
       }

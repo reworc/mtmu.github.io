@@ -409,7 +409,7 @@
         const drawKeywordsSpider = (url) => {
           // set the dimensions and margins of the graph
           const margin = {top: 30, right: 30, bottom: 70, left: 30},
-            width = 400 - margin.left - margin.right,
+            width = 600 - margin.left - margin.right,
             height = 400 - margin.top - margin.bottom;
 
           const svg = d3.select("#dataVis_KeywordsSpider")
@@ -483,7 +483,7 @@
                     "name": f[0],
                     "angle": angle,
                     "line_coord": angleToCoordinate(angle, maxNum),
-                    "label_coord": angleToCoordinate(angle, maxNum + 1)
+                    "label_coord": angleToCoordinate(angle, maxNum + 2)
                 };
               });
 
@@ -507,6 +507,7 @@
                       .attr("x", d => d.label_coord.x)
                       .attr("y", d => d.label_coord.y)
                       .attr("class", "visualization__keywords--spider--axisLabel")
+                      .attr("text-anchor", (d, i) => i < (featureData.length / 2) ? "end" : "start") 
                       .text(d => d.name)
               );
               
@@ -520,10 +521,11 @@
             const getPathCoordinates = (data_points) => {
               let coordinates = [];
               for (var i = 0; i < labels.length; i++){
-                  let ft_name = labels[i];
                   let angle = (Math.PI / 2) + (2 * Math.PI * i / labels.length);
                   coordinates.push(angleToCoordinate(angle, data_points[i]));
               }
+              // close path
+              coordinates.push(angleToCoordinate((Math.PI / 2), data_points[0]));
               return coordinates;
             };
 
@@ -534,11 +536,9 @@
                     enter => enter.append("path")
                         .datum(d => getPathCoordinates(d))
                         .attr("d", line)
-                        .attr("stroke-width", 4)
-                        .attr("stroke", barColor)
-                        .attr("fill", barColor)
-                        .attr("stroke-opacity", 1)
-                        .attr("opacity", 0.5)
+                        .attr("stroke-width", 2)
+                        .attr("stroke", `rgba(${barcolor_rgb}, 1.0)`)
+                        .attr("fill", `rgba(${barcolor_rgb}, 0.5)`)
                 );
 
           });
@@ -546,6 +546,7 @@
         };
 
         const barColor = "#0084ba";
+        const barcolor_rgb = "0, 132, 184";
         const barColor2 = "#aaa"
         const circleColor = "#0084ba";
         const circleOutline = "#fff";
