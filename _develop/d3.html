@@ -644,7 +644,9 @@
               .style("fill", "none")
               .attr("stroke-width", 1)
               .attr('points', function(d) {
-                const posA = arc.centroid(d) // line insertion in the slice
+                let posA = arc.centroid(d) // line insertion in the slice
+                posA[0] *= 1.15;
+                posA[1] *= 1.15;
                 const posB = outerArc.centroid(d) // line break: we use the other arc generator that has been built only for that
                 const posC = outerArc.centroid(d); // Label position = almost the same as posB
                 const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 // we need the angle to see if the X position will be at the extreme right or extreme left
@@ -668,6 +670,22 @@
                   const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
                   return (midangle < Math.PI ? 'start' : 'end')
               });
+
+          // Add labels with the number count on th arc:
+          svg
+            .selectAll('allLabels')
+            .data(data_ready)
+            .join('text')
+              .text(d => `${d.data[1]}`)
+              .attr('transform', function(d) {
+                  const pos = arc.centroid(d);
+                  //const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+                  //pos[0] = radius * (labelRadiusMultiplyer * 1.05) * (midangle < Math.PI ? 1 : -1);
+                  return `translate(${pos})`;
+              })
+              .style('text-anchor', 'middle')
+              .style('font-weight', '700')
+              .style('fill', '#fff');
         });
       };
       
@@ -685,7 +703,6 @@
       drawAuthorPeriod(url);
       drawKeywords(url, 1);
       drawKeywordsSpider(url);
-
       drawKeywordsDonut(url);
 
     </script>
