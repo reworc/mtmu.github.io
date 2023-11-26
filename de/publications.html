@@ -53,14 +53,18 @@ title: Publikationen
     <div class="visualization__authors">
     <div class="visualization__authors--buttons">
         <p>Sortierung</p>
-        <fieldset>
-          <input type="radio" id="d" name="sort" value="0" onchange="drawAuthors(url, this.value)">
-          <label for="d">Datum (neuste zuerst)</label> 
-          <input type="radio" id="h" name="sort" value="1" onchange="drawAuthors(url, this.value)" checked>
-          <label for="h">Häufigkeit</label>
-          <input type="radio" id="n" name="sort" value="2" onchange="drawAuthors(url, this.value)">
-          <label for="n">Name</label> 
-        </fieldset>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox"  id="d" name="sort" value="0" onchange="drawAuthors(url, this.value)">
+          <label class="form-check-label" for="d">Datum (neuste zuerst)</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="h" name="sort" value="1" onchange="drawAuthors(url, this.value)" checked>
+          <label class="form-check-label" for="h">Häufigkeit</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="n" name="sort" value="2" onchange="drawAuthors(url, this.value)">
+          <label class="form-check-label" for="n">Name</label>
+        </div>
       </div>
       <div class="visualization__authors--diagram" id="dataVis_Authors">
       </div>
