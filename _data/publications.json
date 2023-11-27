@@ -165,7 +165,7 @@
           "image": "2018_iCom.jpg",
           "preview": "2018_iCom_prev.jpg",
           "keywords": ["Human-Computer Interaction", "Interaction Design", "Tangible Interaction", "Organic User Interfaces", "Shape-Changing Interfaces", "Elastic Displays", "Physics-Based Interaction", "Task Taxonomy"],
-          "doi": "10.1515/icom-2018-0021",
+          "doi": "https://doi.org/10.1515/icom-2018-0021",
           "abstract": "2018_icom.html"
         },
         {
@@ -176,7 +176,7 @@
           "image": "2018_MuC.jpg",
           "preview": "2018_MuC_prev.jpg",
           "keywords": ["Elastic Displays", "Shape-Changing Interfaces", "Interaction Design", "User Interface", "Zoomable User Interface"],
-          "doi": "10.18420/muc2018-ws05-0502",
+          "doi": "https://doi.org/10.18420/muc2018-ws05-0502",
           "abstract": "2018_MuC.html"
         },
         {
@@ -224,7 +224,9 @@
           "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2017), Lissabon",
           "image": "2017_xCoAx.jpg",
           "preview": "2017_xCoAx_prev.jpg",
-          "keywords": ["Elastic Displays", "Information Visualization",  "Interaction Design", "Zoomable User Interface", "Browsing", "Similarity-Based Search", "Glyph-Based Visualization"]
+          "keywords": ["Elastic Displays", "Information Visualization",  "Interaction Design", "Zoomable User Interface", "Browsing", "Similarity-Based Search", "Glyph-Based Visualization"],
+          "doi": "",
+          "abstract": "2017_xCoAx.html"
         },
         {
           "id": "2017_MuC",
@@ -233,7 +235,9 @@
           "reference": "Mensch und Computer 2017, Workshop Begreifbare Interaktion, Regensburg",
           "image": "2017_MuC.jpg",
           "preview": "2017_MuC_prev.jpg",
-          "keywords": ["Elastic Displays", "Information Visualization",  "Interaction Design", "Zoomable User Interface", "Data Analysis", "Data Science", "Big Data", "Glyph-Based Visualization"]
+          "keywords": ["Elastic Displays", "Information Visualization",  "Interaction Design", "Zoomable User Interface", "Data Analysis", "Data Science", "Big Data", "Glyph-Based Visualization"],
+          "doi": "https://doi.org/10.18420/muc2017-ws08-0342",
+          "abstract": "2017_MuC.html"
         },
         {
           "id": "2017_EuroVis",
@@ -242,7 +246,9 @@
           "reference": "Eurographics Conference on Visualization (EuroVis) 2017, Barcelona",
           "image": "2017_EuroVis.jpg",
           "preview": "2017_EuroVis_prev.jpg",
-          "keywords": ["Information Visualization", "User Interface", "Parallel Coordinates", "3D Visualization", "Human-Computer Interaction"]
+          "keywords": ["Information Visualization", "User Interface", "Parallel Coordinates", "3D Visualization", "Human-Computer Interaction"],
+          "doi": "https://doi.org/10.2312/eurovisshort.20171151",
+          "abstract": "2017_EuroVis.html"
         },
         {
           "id": "2017_DGfGG",
@@ -251,7 +257,9 @@
           "reference": "DGfGG Tagung 2017 “Lösungsbilder“, Erfurt",
           "image": "2017_DGfGG.jpg",
           "preview": "2017_DGfGG_prev.jpg",
-          "keywords": ["Elastic Displays", "Information Visualization", "Interaction Metaphors", "Interaction Design", "Human-Computer Interaction"]
+          "keywords": ["Elastic Displays", "Information Visualization", "Interaction Metaphors", "Interaction Design", "Human-Computer Interaction"],
+          "doi": "",
+          "abstract": "2017_DGfGG.html"
         }
       ]
     },
@@ -265,7 +273,9 @@
           "reference": "USEWARE 2016, Dresden",
           "image": "2016_UseWare.jpg",
           "preview": "2016_UseWare_prev.jpg",
-          "keywords": ["Assistenzsysteme", "Human-Computer Interaction", "User Interface", "User Centered Design"]
+          "keywords": ["Assistenzsysteme", "Human-Computer Interaction", "User Interface", "User Centered Design"],
+          "doi": "",
+          "abstract": ""
         },
         {
           "id": "2016_VRST",
@@ -274,7 +284,9 @@
           "reference": "ACM VRST 2016, München",
           "image": "2016_VRST.jpg",
           "preview": "2016_VRST_prev.jpg",
-          "keywords": ["Virtual Reality", "Stereoscopy" ,"Depth Perception", "Distance Estimation", "Reaching"]
+          "keywords": ["Virtual Reality", "Stereoscopy" ,"Depth Perception", "Distance Estimation", "Reaching"],
+          "doi": "https://doi.org/10.1145/2993369.2993408",
+          "abstract": "2016_VRST.html"
         },
         {
           "id": "2016_VRST-Poster",
@@ -283,7 +295,9 @@
           "reference": "ACM VRST 2016, München",
           "image": "2016_VRST_Poster.jpg",
           "preview": "2016_VRST_Poster_prev.jpg",
-          "keywords": ["Stereoscopy", "Depth Perception", "Binocular Eye Movements"]
+          "keywords": ["Stereoscopy", "Depth Perception", "Binocular Eye Movements"],
+          "doi": "https://doi.org/10.1145/2993369.2996334",
+          "abstract": "2016_VRST-Poster.html"
         },
         {
           "id": "2016_MuC",
@@ -292,7 +306,9 @@
           "reference": "Mensch und Computer 2016, Workshop Begreifbare Interaktion, Aachen",
           "image": "2016_MuC.jpg",
           "preview": "2016_MuC_prev.jpg",
-          "keywords": ["Elastic Displays", "User Interface", "Interaction Design", "Information Visualization", "Graph Visualization", "Zoomable User Interface"]
+          "keywords": ["Elastic Displays", "User Interface", "Interaction Design", "Information Visualization", "Graph Visualization", "Zoomable User Interface"],
+          "doi": "https://doi.org/10.18420/muc2016-ws10-0007",
+          "abstract": "2016_MuC.html"
         },
         {
           "id": "2016_HCII",
@@ -301,7 +317,10 @@
           "reference": "HCI International 2016, Toronto",
           "image": "2016_HCII.jpg",
           "preview": "2016_HCII_prev.jpg",
-          "keywords": ["Virtual Reality", "Virtual Prototyping", "Interface Design", "Product Design", "Participatory Design"]
+          "keywords": ["Virtual Reality", "Virtual Prototyping", "Interface Design", "Product Design", "Participatory Design"],
+          "doi": "https://doi.org/10.1007/978-3-319-39907-2_5",
+          "abstract": "2016_HCII.html"
+
         },
         {
           "id": "2016_xCoAx",
@@ -310,7 +329,9 @@
           "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2016), Bergamo",
           "image": "2016_xCoAx.jpg",
           "preview": "2016_xCoAx_prev.jpg",
-          "keywords": ["Virtual Reality", "Non-Photorealistic Rendering", "Virtual Phenomena"]
+          "keywords": ["Virtual Reality", "Non-Photorealistic Rendering", "Virtual Phenomena"],
+          "doi": "",
+          "abstract": "2016_xCoAx.html"
         }
       ]
     },

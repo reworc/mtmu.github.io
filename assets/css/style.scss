@@ -7,6 +7,11 @@ body {
   margin: 3rem 4rem;
 }
 
+a {
+  text-decoration: none;
+  color: $color-primary-light;
+}
+
 h1 {
   font-family: $font-primary;
   font-weight: $font-weight-bold;
@@ -232,13 +237,9 @@ svg text {
       font-size: $font-size-small;
     }
 
-    &--detail-view {
-      border-left: 2px solid $color-grey-very-light;
-    }
-
     &--detail-container {
       grid-column: 2;
-      margin: 2rem;      
+      margin: 1rem 1rem 0 2rem;      
     }
 
     &--abstract-title {
