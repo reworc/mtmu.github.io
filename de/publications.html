@@ -21,42 +21,47 @@ title: Publikationen
             <div class="timeline__year--content">
               <ul class="timeline__publication--list">
                   {% for element in year.elements %}
-                  <li class="timeline__publication--element">
+                  <li class="timeline__publication--element">                 
                     <div class="timeline__publication--content">
-                      <div class="timeline__publication--image">                      
-                        <div class="timeline__publication--image-preview">                        
-                          <img src="../assets/img/{{ element.preview }}" alt="{{ element.title }} (Preview)">
-                        </div>
-                        <div class="timeline__publication--image-detail">                        
-                          <img src="../assets/img/{{ element.image }}" alt="{{ element.title }} (Detail)">
-                        </div>
-                      </div>
-                      <div class="timeline__publication--description">
-                        <h3 class="timeline__publication--title">{{ element.title }}</h3>
-                        <h4 class="timeline__publication--author">{{ element.authors }}</h4>
-                        <p class="timeline__publication--location">{{ element.reference }}</p>                        
-                      </div>
-                      <div class="timeline__publication--detail-view">
-                        <div class="timeline__publication--abstract">
-                          <div class="timeline__publication--abstract-title">
-                            Zusammenfassung
+                      <input type="checkbox" name="collapse" id="{{ element.id }}" checked="checked">
+                      <label for="{{ element.id }}" class="timeline__publication--summary">
+                        <div class="timeline__publication--image">                      
+                          <div class="timeline__publication--image-preview">                        
+                            <img src="../assets/img/{{ element.preview }}" alt="{{ element.title }} (Preview)">
                           </div>
-                          <div class="timeline_publication--abstract-content">
-                            {% if element.abstract And element.abstract != "" And element.abstract != nil %}
-                              {%- include abstracts/{{element.abstract}} -%}
-                            {% endif %}
-                          </div>                                                  
+                          <div class="timeline__publication--image-detail">                        
+                            <img src="../assets/img/{{ element.image }}" alt="{{ element.title }} (Detail)">
+                          </div>
                         </div>
-                        <div class="timeline__publication--keywords">
-                          {% for word in element.keywords %}
-                            <span>{{ word }}</span>
-                          {% endfor %}
+                        <div class="timeline__publication--description">
+                          <h3 class="timeline__publication--title">{{ element.title }}</h3>
+                          <h4 class="timeline__publication--author">{{ element.authors }}</h4>
+                          <p class="timeline__publication--location">{{ element.reference }}</p>                        
                         </div>
-                        {% if element.doi And element.doi != "" And element.doi != nil %}
-                        <div class="timeline__publication--doi">
-                          <a href="{{ element.doi }}">{{element.doi}}</a>
+                      </div> 
+                      <div class="timeline__publication--detail-view">
+                        <div class="timeline__publication--detail-container">
+                          <div class="timeline__publication--abstract">
+                            <div class="timeline__publication--abstract-title">
+                              Zusammenfassung
+                            </div>
+                            <div class="timeline_publication--abstract-content">
+                              {% if element.abstract And element.abstract != "" And element.abstract != nil %}
+                                {%- include abstracts/{{element.abstract}} -%}
+                              {% endif %}
+                            </div>                                                  
+                          </div>
+                          <div class="timeline__publication--keywords">
+                            {% for word in element.keywords %}
+                              <span>{{ word }}</span>
+                            {% endfor %}
+                          </div>
+                          {% if element.doi And element.doi != "" And element.doi != nil %}
+                          <div class="timeline__publication--doi">
+                            <a href="{{ element.doi }}">{{element.doi}}</a>
+                          </div>
+                          {% endif %}
                         </div>
-                        {% endif %}
                       </div>
                     </div>
                   </li>
