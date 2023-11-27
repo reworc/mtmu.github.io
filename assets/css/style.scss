@@ -71,8 +71,9 @@ svg text {
       border-radius: 50px;
       transition: all 1s;
       /*Flex for the win*/
-      display: flex;
-      align-items: flex-start;
+      display: grid;
+      grid-template-columns: 6rem 1fr;
+      align-items: start;
       position:relative;
     }    
 
@@ -145,10 +146,17 @@ svg text {
       display: grid;
       grid-template-columns: 7rem 1fr;
       align-items: center;
+
+      cursor: pointer;
+
+      &:hover, &:focus {
+        border-right: 4px solid $color-primary;
+      }
     }
 
     &--image {
-      position: relative;      
+      position: relative;
+      align-self:flex-start; 
     }
     
     &--image-detail {
@@ -224,6 +232,10 @@ svg text {
       font-size: $font-size-small;
     }
 
+    &--detail-view {
+      border-left: 2px solid $color-grey-very-light;
+    }
+
     &--detail-container {
       grid-column: 2;
       margin: 2rem;      
@@ -245,13 +257,20 @@ svg text {
       color: $color-primary;
       font-style: italic;
 
-      &::after {
+      & span::after {
         content: " | ";
-
-        &:last-child {
-          content: "";
-        }
       }
+
+      & span:last-child::after {
+          content: "";
+      }      
+    }
+
+    &--doi {
+      text-decoration: none;
+      font-size: $font-size-small;
+      color: $color-primary-light;
+      font-weight: $font-weight-bold;
     }
   }  
 }

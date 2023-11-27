@@ -24,7 +24,6 @@
           "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "User Experience", "Haptics", "Vibrotactile Feedback"],
           "doi": "https://doi.org/10.1145/3603555.3608534",
           "abstract": "2023_MuC.html"
-
         }
       ]
     },
@@ -111,7 +110,9 @@
           "reference": "Mensch und Computer 2021, Workshop Begreifbare Interaktion, Ingolstadt",
           "image": "2021_MuC.jpg",
           "preview": "2021_MuC_prev.jpg",
-          "keywords": ["Elastic Displays", "Interaction Design", "Design Methodology", "Design Thinking", "User Centered Design"]
+          "keywords": ["Elastic Displays", "Interaction Design", "Design Methodology", "Design Thinking", "User Centered Design"],
+          "doi": "https://doi.org/10.18420/muc2021-mci-ws09-391",
+          "abstract": "2021_MuC.html"
         }
       ]
     },
@@ -125,7 +126,9 @@
           "reference": "Mensch und Computer 2020, Workshop Begreifbare Interaktion, Magdeburg",
           "image": "2020_MuC.jpg",
           "preview": "2020_MuC_prev.jpg",
-          "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "Building Information Management", "Tangible Interaction", "Interface Design", "Information Visualization"]
+          "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "Building Information Management", "Tangible Interaction", "Interface Design", "Information Visualization"],
+          "doi": "https://doi.org/10.18420/muc2020-ws121-368",
+          "abstract": "2020_MuC.html"
         },
         {
           "id": "2020_AVI",
@@ -134,7 +137,9 @@
           "reference": "AVI - Advanced Visual Interfaces 2020, Workshop on Visual Interface Design Methods, Ischia",
           "image": "2020_AVI.jpg",
           "preview": "2020_AVI_prev.jpg",
-          "keywords": ["Human-Computer Interaction", "Design Methodology", "Interactive–Museum–Installation"]
+          "keywords": ["Human-Computer Interaction", "Design Methodology", "Interactive–Museum–Installation"],
+          "doi": "https://doi.org/10.48550/arXiv.2010.14307",
+          "abstract": "2020_AVI.html"
         },
         {
           "id": "2020_EuroHaptics",
@@ -143,7 +148,9 @@
           "reference": "Designing Digital Touch: Social and Sensory Aspects and Challenges. Workshop at EuroHaptics 2020, Leiden",
           "image": "2020_EuroHaptics.jpg",
           "preview": "2020_EuroHaptics_prev.jpg",
-          "keywords": ["Elastic Displays", "Shape-Changing Interfaces", "Tangible Interaction", "Touch"]
+          "keywords": ["Elastic Displays", "Shape-Changing Interfaces", "Tangible Interaction", "Touch"],
+          "doi": "",
+          "abstract": "2020_EuroHaptics.html"
         }
       ]
     },
@@ -157,7 +164,9 @@
           "reference": "i-com, 17(3)",
           "image": "2018_iCom.jpg",
           "preview": "2018_iCom_prev.jpg",
-          "keywords": ["Human-Computer Interaction", "Interaction Design", "Tangible Interaction", "Organic User Interfaces", "Shape-Changing Interfaces", "Elastic Displays", "Physics-Based Interaction", "Task Taxonomy"]
+          "keywords": ["Human-Computer Interaction", "Interaction Design", "Tangible Interaction", "Organic User Interfaces", "Shape-Changing Interfaces", "Elastic Displays", "Physics-Based Interaction", "Task Taxonomy"],
+          "doi": "10.1515/icom-2018-0021",
+          "abstract": "2018_icom.html"
         },
         {
           "id": "2018_MuC",
@@ -166,7 +175,9 @@
           "reference": "Mensch und Computer 2018, Workshop Begreifbare Interaktion, Dresden",
           "image": "2018_MuC.jpg",
           "preview": "2018_MuC_prev.jpg",
-          "keywords": ["Elastic Displays", "Shape-Changing Interfaces", "Interaction Design", "User Interface", "Zoomable User Interface"]
+          "keywords": ["Elastic Displays", "Shape-Changing Interfaces", "Interaction Design", "User Interface", "Zoomable User Interface"],
+          "doi": "10.18420/muc2018-ws05-0502",
+          "abstract": "2018_MuC.html"
         },
         {
           "id": "2018_MMVE",
@@ -175,7 +186,9 @@
           "reference": "International Workshop on Immersive Mixed and Virtual Environment Systems (MMVE 2018), Amsterdam",
           "image": "2018_MMVE.jpg",
           "preview": "2018_MMVE_prev.jpg",
-          "keywords": ["Augmented Reality", "Handheld Devices", "Concept and Implementation", "Design Decisions"]
+          "keywords": ["Augmented Reality", "Handheld Devices", "Concept and Implementation", "Design Decisions"],
+          "doi": "https://doi.org/10.1145/3210438.3210442",
+          "abstract": "2018_MMVE.html"
         },
         {
           "id": "2018_AVI",
@@ -184,7 +197,9 @@
           "reference": "AVI - Advanced Visual Interfaces 2018, Workshop on Visual Interfaces for Big Data Environments in Industrial Applications (ViaBIA 2018), Grosseto",
           "image": "2018_AVI.jpg",
           "preview": "2018_AVI_prev.jpg",
-          "keywords": ["Data Analysis", "Information Visualization", "Human-Computer Interaction", "Virtual Reality", "Immersive Analytics"]
+          "keywords": ["Data Analysis", "Information Visualization", "Human-Computer Interaction", "Virtual Reality", "Immersive Analytics"],
+          "doi": "",
+          "abstract": "2018_AVI.html"
         },
         {
           "id": "2018_AVI-Poster",
@@ -193,7 +208,9 @@
           "reference": "AVI - Advanced Visual Interfaces 2018, Grosseto",
           "image": "2018_AVI_Poster.jpg",
           "preview": "2018_AVI_Poster_prev.jpg",
-          "keywords": ["Recommender Systems", "Information Visualization", "Human-Computer Interaction", "Augmented Reality"]
+          "keywords": ["Recommender Systems", "Information Visualization", "Human-Computer Interaction", "Augmented Reality"],
+          "doi": "https://doi.org/10.1145/3206505.3206585",
+          "abstract": "2018_AVI-Poster.html"
         }
       ]
     },
