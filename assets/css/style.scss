@@ -124,28 +124,26 @@ svg text {
     }
 
     &--content {
-      display: grid;
-      grid-template-columns: 7rem 1fr;
-      align-items: center;
-
-      & > input[type="checkbox"] {
+      > input[type="checkbox"] {
         position: absolute;
         left: -100vw;
       }
 
-      & .timeline__publication--detail-view {
+      .timeline__publication--detail-view {
         overflow-y: hidden;
         height: 0;
         transition: height 0.3s ease;  
       }
 
-      & > input[type="checkbox"]:checked ~ .timeline__publication--detail-view {
+      > input[type="checkbox"]:checked ~ .timeline__publication--detail-view {
         height: auto;
         overflow: visible;
       }
 
-      & label {
-        display: block;
+      &--summary {
+        display: grid;
+        grid-template-columns: 7rem 1fr;
+        align-items: center;
       }
     }
 
