@@ -42,7 +42,7 @@ title: Publikationen
                             Zusammenfassung
                           </div>
                           <div class="timeline_publication--abstract-content">
-                            {% if element.abstract And element.abstract != "" And element.abstract != nil }
+                            {% if element.abstract And element.abstract != "" And element.abstract != nil %}
                               {%- include abstracts/{{element.abstract}} -%}
                             {% endif %}
                           </div>                                                  
@@ -52,7 +52,7 @@ title: Publikationen
                             <span>{{ word }}</span>
                           {% endfor %}
                         </div>
-                        {% if element.doi And element.doi != "" And element.doi != nil }
+                        {% if element.doi And element.doi != "" And element.doi != nil %}
                         <div class="timeline__publication--doi">
                           <a href="{{ element.doi }}">{{element.doi}}</a>
                         </div>
