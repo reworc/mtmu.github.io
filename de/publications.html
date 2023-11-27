@@ -38,8 +38,25 @@ title: Publikationen
                       </div>
                       <div class="timeline__publication--detail-view">
                         <div class="timeline__publication--abstract">
-                          {%- include abstracts/{{element.abstract}} -%}
+                          <div class="timeline__publication--abstract-title">
+                            Zusammenfassung
+                          </div>
+                          <div class="timeline_publication--abstract-content">
+                            {% if element.abstract And element.abstract != "" And element.abstract != nil }
+                              {%- include abstracts/{{element.abstract}} -%}
+                            {% endif %}
+                          </div>                                                  
                         </div>
+                        <div class="timeline__publication--keywords">
+                          {% for word in element.keywords %}
+                            <span>{{ word }}</span>
+                          {% endfor %}
+                        </div>
+                        {% if element.doi And element.doi != "" And element.doi != nil }
+                        <div class="timeline__publication--doi">
+                          <a href="{{ element.doi }}">{{element.doi}}</a>
+                        </div>
+                        {% endif %}
                       </div>
                     </div>
                   </li>

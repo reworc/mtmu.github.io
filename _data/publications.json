@@ -19,7 +19,10 @@
           "reference": "Mensch und Computer 2023, Zürich",
           "image": "2023_MuC.jpg",
           "preview": "2023_MuC_prev.jpg",
-          "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "User Experience", "Haptics", "Vibrotactile Feedback"]
+          "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "User Experience", "Haptics", "Vibrotactile Feedback"],
+          "doi": "https://doi.org/10.1145/3603555.3608534",
+          "abstract": "2023_MuC.html"
+
         }
       ]
     },
@@ -32,7 +35,9 @@
           "reference": "25th Bilateral Student Workshop CTU Prague - HTW Dresden - User Interfaces & Visualization 2022, Dresden",
           "image": "2022_CTU-Prag.jpg",
           "preview": "2022_CTU-Prag_prev.jpg",
-          "keywords": [ "Shape-Changing Interfaces", "Elastic Displays", "Software Frameworks", "Development Tools" ]
+          "keywords": [ "Shape-Changing Interfaces", "Elastic Displays", "Software Frameworks", "Development Tools" ],
+          "doi": "",
+          "abstract": "2022_CTU-Prag.html"
         },
         {
           "title": "Bedarfsanalyse zur Darstellung von Daten im Bereich Learning Analytics aus Lernenden-Sicht",
@@ -40,7 +45,9 @@
           "reference": "GeNeMe 2022, Gemeinschaften in neuen Medien, Dresden",
           "image": "2022_GeNeMe.jpg",
           "preview": "2022_GeNeMe_prev.jpg",
-          "keywords": ["Learning Analytics", "User Survey", "User Interface", "Interface Design"]
+          "keywords": ["Learning Analytics", "User Survey", "User Interface", "Interface Design"],
+          "doi": "",
+          "abstract": "2022_GeNeMe.html"
         },
         {
           "title": "LEAC: Learning Analytics Cockpit",
@@ -48,7 +55,9 @@
           "reference": "WeL - Workshop on e-Learning 2022, Görlitz",
           "image": "2022_WeL.jpg",
           "preview": "2022_WeL_prev.jpg",
-          "keywords": ["Learning Analytics", "Information Visualization"]
+          "keywords": ["Learning Analytics", "Information Visualization"],
+          "doi": "",
+          "abstract": "2022_WeL.html"
         },
         {
           "title": "Augmenting Elastic Displays with Active Vibrotactile Feedback",
@@ -56,7 +65,9 @@
           "reference": "Mensch und Computer 2022, Workshop Begreifbare Interaktion, Darmstadt",
           "image": "2022_MuC.jpg",
           "preview": "2022_MuC_prev.jpg",
-          "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "Interaction Design", "Interaction Metaphors", "Tactile Feedback"]
+          "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "Interaction Design", "Interaction Metaphors", "Tactile Feedback"],
+          "doi": "",
+          "abstract": "2022_MuC.html"
 
         },
         {
@@ -65,7 +76,10 @@
           "reference": "AVI - Advanced Visual Interfaces 2022, Rom",
           "image": "2022_AVI_Poster.jpg",
           "preview": "2022_AVI_Poster_prev.jpg",
-          "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "Interaction Design", "Software Frameworks", "Development Tools", "Rapid Prototyping", "User Experience"]
+          "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "Interaction Design", "Software Frameworks", "Development Tools", "Rapid Prototyping", "User Experience"],
+          "doi": "https://doi.org/10.1145/3531073.3534482",
+          "abstract": "2022_AVI-Poster.html"
+
         },
         {
           "title": "Investigating Usability and User Experience of Layer-Based Interaction with a Deformable Elastic Display",
@@ -73,7 +87,9 @@
           "reference": "AVI - Advanced Visual Interfaces 2022, Rom",
           "image": "2022_AVI.jpg",
           "preview": "2022_AVI_prev.jpg",
-          "keywords": ["Usability", "User Experience", "Shape-Changing Interfaces", "Elastic Displays", "User Study", "Evaluation"]
+          "keywords": ["Usability", "User Experience", "Shape-Changing Interfaces", "Elastic Displays", "User Study", "Evaluation"],
+          "doi": "https://doi.org/10.1145/3531073.3531101",
+          "abstract": "2022_AVI.html"
         }
       ]
     },
