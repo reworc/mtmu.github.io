@@ -34,7 +34,12 @@ title: Publikationen
                       <div class="timeline__publication--description">
                         <h3 class="timeline__publication--title">{{ element.title }}</h3>
                         <h4 class="timeline__publication--author">{{ element.authors }}</h4>
-                        <p class="timeline__publication--location">{{ element.reference }}</p>
+                        <p class="timeline__publication--location">{{ element.reference }}</p>                        
+                      </div>
+                      <div class="timeline__publication--detail-view">
+                        <div class="timeline__publication--abstract">
+                          {%- include abstracts/{{element.abstract}} -%}
+                        </div>
                       </div>
                     </div>
                   </li>

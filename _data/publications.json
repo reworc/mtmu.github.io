@@ -9,7 +9,9 @@
           "reference": "WeL - Workshop on e-Learning 2023, Leipzig",
           "image": "2023_WeL.jpg",
           "preview": "2023_WeL_prev.jpg",
-          "keywords": ["Learning Analytics", "Information Visualization", "User Interface", "Evaluation", "Interface Design"]
+          "keywords": ["Learning Analytics", "Information Visualization", "User Interface", "Evaluation", "Interface Design"],
+          "doi": "",
+          "abstract": "2023_WeL.html"
         },
         {
           "title": "Exploring Dynamic Vibrotactile Feedback for Layer-Based Interaction on Elastic Displays",
