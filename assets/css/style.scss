@@ -139,12 +139,12 @@ svg text {
         height: auto;
         overflow: visible;
       }
+    }
 
-      &--summary {
-        display: grid;
-        grid-template-columns: 7rem 1fr;
-        align-items: center;
-      }
+    &--summary {
+      display: grid;
+      grid-template-columns: 7rem 1fr;
+      align-items: center;
     }
 
     &--image {
@@ -227,6 +227,31 @@ svg text {
     &--detail-container {
       grid-column: 2;
       margin: 2rem;      
+    }
+
+    &--abstract-title {
+      font-family: $font-secondary;
+      font-weight: $font-weight-bold;
+      font-size: $font-size-default;
+      color: $color-grey-dark;
+    }
+
+    &--abstract-content {
+      font-family: $font-primary;
+    }
+
+    &--keywords {
+      font-family: $font-primary;
+      color: $color-primary;
+      font-style: italic;
+
+      &::after {
+        content: " | ";
+
+        &:last-child {
+          content: "";
+        }
+      }
     }
   }  
 }
