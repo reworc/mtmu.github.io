@@ -4,6 +4,7 @@
       "name": 2023,
       "elements": [
         {
+          "id": "2023_WeL",
           "title": "Konzepte für die Organisation von Lerninhalten und -zielen für Studierende",
           "authors": "Mathias Müller & Dietrich Kammer",
           "reference": "WeL - Workshop on e-Learning 2023, Leipzig",
@@ -14,6 +15,7 @@
           "abstract": "2023_WeL.html"
         },
         {
+          "id": "2023_MuC",
           "title": "Exploring Dynamic Vibrotactile Feedback for Layer-Based Interaction on Elastic Displays",
           "authors": "Mathias Müller, Alexander Ramian, Dennis Wittchen, Georg Freitag & Dietrich Kammer",
           "reference": "Mensch und Computer 2023, Zürich",
@@ -30,6 +32,7 @@
       "name": 2022,
       "elements": [
         {
+          "id": "2022_CTU",
           "title": "ReFlex - A Framework for Research on Elastic Displays",
           "authors": "Mathias Müller & Dietrich Kammer",
           "reference": "25th Bilateral Student Workshop CTU Prague - HTW Dresden - User Interfaces & Visualization 2022, Dresden",
@@ -40,6 +43,7 @@
           "abstract": "2022_CTU-Prag.html"
         },
         {
+          "id": "2022_GeNeMe",
           "title": "Bedarfsanalyse zur Darstellung von Daten im Bereich Learning Analytics aus Lernenden-Sicht",
           "authors": "Dietrich Kammer & Mathias Müller",
           "reference": "GeNeMe 2022, Gemeinschaften in neuen Medien, Dresden",
@@ -50,6 +54,7 @@
           "abstract": "2022_GeNeMe.html"
         },
         {
+          "id": "2022_WeL",
           "title": "LEAC: Learning Analytics Cockpit",
           "authors": "Dietrich Kammer & Mathias Müller",
           "reference": "WeL - Workshop on e-Learning 2022, Görlitz",
@@ -60,6 +65,7 @@
           "abstract": "2022_WeL.html"
         },
         {
+          "id": "2022_MuC",
           "title": "Augmenting Elastic Displays with Active Vibrotactile Feedback",
           "authors": "Mathias Müller, Dietrich Kammer, Alexander Ramian, Dennis Wittchen & Georg Freitag",
           "reference": "Mensch und Computer 2022, Workshop Begreifbare Interaktion, Darmstadt",
@@ -71,6 +77,7 @@
 
         },
         {
+          "id": "2022_AVI-Poster",
           "title": "ReFlex Framework: Rapid Prototyping for Elastic Displays",
           "authors": "Mathias Müller, Dietrich Kammer, Lasse Grimm, Konrad Fabian & Diana Simon",
           "reference": "AVI - Advanced Visual Interfaces 2022, Rom",
@@ -82,6 +89,7 @@
 
         },
         {
+          "id": "2022_AVI",
           "title": "Investigating Usability and User Experience of Layer-Based Interaction with a Deformable Elastic Display",
           "authors": "Mathias Müller, Elena Stoll, Anna-Magdalena Krauß, Franziska Hannß & Dietrich Kammer",
           "reference": "AVI - Advanced Visual Interfaces 2022, Rom",
@@ -97,6 +105,7 @@
       "name": 2021,
       "elements": [
         {
+          "id": "2021_MuC",
           "title": "Designing Interfaces for Elastic Displays using Workshop and Prototyping Methods",
           "authors": "Franziska Hannß, Mathias Müller & Dietrich Kammer",
           "reference": "Mensch und Computer 2021, Workshop Begreifbare Interaktion, Ingolstadt",
@@ -110,6 +119,7 @@
       "name": 2020,
       "elements": [
         {
+          "id": "2020_MuC",
           "title": "A Tangible Concept for Layered Map Visualization: Supporting On-Site Civil Engineering Construction Consultations using Elastic Displays",
           "authors": "Mathias Müller, Erik Lier, Rainer Groh & Franziska Hannß",
           "reference": "Mensch und Computer 2020, Workshop Begreifbare Interaktion, Magdeburg",
@@ -118,6 +128,7 @@
           "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "Building Information Management", "Tangible Interaction", "Interface Design", "Information Visualization"]
         },
         {
+          "id": "2020_AVI",
           "title": "What Color is this? Explaining Art Restoration Research Methods using Interactive Museum Installations",
           "authors": "Franziska Hannß, Esther Lapczyna, Mathias Müller & Rainer Groh",
           "reference": "AVI - Advanced Visual Interfaces 2020, Workshop on Visual Interface Design Methods, Ischia",
@@ -126,6 +137,7 @@
           "keywords": ["Human-Computer Interaction", "Design Methodology", "Interactive–Museum–Installation"]
         },
         {
+          "id": "2020_EuroHaptics",
           "title": "Research Agenda on Designing the Future of Eladtic Touch",
           "authors": "Mathias Müller, Elena Stoll, Lukas Büschel, Stefan Gehrke, Franziska Hannß & Dietrich Kammer",
           "reference": "Designing Digital Touch: Social and Sensory Aspects and Challenges. Workshop at EuroHaptics 2020, Leiden",
@@ -139,6 +151,7 @@
       "name": 2018,
       "elements": [
         {
+          "id": "2018_icom",
           "title": "New Impressions in Interaction Design: A Task Taxonomy for Elastic Displays",
           "authors": "Dietrich Kammer, Mathias Müller, Jan Wojdziak & Ingmar S. Franke",
           "reference": "i-com, 17(3)",
@@ -147,6 +160,7 @@
           "keywords": ["Human-Computer Interaction", "Interaction Design", "Tangible Interaction", "Organic User Interfaces", "Shape-Changing Interfaces", "Elastic Displays", "Physics-Based Interaction", "Task Taxonomy"]
         },
         {
+          "id": "2018_MuC",
           "title": "Zoomable User Interfaces für Elastic Displays",
           "authors": "Mathias Müller, Erik Lier & Thomas Gründer",
           "reference": "Mensch und Computer 2018, Workshop Begreifbare Interaktion, Dresden",
@@ -155,6 +169,7 @@
           "keywords": ["Elastic Displays", "Shape-Changing Interfaces", "Interaction Design", "User Interface", "Zoomable User Interface"]
         },
         {
+          "id": "2018_MMVE",
           "title": "Towards Augmented Reality in Quality Assurance Processes",
           "authors": "Natalie Hube, Mathias Müller, Jan Wojdziak, Franziska Hannß & Rainer Groh",
           "reference": "International Workshop on Immersive Mixed and Virtual Environment Systems (MMVE 2018), Amsterdam",
@@ -163,6 +178,7 @@
           "keywords": ["Augmented Reality", "Handheld Devices", "Concept and Implementation", "Design Decisions"]
         },
         {
+          "id": "2018_AVI",
           "title": "The Data in Your Hands: Exploring Novel Interaction Techniques and Data Visualization Approaches for Immersive Data Analytics",
           "authors": "Natalie Hube & Mathias Müller",
           "reference": "AVI - Advanced Visual Interfaces 2018, Workshop on Visual Interfaces for Big Data Environments in Industrial Applications (ViaBIA 2018), Grosseto",
@@ -171,6 +187,7 @@
           "keywords": ["Data Analysis", "Information Visualization", "Human-Computer Interaction", "Virtual Reality", "Immersive Analytics"]
         },
         {
+          "id": "2018_AVI-Poster",
           "title": "Facilitating Exploration on Exhibits with Augmented Reality",
           "authors": "Natalie Hube, Mathias Müller & Rainer Groh",
           "reference": "AVI - Advanced Visual Interfaces 2018, Grosseto",
@@ -184,6 +201,7 @@
       "name": 2017,
       "elements": [
         {
+          "id": "2017_xCoAx",
           "title": "A Zoomable Product Browser for Elastic Displays",
           "authors": "Mathias Müller, Mandy Keck, Thomas Gründer, Natalie Hube & Rainer Groh",
           "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2017), Lissabon",
@@ -192,6 +210,7 @@
           "keywords": ["Elastic Displays", "Information Visualization",  "Interaction Design", "Zoomable User Interface", "Browsing", "Similarity-Based Search", "Glyph-Based Visualization"]
         },
         {
+          "id": "2017_MuC",
           "title": "Exploring Big Data Landscapes with Elastic Displays",
           "authors": "Dietrich Kammer, Mandy Keck, Mathias Müller, Thomas Gründer & Rainer Groh",
           "reference": "Mensch und Computer 2017, Workshop Begreifbare Interaktion, Regensburg",
@@ -200,6 +219,7 @@
           "keywords": ["Elastic Displays", "Information Visualization",  "Interaction Design", "Zoomable User Interface", "Data Analysis", "Data Science", "Big Data", "Glyph-Based Visualization"]
         },
         {
+          "id": "2017_EuroVis",
           "title": "Additional On-Demand Dimanesion for Data Visualization",
           "authors": "Natalie Hube, Mathias Müller & Rainer Groh",
           "reference": "Eurographics Conference on Visualization (EuroVis) 2017, Barcelona",
@@ -208,6 +228,7 @@
           "keywords": ["Information Visualization", "User Interface", "Parallel Coordinates", "3D Visualization", "Human-Computer Interaction"]
         },
         {
+          "id": "2017_DGfGG",
           "title": "Interaktive Bilder auf Elastischen Displays",
           "authors": "Rainer Groh, Mathias Müller & Dietrich Kammer",
           "reference": "DGfGG Tagung 2017 “Lösungsbilder“, Erfurt",
@@ -221,6 +242,7 @@
       "name": 2016,
       "elements": [
         {
+          "id": "2016_UseWare",
           "title": "Interface-Konzepte für präsente Assistenten",
           "authors": "Anja Knöfel, Mathias Müller, Rainer Groh & Jens Krzywinski",
           "reference": "USEWARE 2016, Dresden",
@@ -229,6 +251,7 @@
           "keywords": ["Assistenzsysteme", "Human-Computer Interaction", "User Interface", "User Centered Design"]
         },
         {
+          "id": "2016_VRST",
           "title": "Depth Information from Binocular Disparity And Familiar Size is Combined when Reaching Towards Virtual Objects",
           "authors": "Rebekka S. Schubert, Mathias Müller, Sebastian Pannasch & Jens R. Helmert",
           "reference": "ACM VRST 2016, München",
@@ -237,6 +260,7 @@
           "keywords": ["Virtual Reality", "Stereoscopy" ,"Depth Perception", "Distance Estimation", "Reaching"]
         },
         {
+          "id": "2016_VRST-Poster",
           "title": "Are Age Differences Missing in Relative and Absolute Distance Perception of Stereoscopically Presented Virtual Objects?",
           "authors": "Rebekka S. Schubert, Josephine Hartwig, Mathias Müller, Rainer Groh & Sebastian Pannasch",
           "reference": "ACM VRST 2016, München",
@@ -245,6 +269,7 @@
           "keywords": ["Stereoscopy", "Depth Perception", "Binocular Eye Movements"]
         },
         {
+          "id": "2016_MuC",
           "title": "Elastische Displays im Einsatz",
           "authors": "Mathias Müller, Dietrich Kammer & Rainer Groh",
           "reference": "Mensch und Computer 2016, Workshop Begreifbare Interaktion, Aachen",
@@ -253,6 +278,7 @@
           "keywords": ["Elastic Displays", "User Interface", "Interaction Design", "Information Visualization", "Graph Visualization", "Zoomable User Interface"]
         },
         {
+          "id": "2016_HCII",
           "title": "Smart Prototyping: Improving the Evaluation of Design Concepts using Virtual Reality",
           "authors": "Mathias Müller, Tobias Günther, Jan Wojdziak, Dietrich Kammer, Sebastian Lorenz & Rainer Groh",
           "reference": "HCI International 2016, Toronto",
@@ -261,6 +287,7 @@
           "keywords": ["Virtual Reality", "Virtual Prototyping", "Interface Design", "Product Design", "Participatory Design"]
         },
         {
+          "id": "2016_xCoAx",
           "title": "Virtual UNREALity: Exploring Alternative Visualization Techniques for Virtual Reality",
           "authors": "Natalie Hube, Hannes Grusla, Mathias Müller, Ingmar S. Franke, Tobias Günther & Rainer Groh",
           "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2016), Bergamo",
@@ -274,6 +301,7 @@
       "name": 2015,
       "elements": [
         {
+          "id": "2015_xCoAx",
           "title": "Data Exploration on Elastic Displays using Physical Metaphors",
           "authors": "Mathias Müller, Thomas Gründer & Rainer Groh",
           "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2015), Glasgow",
@@ -282,6 +310,7 @@
           "keywords": ["Elastic Displays", "Information Visualization", "Haptic Interaction"]
         },
         {
+          "id": "2015_IFF",
           "title": "Auf dem Weg zu mobilen, flexiblen Interaktionsoberflächen",
           "authors": "Ingmar S. Franke, Mathias Müller & Rainer Groh",
           "reference": "Die Zukunft interaktiver Oberflächen im Kontext durchgängigen digitalen Engineerings - 18. IFF-Wissenschaftstage 2015, Magdeburg",
@@ -290,6 +319,7 @@
           "keywords": ["Elastic Displays", "Digital Engineering", "Building Information Management", "Interaction Design", "Information Visualization"]
         },
         {
+          "id": "2015_TAP",
           "title": "The Influence of the Stereo Base on Blind and Sighted Reaches in a Virtual Environment",
           "authors": "Rebekka S. Renner, Erik Steindecker, Mathias Müller, Boris M. Velichkovsky, Ralph Stelzer, Sebastian Pannasch & Jens R. Helmert",
           "reference": "ACM Transactions on Applied Perception",
@@ -303,6 +333,7 @@
       "name": 2014,
       "elements": [
         {
+          "id": "2014_ITS",
           "title": "FlexiWall: Exploring Layered Data with Elastic Displays",
           "authors": "Mathias Müller, Anja Knöfel, Thomas Gründer, Ingmar S. Franke & Rainer Groh",
           "reference": "ITS - Interactive Surfaces and Systems 2014, Dresden",
@@ -311,6 +342,7 @@
           "keywords": ["Elastic Displays", "Tangible Interaction", "Layered Data", "Information Visualization", "Interaction Design"]
         },
         {
+          "id": "2014_xCoAx",
           "title": "Visualization of Spatial Relations in Virtual Environments with Artificial Depth Cues",
           "authors": "Mathias Müller, Thomas Gründer, Ingmar S. Franke & Rainer Groh",
           "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2014), porto",
@@ -319,6 +351,7 @@
           "keywords": ["Gesture-Based Interaction", "Depth Perception", "Virtual Environments"]
         },
         {
+          "id": "2014_HCII-VR",
           "title": "\"Form Follows Function\" - Investigating Interactive Physical Objects in Virtual Environments",
           "authors": "Mathias Müller, Katharina L. Maurer, Anja Knöfel, Ingmar S. Franke & Rainer Groh",
           "reference": "Human-Computer Interaction: Design and Development Approaches, HCI International 2014, Heraklion",
@@ -327,6 +360,7 @@
           "keywords": ["3D User Interfaces", "Tangible Interaction", "Virtual Reality"]
         },
         {
+          "id": "2014_HCII-FlexiWall",
           "title": "FlexiWall: Interaction In-Between 2D and 3D Interfaces",
           "authors": "Ingmar S. Franke, Mathias Müller, Thomas Gründer & Rainer Groh",
           "reference": "Human-Computer Interaction: Design and Development Approaches, HCI International 2014, Heraklion",
@@ -335,6 +369,7 @@
           "keywords": ["Elastic Displays", "Haptic Interaction", "Natural User Interfaces"]
         },
         {
+          "id": "2014_IFF",
           "title": "Forschung und Anwendung auf dem Gebiet kognitiver Benutzerschnittstellen - Cognitive Interface Technologies",
           "authors": "Ingmar S. Franke, Anja Knöfel, Mathias Müller & Rainer Groh",
           "reference": "17. IFF-Wissenschaftstage 2014, Magdeburg",
@@ -348,6 +383,7 @@
       "name": 2013,
       "elements": [
         {
+          "id": "2013_MuC-Sounds",
           "title": "Shaping Sound - A Vision for Tangible Music Interaction",
           "authors": "Sebastian Walther, Mathias Müller, Marius Brade & Rainer Groh",
           "reference": "Mensch und Computer 2013: Interaktive Vielfalt, Bremen",
@@ -356,6 +392,7 @@
           "keywords": ["Elastic Displays", "Tangible Interaction", "Music Composition", "Interaction Design", "Interaction Metaphors"]
         },
         {
+          "id": "2013_MuC-NUBSL",
           "title": "NUBSL - A Freely Placeable, Low-Cost Notification Utility",
           "authors": "Marius Brade, Mathias Müller, Sebastian Walther & Rainer Groh",
           "reference": "Mensch und Computer 2013: Interaktive Vielfalt, Bremen",
@@ -364,6 +401,7 @@
           "keywords": ["Internet of Things", "Tangible Interaction", "Human-Computer Interaction"]
         },
         {
+          "id": "2013_TEI",
           "title": "Natural Interface Exploration",
           "authors": "Marius Brade, Mandy Keck, Thomas Gründer, Mathias Müller & Rainer Groh",
           "reference": "International Conference on Tangible, Embedded and Embodied Interaction (TEI 2013), Barcelona",
@@ -377,6 +415,7 @@
       "name": 2012,
       "elements": [
         {
+          "id": "2012_DCIS",
           "title": "Business-Oriented Design of Collaborative Applications",
           "authors": "Mathias Müller, Ingmar S. Franke, Dietrich Kammer & Rainer Groh",
           "reference": "AVI - Advanced Visual Interfaces 2012, Workshop Designing Collaborative Interactive Spaces (DCIS 2012), Capri",
@@ -385,6 +424,7 @@
           "keywords": ["Natural User Interfaces", "Gesture-Based Interaction", "Creativity Techniques"]
         },
         {
+          "id": "2012_DA",
           "title": "Repräsentation von Tiefeninformationen zur Unterstützung des Wahrnehmungsprozesses bei der gestenbasierten Interaktion in system- und aggregaträumlichen Bildstrukturen",
           "authors": "Mathias Müller",
           "reference": "Diplomarbeit, TU Dresden",
@@ -398,6 +438,7 @@
       "name": 2011,
       "elements": [
         {
+          "id": "2011_BA",
           "title": "Anwendungsfälle einer Gestensteuerung auf Basis von Tiefeninformationen",
           "authors": "Mathias Müller",
           "reference": "Belegarbeit, TU Dresden",
@@ -411,6 +452,7 @@
       "name": 2010,
       "elements": [
         {
+          "id": "2010_HS",
           "title": "Konzept zur Visualisierung des Baufortschritts und Abweichungen vom Bauablaufplan am 3D-Modell",
           "authors": "Mathias Müller",
           "reference": "HS Visualisierung 2010, TU Dresden",

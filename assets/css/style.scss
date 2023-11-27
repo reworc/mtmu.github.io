@@ -109,7 +109,6 @@ svg text {
     &--content {
       margin-left: 4rem;
       display:inline-block;
-
     }
   }
 
@@ -128,6 +127,26 @@ svg text {
       display: grid;
       grid-template-columns: 7rem 1fr;
       align-items: center;
+
+      & > input[type="checkbox"] {
+        position: absolute;
+        left: -100vw;
+      }
+
+      & .timeline__publication--detail-view {
+        overflow-y: hidden;
+        height: 0;
+        transition: height 0.3s ease;  
+      }
+
+      & > input[type="checkbox"]:checked ~ .timeline__publication--detail-view {
+        height: auto;
+        overflow: visible;
+      }
+
+      & label {
+        display: block;
+      }
     }
 
     &--image {
@@ -205,6 +224,11 @@ svg text {
       color: $color-grey-dark;
     
       font-size: $font-size-small;
+    }
+
+    &--detail-container {
+      grid-column: 2;
+      margin: 2rem;      
     }
   }  
 }
