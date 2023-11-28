@@ -344,7 +344,9 @@
           "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2015), Glasgow",
           "image": "2015_xCoAx.jpg",
           "preview": "2015_xCoAx.jpg",
-          "keywords": ["Elastic Displays", "Information Visualization", "Haptic Interaction"]
+          "keywords": ["Elastic Displays", "Information Visualization", "Haptic Interaction"],
+          "doi": "",
+          "abstract": "2015_xCoAx.html"
         },
         {
           "id": "2015_IFF",
@@ -353,7 +355,9 @@
           "reference": "Die Zukunft interaktiver Oberflächen im Kontext durchgängigen digitalen Engineerings - 18. IFF-Wissenschaftstage 2015, Magdeburg",
           "image": "2015_IFF.jpg",
           "preview": "2015_IFF_prev.jpg",
-          "keywords": ["Elastic Displays", "Digital Engineering", "Building Information Management", "Interaction Design", "Information Visualization"]
+          "keywords": ["Elastic Displays", "Digital Engineering", "Building Information Management", "Interaction Design", "Information Visualization"],
+          "doi": "",
+          "abstract": "2015_IFF.html"
         },
         {
           "id": "2015_TAP",
@@ -362,7 +366,9 @@
           "reference": "ACM Transactions on Applied Perception",
           "image": "2015_TAP.jpg",
           "preview": "2015_TAP_prev.jpg",
-          "keywords": ["Depth Perception", "Distance Estimation", "Stereoscopic Displays", "Virtual Environments"]
+          "keywords": ["Depth Perception", "Distance Estimation", "Stereoscopic Displays", "Virtual Environments"],
+          "doi": "http://dx.doi.org/10.1145/2724716",
+          "abstract": "2015_TAP.html"
         }
       ]
     },
@@ -376,7 +382,9 @@
           "reference": "ITS - Interactive Surfaces and Systems 2014, Dresden",
           "image": "2014_ITS.jpg",
           "preview": "2014_ITS_prev.jpg",
-          "keywords": ["Elastic Displays", "Tangible Interaction", "Layered Data", "Information Visualization", "Interaction Design"]
+          "keywords": ["Elastic Displays", "Tangible Interaction", "Layered Data", "Information Visualization", "Interaction Design"],
+          "doi": "https://doi.org/10.1145/2669485.2669529",
+          "abstract": "2014_ITS.html"
         },
         {
           "id": "2014_xCoAx",
@@ -385,7 +393,9 @@
           "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2014), porto",
           "image": "2014_xCoAx.jpg",
           "preview": "2014_xCoAx_prev.jpg",
-          "keywords": ["Gesture-Based Interaction", "Depth Perception", "Virtual Environments"]
+          "keywords": ["Gesture-Based Interaction", "Depth Perception", "Virtual Environments"],
+          "doi": "",
+          "abstract": "2014_xCoAx.html"
         },
         {
           "id": "2014_HCII-VR",
@@ -394,7 +404,9 @@
           "reference": "Human-Computer Interaction: Design and Development Approaches, HCI International 2014, Heraklion",
           "image": "2014_HCII_VR.jpg",
           "preview": "2014_HCII_VR_prev.jpg",
-          "keywords": ["3D User Interfaces", "Tangible Interaction", "Virtual Reality"]
+          "keywords": ["3D User Interfaces", "Tangible Interaction", "Virtual Reality"],
+          "doi": "https://doi.org/10.1007/978-3-319-07857-1_109",
+          "abstract": "2014_HCII-VR.html"
         },
         {
           "id": "2014_HCII-FlexiWall",
@@ -403,7 +415,9 @@
           "reference": "Human-Computer Interaction: Design and Development Approaches, HCI International 2014, Heraklion",
           "image": "2014_HCII_FlexiWall.jpg",
           "preview": "2014_HCII_FlexiWall_prev.jpg",
-          "keywords": ["Elastic Displays", "Haptic Interaction", "Natural User Interfaces"]
+          "keywords": ["Elastic Displays", "Haptic Interaction", "Natural User Interfaces"],
+          "doi": "https://doi.org/10.1007/978-3-319-07857-1_73",
+          "abstract": "2014_HCII-FlexiWall.html"
         },
         {
           "id": "2014_IFF",
@@ -412,7 +426,9 @@
           "reference": "17. IFF-Wissenschaftstage 2014, Magdeburg",
           "image": "2014_IFF.jpg",
           "preview": "2014_IFF_prev.jpg",
-          "keywords": ["Digital Engineering", "Virtual Environments", "Elastic Displays", "Human-Computer Interaction", "Depth Perception", "Human Perception", "User Interface", "User Experience"]
+          "keywords": ["Digital Engineering", "Virtual Environments", "Elastic Displays", "Human-Computer Interaction", "Depth Perception", "Human Perception", "User Interface", "User Experience"],
+          "doi": "",
+          "abstract": "2014_IFF.html"
         }
       ]
     },
@@ -421,12 +437,14 @@
       "elements": [
         {
           "id": "2013_MuC-Sounds",
-          "title": "Shaping Sound - A Vision for Tangible Music Interaction",
+          "title": "Shaping Sounds - A Vision for Tangible Music Interaction",
           "authors": "Sebastian Walther, Mathias Müller, Marius Brade & Rainer Groh",
           "reference": "Mensch und Computer 2013: Interaktive Vielfalt, Bremen",
           "image": "2013_MuC_Sounds.jpg",
           "preview": "2013_MuC_Sounds_prev.jpg",
-          "keywords": ["Elastic Displays", "Tangible Interaction", "Music Composition", "Interaction Design", "Interaction Metaphors"]
+          "keywords": ["Elastic Displays", "Tangible Interaction", "Music Composition", "Interaction Design", "Interaction Metaphors"],
+          "doi": "",
+          "abstract": "2013_MuC-Sounds.html"
         },
         {
           "id": "2013_MuC-NUBSL",
@@ -435,7 +453,9 @@
           "reference": "Mensch und Computer 2013: Interaktive Vielfalt, Bremen",
           "image": "2013_MuC_NUBSL.jpg",
           "preview": "2013_MuC_NUBSL_prev.jpg",
-          "keywords": ["Internet of Things", "Tangible Interaction", "Human-Computer Interaction"]
+          "keywords": ["Internet of Things", "Tangible Interaction", "Human-Computer Interaction"],
+          "doi": "",
+          "abstract": "2013_MuC-NUBSL.html"   
         },
         {
           "id": "2013_TEI",
