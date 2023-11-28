@@ -12,7 +12,9 @@
           "preview": "2023_WeL_prev.jpg",
           "keywords": ["Learning Analytics", "Information Visualization", "User Interface", "Evaluation", "Interface Design"],
           "doi": "",
-          "abstract": "2023_WeL.html"
+          "abstract": "2023_WeL.html",
+          "lang": "de",
+          "type": "conference"
         },
         {
           "id": "2023_MuC",
@@ -23,7 +25,9 @@
           "preview": "2023_MuC_prev.jpg",
           "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "User Experience", "Haptics", "Vibrotactile Feedback"],
           "doi": "https://doi.org/10.1145/3603555.3608534",
-          "abstract": "2023_MuC.html"
+          "abstract": "2023_MuC.html",
+          "lang": "en",
+          "type": "poster"
         }
       ]
     },
@@ -39,7 +43,9 @@
           "preview": "2022_CTU-Prag_prev.jpg",
           "keywords": [ "Shape-Changing Interfaces", "Elastic Displays", "Software Frameworks", "Development Tools" ],
           "doi": "",
-          "abstract": "2022_CTU-Prag.html"
+          "abstract": "2022_CTU-Prag.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2022_GeNeMe",
@@ -50,7 +56,9 @@
           "preview": "2022_GeNeMe_prev.jpg",
           "keywords": ["Learning Analytics", "User Survey", "User Interface", "Interface Design"],
           "doi": "",
-          "abstract": "2022_GeNeMe.html"
+          "abstract": "2022_GeNeMe.html",
+          "lang": "de",
+          "type": "conference"
         },
         {
           "id": "2022_WeL",
@@ -61,7 +69,9 @@
           "preview": "2022_WeL_prev.jpg",
           "keywords": ["Learning Analytics", "Information Visualization"],
           "doi": "",
-          "abstract": "2022_WeL.html"
+          "abstract": "2022_WeL.html",
+          "lang": "de",
+          "type": "conference"
         },
         {
           "id": "2022_MuC",
@@ -72,7 +82,9 @@
           "preview": "2022_MuC_prev.jpg",
           "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "Interaction Design", "Interaction Metaphors", "Tactile Feedback"],
           "doi": "",
-          "abstract": "2022_MuC.html"
+          "abstract": "2022_MuC.html",
+          "lang": "en",
+          "type": "conference"
 
         },
         {
@@ -84,8 +96,9 @@
           "preview": "2022_AVI_Poster_prev.jpg",
           "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "Interaction Design", "Software Frameworks", "Development Tools", "Rapid Prototyping", "User Experience"],
           "doi": "https://doi.org/10.1145/3531073.3534482",
-          "abstract": "2022_AVI-Poster.html"
-
+          "abstract": "2022_AVI-Poster.html",
+          "lang": "en",
+          "type": "poster"
         },
         {
           "id": "2022_AVI",
@@ -96,7 +109,9 @@
           "preview": "2022_AVI_prev.jpg",
           "keywords": ["Usability", "User Experience", "Shape-Changing Interfaces", "Elastic Displays", "User Study", "Evaluation"],
           "doi": "https://doi.org/10.1145/3531073.3531101",
-          "abstract": "2022_AVI.html"
+          "abstract": "2022_AVI.html",
+          "lang": "en",
+          "type": "conference"
         }
       ]
     },
@@ -112,7 +127,9 @@
           "preview": "2021_MuC_prev.jpg",
           "keywords": ["Elastic Displays", "Interaction Design", "Design Methodology", "Design Thinking", "User Centered Design"],
           "doi": "https://doi.org/10.18420/muc2021-mci-ws09-391",
-          "abstract": "2021_MuC.html"
+          "abstract": "2021_MuC.html",
+          "lang": "en",
+          "type": "conference"
         }
       ]
     },
@@ -128,7 +145,9 @@
           "preview": "2020_MuC_prev.jpg",
           "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "Building Information Management", "Tangible Interaction", "Interface Design", "Information Visualization"],
           "doi": "https://doi.org/10.18420/muc2020-ws121-368",
-          "abstract": "2020_MuC.html"
+          "abstract": "2020_MuC.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2020_AVI",
@@ -137,9 +156,11 @@
           "reference": "AVI - Advanced Visual Interfaces 2020, Workshop on Visual Interface Design Methods, Ischia",
           "image": "2020_AVI.jpg",
           "preview": "2020_AVI_prev.jpg",
-          "keywords": ["Human-Computer Interaction", "Design Methodology", "Interactive–Museum–Installation"],
+          "keywords": ["Human-Computer Interaction", "Design Methodology", "Interactive-Museum-Installation"],
           "doi": "https://doi.org/10.48550/arXiv.2010.14307",
-          "abstract": "2020_AVI.html"
+          "abstract": "2020_AVI.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2020_EuroHaptics",
@@ -150,7 +171,9 @@
           "preview": "2020_EuroHaptics_prev.jpg",
           "keywords": ["Elastic Displays", "Shape-Changing Interfaces", "Tangible Interaction", "Touch"],
           "doi": "",
-          "abstract": "2020_EuroHaptics.html"
+          "abstract": "2020_EuroHaptics.html",
+          "lang": "en",
+          "type": "conference"
         }
       ]
     },
@@ -166,7 +189,9 @@
           "preview": "2018_iCom_prev.jpg",
           "keywords": ["Human-Computer Interaction", "Interaction Design", "Tangible Interaction", "Organic User Interfaces", "Shape-Changing Interfaces", "Elastic Displays", "Physics-Based Interaction", "Task Taxonomy"],
           "doi": "https://doi.org/10.1515/icom-2018-0021",
-          "abstract": "2018_icom.html"
+          "abstract": "2018_icom.html",
+          "lang": "en",
+          "type": "journal"
         },
         {
           "id": "2018_MuC",
@@ -177,7 +202,9 @@
           "preview": "2018_MuC_prev.jpg",
           "keywords": ["Elastic Displays", "Shape-Changing Interfaces", "Interaction Design", "User Interface", "Zoomable User Interface"],
           "doi": "https://doi.org/10.18420/muc2018-ws05-0502",
-          "abstract": "2018_MuC.html"
+          "abstract": "2018_MuC.html",
+          "lang": "de",
+          "type": "conference"
         },
         {
           "id": "2018_MMVE",
@@ -188,7 +215,9 @@
           "preview": "2018_MMVE_prev.jpg",
           "keywords": ["Augmented Reality", "Handheld Devices", "Concept and Implementation", "Design Decisions"],
           "doi": "https://doi.org/10.1145/3210438.3210442",
-          "abstract": "2018_MMVE.html"
+          "abstract": "2018_MMVE.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2018_AVI",
@@ -199,7 +228,9 @@
           "preview": "2018_AVI_prev.jpg",
           "keywords": ["Data Analysis", "Information Visualization", "Human-Computer Interaction", "Virtual Reality", "Immersive Analytics"],
           "doi": "",
-          "abstract": "2018_AVI.html"
+          "abstract": "2018_AVI.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2018_AVI-Poster",
@@ -210,7 +241,9 @@
           "preview": "2018_AVI_Poster_prev.jpg",
           "keywords": ["Recommender Systems", "Information Visualization", "Human-Computer Interaction", "Augmented Reality"],
           "doi": "https://doi.org/10.1145/3206505.3206585",
-          "abstract": "2018_AVI-Poster.html"
+          "abstract": "2018_AVI-Poster.html",
+          "lang": "en",
+          "type": "poster"
         }
       ]
     },
@@ -226,7 +259,9 @@
           "preview": "2017_xCoAx_prev.jpg",
           "keywords": ["Elastic Displays", "Information Visualization",  "Interaction Design", "Zoomable User Interface", "Browsing", "Similarity-Based Search", "Glyph-Based Visualization"],
           "doi": "",
-          "abstract": "2017_xCoAx.html"
+          "abstract": "2017_xCoAx.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2017_MuC",
@@ -237,7 +272,9 @@
           "preview": "2017_MuC_prev.jpg",
           "keywords": ["Elastic Displays", "Information Visualization",  "Interaction Design", "Zoomable User Interface", "Data Analysis", "Data Science", "Big Data", "Glyph-Based Visualization"],
           "doi": "https://doi.org/10.18420/muc2017-ws08-0342",
-          "abstract": "2017_MuC.html"
+          "abstract": "2017_MuC.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2017_EuroVis",
@@ -248,7 +285,9 @@
           "preview": "2017_EuroVis_prev.jpg",
           "keywords": ["Information Visualization", "User Interface", "Parallel Coordinates", "3D Visualization", "Human-Computer Interaction"],
           "doi": "https://doi.org/10.2312/eurovisshort.20171151",
-          "abstract": "2017_EuroVis.html"
+          "abstract": "2017_EuroVis.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2017_DGfGG",
@@ -259,7 +298,9 @@
           "preview": "2017_DGfGG_prev.jpg",
           "keywords": ["Elastic Displays", "Information Visualization", "Interaction Metaphors", "Interaction Design", "Human-Computer Interaction"],
           "doi": "",
-          "abstract": "2017_DGfGG.html"
+          "abstract": "2017_DGfGG.html",
+          "lang": "de",
+          "type": "conference"
         }
       ]
     },
@@ -274,7 +315,9 @@
           "image": "2016_UseWare.jpg",
           "preview": "2016_UseWare_prev.jpg",
           "keywords": ["Assistenzsysteme", "Human-Computer Interaction", "User Interface", "User Centered Design"],
-          "doi": ""
+          "doi": "",
+          "lang": "de",
+          "type": "conference"
         },
         {
           "id": "2016_VRST",
@@ -285,7 +328,9 @@
           "preview": "2016_VRST_prev.jpg",
           "keywords": ["Virtual Reality", "Stereoscopy" ,"Depth Perception", "Distance Estimation", "Reaching"],
           "doi": "https://doi.org/10.1145/2993369.2993408",
-          "abstract": "2016_VRST.html"
+          "abstract": "2016_VRST.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2016_VRST-Poster",
@@ -296,7 +341,9 @@
           "preview": "2016_VRST_Poster_prev.jpg",
           "keywords": ["Stereoscopy", "Depth Perception", "Binocular Eye Movements"],
           "doi": "https://doi.org/10.1145/2993369.2996334",
-          "abstract": "2016_VRST-Poster.html"
+          "abstract": "2016_VRST-Poster.html",
+          "lang": "en",
+          "type": "poster"
         },
         {
           "id": "2016_MuC",
@@ -307,7 +354,9 @@
           "preview": "2016_MuC_prev.jpg",
           "keywords": ["Elastic Displays", "User Interface", "Interaction Design", "Information Visualization", "Graph Visualization", "Zoomable User Interface"],
           "doi": "https://doi.org/10.18420/muc2016-ws10-0007",
-          "abstract": "2016_MuC.html"
+          "abstract": "2016_MuC.html",
+          "lang": "de",
+          "type": "conference"
         },
         {
           "id": "2016_HCII",
@@ -318,7 +367,9 @@
           "preview": "2016_HCII_prev.jpg",
           "keywords": ["Virtual Reality", "Virtual Prototyping", "Interface Design", "Product Design", "Participatory Design"],
           "doi": "https://doi.org/10.1007/978-3-319-39907-2_5",
-          "abstract": "2016_HCII.html"
+          "abstract": "2016_HCII.html",
+          "lang": "en",
+          "type": "conference"
 
         },
         {
@@ -330,7 +381,9 @@
           "preview": "2016_xCoAx_prev.jpg",
           "keywords": ["Virtual Reality", "Non-Photorealistic Rendering", "Virtual Phenomena"],
           "doi": "",
-          "abstract": "2016_xCoAx.html"
+          "abstract": "2016_xCoAx.html",
+          "lang": "en",
+          "type": "conference"
         }
       ]
     },
@@ -346,7 +399,9 @@
           "preview": "2015_xCoAx.jpg",
           "keywords": ["Elastic Displays", "Information Visualization", "Haptic Interaction"],
           "doi": "",
-          "abstract": "2015_xCoAx.html"
+          "abstract": "2015_xCoAx.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2015_IFF",
@@ -357,7 +412,9 @@
           "preview": "2015_IFF_prev.jpg",
           "keywords": ["Elastic Displays", "Digital Engineering", "Building Information Management", "Interaction Design", "Information Visualization"],
           "doi": "",
-          "abstract": "2015_IFF.html"
+          "abstract": "2015_IFF.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2015_TAP",
@@ -368,7 +425,9 @@
           "preview": "2015_TAP_prev.jpg",
           "keywords": ["Depth Perception", "Distance Estimation", "Stereoscopic Displays", "Virtual Environments"],
           "doi": "http://dx.doi.org/10.1145/2724716",
-          "abstract": "2015_TAP.html"
+          "abstract": "2015_TAP.html",
+          "lang": "en",
+          "type": "journal"
         }
       ]
     },
@@ -384,7 +443,9 @@
           "preview": "2014_ITS_prev.jpg",
           "keywords": ["Elastic Displays", "Tangible Interaction", "Layered Data", "Information Visualization", "Interaction Design"],
           "doi": "https://doi.org/10.1145/2669485.2669529",
-          "abstract": "2014_ITS.html"
+          "abstract": "2014_ITS.html",
+          "lang": "en",
+          "type": "poster"
         },
         {
           "id": "2014_xCoAx",
@@ -395,7 +456,9 @@
           "preview": "2014_xCoAx_prev.jpg",
           "keywords": ["Gesture-Based Interaction", "Depth Perception", "Virtual Environments"],
           "doi": "",
-          "abstract": "2014_xCoAx.html"
+          "abstract": "2014_xCoAx.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2014_HCII-VR",
@@ -406,7 +469,9 @@
           "preview": "2014_HCII_VR_prev.jpg",
           "keywords": ["3D User Interfaces", "Tangible Interaction", "Virtual Reality"],
           "doi": "https://doi.org/10.1007/978-3-319-07857-1_109",
-          "abstract": "2014_HCII-VR.html"
+          "abstract": "2014_HCII-VR.html",
+          "lang": "en",
+          "type": "poster"
         },
         {
           "id": "2014_HCII-FlexiWall",
@@ -417,7 +482,9 @@
           "preview": "2014_HCII_FlexiWall_prev.jpg",
           "keywords": ["Elastic Displays", "Haptic Interaction", "Natural User Interfaces"],
           "doi": "https://doi.org/10.1007/978-3-319-07857-1_73",
-          "abstract": "2014_HCII-FlexiWall.html"
+          "abstract": "2014_HCII-FlexiWall.html",
+          "lang": "en",
+          "type": "poster"
         },
         {
           "id": "2014_IFF",
@@ -428,7 +495,9 @@
           "preview": "2014_IFF_prev.jpg",
           "keywords": ["Digital Engineering", "Virtual Environments", "Elastic Displays", "Human-Computer Interaction", "Depth Perception", "Human Perception", "User Interface", "User Experience"],
           "doi": "",
-          "abstract": "2014_IFF.html"
+          "abstract": "2014_IFF.html",
+          "lang": "en",
+          "type": "conference"
         }
       ]
     },
@@ -444,7 +513,9 @@
           "preview": "2013_MuC_Sounds_prev.jpg",
           "keywords": ["Elastic Displays", "Tangible Interaction", "Music Composition", "Interaction Design", "Interaction Metaphors"],
           "doi": "",
-          "abstract": "2013_MuC-Sounds.html"
+          "abstract": "2013_MuC-Sounds.html",
+          "lang": "en",
+          "type": "poster"
         },
         {
           "id": "2013_MuC-NUBSL",
@@ -455,7 +526,9 @@
           "preview": "2013_MuC_NUBSL_prev.jpg",
           "keywords": ["Internet of Things", "Tangible Interaction", "Human-Computer Interaction"],
           "doi": "",
-          "abstract": "2013_MuC-NUBSL.html"   
+          "abstract": "2013_MuC-NUBSL.html",
+          "lang": "en",
+          "type": "poster"
         },
         {
           "id": "2013_TEI",
@@ -466,7 +539,9 @@
           "preview": "2013_TEI_prev.jpg",
           "keywords": ["Inspiration", "Interaction Design", "Interface Design", "Tangible Interaction", "Physical Materials"],
           "doi": "https://doi.org/10.1145/2460625.2460720",
-          "abstract": "2013_TEI.html"
+          "abstract": "2013_TEI.html",
+          "lang": "en",
+          "type": "conference"
         }
       ]
     },
@@ -482,7 +557,9 @@
           "preview": "2012_DCIS_prev.jpg",
           "keywords": ["Natural User Interfaces", "Gesture-Based Interaction", "Creativity Techniques"],
           "doi": "",
-          "abstract": "2012_DCIS.html"
+          "abstract": "2012_DCIS.html",
+          "lang": "en",
+          "type": "conference"
         },
         {
           "id": "2012_DA",
@@ -493,7 +570,9 @@
           "preview": "2012_DA_prev.jpg",
           "keywords": ["Gesture-Based Interaction", "Depth Perception", "Virtual Environments", "Natural User Interfaces", "Information Visualization", "Interface Design", "Interaction Design", "Human-Computer Interaction", "Virtual Phenomena", "Non-Photorealistic Rendering", "3D User Interfaces"],
           "doi": "",
-          "abstract": "2012_DA.html"
+          "abstract": "2012_DA.html",
+          "lang": "de",
+          "type": "monography"
         }
       ]
     },
@@ -509,7 +588,9 @@
           "preview": "2011_BA_prev.jpg",
           "keywords": ["Gesture-Based Interaction", "Natural User Interfaces", "Information Visualization", "Interface Design", "Interaction Design", "Interaction Metaphors", "Human-Computer Interaction"],
           "doi": "",
-          "abstract": "2011_BA.html"
+          "abstract": "2011_BA.html",
+          "lang": "de",
+          "type": "monography"
         }
       ]
     },
@@ -525,7 +606,9 @@
           "preview": "2010_HS_prev.jpg",
           "keywords": ["Information Visualization", "Human-Computer Interaction", "Building Information Management", "User Interface"],
           "doi": "",
-          "abstract": "2010_HS.html"
+          "abstract": "2010_HS.html",
+          "lang": "de",
+          "type": "poster"
         }
       ]
     }
