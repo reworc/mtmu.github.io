@@ -464,7 +464,9 @@
           "reference": "International Conference on Tangible, Embedded and Embodied Interaction (TEI 2013), Barcelona",
           "image": "2013_TEI.jpg",
           "preview": "2013_TEI_prev.jpg",
-          "keywords": ["Inspiration", "Interaction Design", "Interface Design", "Tangible Interaction", "Physical Materials"]
+          "keywords": ["Inspiration", "Interaction Design", "Interface Design", "Tangible Interaction", "Physical Materials"],
+          "doi": "https://doi.org/10.1145/2460625.2460720",
+          "abstract": "2013_TEI.html"
         }
       ]
     },
@@ -478,7 +480,9 @@
           "reference": "AVI - Advanced Visual Interfaces 2012, Workshop Designing Collaborative Interactive Spaces (DCIS 2012), Capri",
           "image": "2012_DCIS.jpg",
           "preview": "2012_DCIS_prev.jpg",
-          "keywords": ["Natural User Interfaces", "Gesture-Based Interaction", "Creativity Techniques"]
+          "keywords": ["Natural User Interfaces", "Gesture-Based Interaction", "Creativity Techniques"],
+          "doi": "",
+          "abstract": "2012_DCIS.html"
         },
         {
           "id": "2012_DA",
@@ -487,7 +491,9 @@
           "reference": "Diplomarbeit, TU Dresden",
           "image": "2012_DA.jpg",
           "preview": "2012_DA_prev.jpg",
-          "keywords": ["Gesture-Based Interaction", "Depth Perception", "Virtual Environments", "Natural User Interfaces", "Information Visualization", "Interface Design", "Interaction Design", "Human-Computer Interaction", "Virtual Phenomena", "Non-Photorealistic Rendering", "3D User Interfaces"]
+          "keywords": ["Gesture-Based Interaction", "Depth Perception", "Virtual Environments", "Natural User Interfaces", "Information Visualization", "Interface Design", "Interaction Design", "Human-Computer Interaction", "Virtual Phenomena", "Non-Photorealistic Rendering", "3D User Interfaces"],
+          "doi": "",
+          "abstract": "2012_DA.html"
         }
       ]
     },
@@ -501,7 +507,9 @@
           "reference": "Belegarbeit, TU Dresden",
           "image": "2011_BA.jpg",
           "preview": "2011_BA_prev.jpg",
-          "keywords": ["Gesture-Based Interaction", "Natural User Interfaces", "Information Visualization", "Interface Design", "Interaction Design", "Interaction Metaphors", "Human-Computer Interaction"]
+          "keywords": ["Gesture-Based Interaction", "Natural User Interfaces", "Information Visualization", "Interface Design", "Interaction Design", "Interaction Metaphors", "Human-Computer Interaction"],
+          "doi": "",
+          "abstract": "2011_BA.html"
         }
       ]
     },
@@ -515,7 +523,9 @@
           "reference": "HS Visualisierung 2010, TU Dresden",
           "image": "2010_HS.jpg",
           "preview": "2010_HS_prev.jpg",
-          "keywords": ["Information Visualization", "Human-Computer Interaction", "Building Information Management", "User Interface"]
+          "keywords": ["Information Visualization", "Human-Computer Interaction", "Building Information Management", "User Interface"],
+          "doi": "",
+          "abstract": "2010_HS.html"
         }
       ]
     }
