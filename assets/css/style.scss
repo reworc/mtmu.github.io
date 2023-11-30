@@ -303,6 +303,7 @@ svg text {
     
     &--simple {
       position: relative;
+      max-width: 70rem;
     }
 
     &--timeline {
@@ -362,8 +363,6 @@ svg text {
 
 
   &__language {
-    
-    background-color: $color-blue-950;
     color: $color-primary;
     font-size: $font-size-default;
     font-family: $font-primary;
