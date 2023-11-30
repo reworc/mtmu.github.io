@@ -39,6 +39,11 @@ title: Publikationen
                           <p class="timeline__publication--location">{{ element.reference }}</p>                        
                         </div>
                         <div class="timeline__publication--icons">
+                          {% if element.doi And element.doi != "" And element.doi != nil %}
+                          <div class="icon__publication">
+                            <a title="download reference {{element.id}}" href="{{element.doi}}" target="_blank" class="icon__publication--download"></a>
+                          </div>
+                          {% endif %}
                           <div class="icon__publication">
                             {% case element.type %}
                               {% when 'monography' %}
