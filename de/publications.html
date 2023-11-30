@@ -39,18 +39,20 @@ title: Publikationen
                           <p class="timeline__publication--location">{{ element.reference }}</p>                        
                         </div>
                         <div class="timeline__publication--icons">
-                          {% case element.type %}
-                            {% when 'monography' %}
-                            <div class="icon__publication icon__publication--book"></div>
-                            {% when 'poster' %}
-                            <div class="icon__publication icon__publication--poster"></div>
-                            {% when 'journal' %}
-                            <div class="icon__publication icon__publication--journal"></div>
-                            {% when 'conference' %}
-                            <div class="icon__publication icon__publication--conference"></div>
-                            {% else %}
-                            <div class="icon__publication icon__publication--undefined"></div>
-                          {% endcase %}
+                          <div class="icon__publication">
+                            {% case element.type %}
+                              {% when 'monography' %}
+                              <div class="icon__publication--book"></div>
+                              {% when 'poster' %}
+                              <div class="icon__publication--poster"></div>
+                              {% when 'journal' %}
+                              <div class="icon__publication--journal"></div>
+                              {% when 'conference' %}
+                              <div class="icon__publication--conference"></div>
+                              {% else %}
+                              <div class="icon__publication--undefined"></div>
+                            {% endcase %}
+                          </div>
                           <div class="icon__language">
                             {{ element.lang }}
                           </div>                            

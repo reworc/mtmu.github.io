@@ -150,8 +150,10 @@ svg text {
 
     &--summary {
       display: grid;
-      grid-template-columns: 7rem 1fr;
+      grid-template-columns: 7rem 1fr 20rem;
       align-items: center;
+      justify-content: flex-end;
+      margin-right: 2rem;
 
       cursor: pointer;
 
@@ -277,6 +279,7 @@ svg text {
 
     &--icons {
       display: flex;
+      margin-right: 2rem;
     }
   }  
 }
@@ -341,27 +344,42 @@ svg text {
   &__language {
     width: 4rem;
     height: 4rem;
-    background-color: $color-primary-very-light;
+    background-color: $color-blue-950;
     color: $color-primary;
+    font-size: $font-size-large;
     font-family: $font-primary;
     text-transform: uppercase;
     font-weight: $font-weight-bold;
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    margin-right: 1rem;
   }
 
   &__publication {    
   
     width: 4rem;
     height: 4rem;
+    padding: 0.4rem;
+    border: 1px solid $color-primary-light;
     display: block;
     background-color: $color-primary;
-    mask-type: alpha;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
-    mask-size: cover;
-    -webkit-mask-size: cover;
+   
+    &--book, 
+    &--poster, 
+    &--journal, 
+    &--conference, 
+    &--undefined {
+   
+      mask-type: alpha;
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-size: cover;
+      -webkit-mask-size: cover;
+    }
+
+    margin-right: 1rem;
 
     &--book {
       mask-image: url(../icons/book.png);
@@ -392,7 +410,9 @@ svg text {
         top: 0;
         left: 0;
 
-        font-family: $font-primary;        
+        font-family: $font-primary;  
+        font-size: $font-size-large;      
+        color: $color-primary;
         text-transform: uppercase;
         font-weight: $font-weight-bold;
         display: flex;
