@@ -274,6 +274,10 @@ svg text {
       color: $color-primary-light;
       font-weight: $font-weight-bold;
     }
+
+    &--icons {
+      display: flex;
+    }
   }  
 }
 
@@ -332,6 +336,72 @@ svg text {
   }
 }
 
+
+.icon {
+  &__language {
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-primary-very-light;
+    color: $color-primary;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__publication {    
+  
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    background-color: $color-primary;
+    mask-type: alpha;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+
+    &--book {
+      mask-image: url(../icons/book.png);
+      -webkit-mask-image: url(../icons/book.png);
+    }
+
+    &--poster {
+      mask-image: url(../icons/poster.png);
+      -webkit-mask-image: url(../icons/poster.png);
+    }
+
+    &--journal {
+      mask-image: url(../icons/journal.png);
+      -webkit-mask-image: url(../icons/journal.png);
+    }
+
+    &--conference {
+      mask-image: url(../icons/conference.png);
+      -webkit-mask-image: url(../icons/conference.png);
+    }
+
+    &--undefined {
+      position: relative;
+      &::after {
+        content: "?";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        font-family: $font-primary;        
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+    }
+  }
+}
 
 p {
     font-family: $font-secondary;

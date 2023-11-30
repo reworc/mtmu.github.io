@@ -25,7 +25,7 @@ title: Publikationen
                     <div class="timeline__publication--content">
                       <input type="checkbox" name="collapse" id="{{ element.id }}">
                       <label for="{{ element.id }}" class="timeline__publication--summary">
-                        <div class="timeline__publication--image">                      
+                        <div class="timeline__publication--image">                
                           <div class="timeline__publication--image-preview">                        
                             <img src="../assets/img/{{ element.preview }}" alt="{{ element.title }} (Preview)">
                           </div>
@@ -37,6 +37,23 @@ title: Publikationen
                           <h3 class="timeline__publication--title">{{ element.title }}</h3>
                           <h4 class="timeline__publication--author">{{ element.authors }}</h4>
                           <p class="timeline__publication--location">{{ element.reference }}</p>                        
+                        </div>
+                        <div class="timeline__publication--icons">
+                          {% case element.type %}
+                            {% when 'monography' %}
+                            <div class="icon__publication icon__publication--book"></div>
+                            {% when 'poster' %}
+                            <div class="icon__publication icon__publication--poster"></div>
+                            {% when 'journal' %}
+                            <div class="icon__publication icon__publication--journal"></div>
+                            {% when 'conference' %}
+                            <div class="icon__publication icon__publication--conference"></div>
+                            {% else %}
+                            <div class="icon__publication icon__publication--undefined"></div>
+                          {% endcase %}
+                          <div class="icon__language">
+                            {{ element.lang }}
+                          </div>                            
                         </div>
                       </label> 
                       <div class="timeline__publication--detail-view">
