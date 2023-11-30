@@ -280,6 +280,9 @@ svg text {
     &--icons {
       display: flex;
       margin-right: 2rem;
+
+      justify-content: flex-end;
+      align-items: center;
     }
   }  
 }
@@ -363,8 +366,7 @@ svg text {
     height: 4rem;
     padding: 0.4rem;
     border: 1px solid $color-primary-light;
-    display: block;
-    background-color: $color-primary;
+    display: block;    
    
     &--book, 
     &--poster, 
@@ -372,6 +374,7 @@ svg text {
     &--conference, 
     &--undefined {
    
+      background-color: $color-primary;
       mask-type: alpha;
       mask-repeat: no-repeat;
       -webkit-mask-repeat: no-repeat;
