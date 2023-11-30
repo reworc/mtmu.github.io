@@ -417,6 +417,7 @@ svg text {
 
     &--download {
       cursor: pointer;
+      display: block;
 
       mask-image: url(../icons/download.png);
       -webkit-mask-image: url(../icons/download.png);
