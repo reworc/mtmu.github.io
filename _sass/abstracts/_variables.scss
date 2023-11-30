@@ -1,5 +1,28 @@
-$color-primary: #0084ba;
-$color-primary-light: #1cbefe;
+$color-blue-50: #000d13;
+$color-blue-100: #001a25;
+$color-blue-150: #002838;
+$color-blue-200: #00354a;
+$color-blue-250: #00425d;
+$color-blue-300: #004f70;
+$color-blue-350: #005c82;
+$color-blue-400: #006a95;
+$color-blue-450: #0077a7;
+$color-blue-500: #0084ba;
+
+$color-blue-550: #1a90c1;
+$color-blue-600: #339dc8;
+$color-blue-650: #339dc8;
+$color-blue-700: #4da9cf;
+$color-blue-750: #66b5d6;
+$color-blue-800: #80c2dd;
+$color-blue-850: #99cee3;
+$color-blue-900: #b3daea;
+$color-blue-950: #cce6f1;
+$color-blue-1000: #e6f3f8;
+
+$color-primary: $color-blue-500;
+$color-primary-light: $color-blue-600;
+$color-primary-very-light: $color-blue-800;
 
 $color-black: #000;
 $color-white: #fff;
