@@ -148,24 +148,32 @@
               .attr("y", d => y(0))
               .attr("height", d => height - y(0))
               .attr("width",x.bandwidth())
-
-          // // Bars - start height with 0: correct height is set in animation
-          // svg.selectAll("mybar")
-          //   .data(data.years)
-          //   .join("rect")
-          //     .attr("x", d => x(d.name))
-          //     .attr("width", x.bandwidth())
-          //     .attr("fill", barColor)
-          //     .attr("height", function(d) { return height - y(0); }) // always equal to 0
-          //     .attr("y", function(d) { return y(0); });
+            
+        // draw horizontal lines on the start of the block as border between groups
+        svg.append("g")
+          .selectAll("g")
+          // Enter in the stack data = loop key per key = group per group
+          .data(stackedData)
+          .join("g")
+            .attr("fill", d => color(d.key))
+            .selectAll("line")
+            // enter a second time = loop subgroup per subgroup to add all rectangles
+            .data(d => d)
+            .join("line")
+              .attr("x1", d=> x(d.data.year))
+              .attr("y1", d => y(d[0]))
+              .attr("x2", d => x(d.data.year) + x.bandwidth())
+              .attr("y2", d => y(d[0]))
+              .attr("stroke", '#fff')
+              .attr("stroke-width", d => d[0] > 0 ? "2" : "0")
 
           // Animation
           svg.selectAll("rect")
             .transition()
-            .duration(100)
+            .duration(400)
             .attr("y", d => y(d[1]))
             .attr("height", d => y(d[0]) - y(d[1]))
-            .delay((d,i) => i*100 );   
+            .delay((d,i) => i*10 );   
         });
       };
 
