@@ -58,14 +58,14 @@
       );
 
       /// draw d3.js bar plot of publications
-      const drawPublications = (url) => {  
+      const drawPublications = (url, elementId, names) => {  
         // set the dimensions and margins of the graph
         const margin = {top: 50, right: 30, bottom: 30, left: 30},
             width = 600 - margin.left - margin.right,
             height = 200 - margin.top - margin.bottom;
         
         // append the svg object to the body of the page
-        const svg = d3.select("#dataVis_numPubYear")
+        const svg = d3.select(elementId)
           .append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
@@ -87,12 +87,14 @@
             .flat()                     // reduce array dimension
             .filter((value, index, array) => array.indexOf(value) === index); // remove duplicate values
 
-          console.log(subgroups);
+          
+
+          console.log(names);
 
           // color palette = one color per subgroup
           const color = d3.scaleOrdinal()
             .domain(subgroups)
-            .range(['#00425d','#0077a7','#339dc8', '#99cee3']);
+            .range(publicationTypeColors);
 
           const publications_by_type = data.years.map((y) => {
             var typeMap = new Map();
@@ -134,6 +136,35 @@
             .call(d3.axisLeft(y).ticks(maxPublications).tickFormat(d3.format("d"))
           );
 
+          // ----------------
+          // Create a tooltip
+          // ----------------
+          var tooltip = d3.select("#dataVis_numPubYear")
+            .append("div")
+            .style("opacity", 0)
+            .attr("class", "tooltip");
+
+          // Three function that change the tooltip when user hover / move / leave a cell
+          const mouseoverPubByType = function(event, d) {
+            const subgroupName = d3.select(this.parentNode).datum().key;
+            const subgroupValue = d.data[subgroupName];
+            tooltip
+                .html("Typ: " + names.get(subgroupName) + "<br>" + "Anzahl: " + subgroupValue)
+                .style("opacity", 1)
+
+          }
+          const mousemovePubByType = function(event, d) {
+            tooltip//.style("transform","translateY(-55%)")
+                  // .style("left",(event.x)/2+"px")
+                  // .style("top",(event.y)/2-30+"px")
+                  .style("transform", `translate(${(event.x)}px, ${(event.y)}px`);
+          }
+          const mouseleavePubByType = function(event, d) {
+            tooltip
+              .style("opacity", 0)
+          }
+
+          // draw the bars
           svg.append("g")
           .selectAll("g")
           // Enter in the stack data = loop key per key = group per group
@@ -148,6 +179,9 @@
               .attr("y", d => y(0))
               .attr("height", d => height - y(0))
               .attr("width",x.bandwidth())
+            .on("mouseover", mouseoverPubByType)
+            .on("mousemove", mousemovePubByType)
+            .on("mouseleave", mouseleavePubByType);
             
         // draw horizontal lines on the start of the block as border between groups
         svg.append("g")
@@ -175,19 +209,21 @@
             .attr("height", d => y(d[0]) - y(d[1]))
             .delay((d,i) => i*10 );   
         });
+
+        
       };
 
       /// draw horizontal d3 bar plot with number of publications per co-author
       /// can be sorted (@param order) by time (descending, 0), publication count (1) or name (2)
-      const drawAuthors = (url, order) => {
+      const drawAuthors = (url, elementId, order) => {
         
         // set the dimensions and margins of the graph
         const margin = {top: 30, right: 30, bottom: 70, left: 150},
             width = 600 - margin.left - margin.right,
             height = 600 - margin.top - margin.bottom;
-        d3.select("#dataVis_Authors").selectAll("*").remove();
+        d3.select(elementId).selectAll("*").remove();
 
-        const svg = d3.select("#dataVis_Authors")
+        const svg = d3.select(elementId)
         .append("svg")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
@@ -274,14 +310,14 @@
       // draw a special bar plot visualizing the time between fist and last publication with a co-author
       // bars start at the first year and end at te last year
       // bars have circle at the start and the end, so that co-authors who appear only once are visible
-      const drawAuthorPeriod = (url) => {
+      const drawAuthorPeriod = (url, elementId) => {
         
         // set the dimensions and margins of the graph
         const margin = {top: 30, right: 30, bottom: 70, left: 150},
             width = 600 - margin.left - margin.right,
             height = 600 - margin.top - margin.bottom;
 
-        const svg = d3.select("#dataVis_AuthorPeriod")
+        const svg = d3.select(elementId)
         .append("svg")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
@@ -375,15 +411,15 @@
 
       // horizontal bar plot visualizing how often specific key words were used
       // ordered by number of appearances
-      const drawKeywords = (url, order) => {
+      const drawKeywords = (url, elementId, order) => {
         
         // set the dimensions and margins of the graph
         const margin = {top: 30, right: 30, bottom: 70, left: 200},
             width = 600 - margin.left - margin.right,
             height = 1000 - margin.top - margin.bottom;
-        d3.select("#dataVis_Keywords").selectAll("*").remove();
+        d3.select(elementId).selectAll("*").remove();
 
-        const svg = d3.select("#dataVis_Keywords")
+        const svg = d3.select(elementId)
         .append("svg")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
@@ -461,13 +497,13 @@
           });
         };
 
-      const drawKeywordsSpider = (url) => {
+      const drawKeywordsSpider = (url, elementId) => {
         // set the dimensions and margins of the graph
         const margin = {top: 30, right: 30, bottom: 70, left: 30},
           width = 600 - margin.left - margin.right,
           height = 400 - margin.top - margin.bottom;
 
-        const svg = d3.select("#dataVis_KeywordsSpider")
+        const svg = d3.select(elementId)
             .append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
@@ -600,7 +636,7 @@
           });
         };
 
-      const drawKeywordsDonut = (url, order) => {
+      const drawKeywordsDonut = (url, elementId, order) => {
         const width = 800,
         height = 480,
         margin = 80;
@@ -611,7 +647,7 @@
         const labelRadiusMultiplyer = 1.4
 
         // append the svg object to the div called 'my_dataviz'
-        const svg = d3.select("#dataVis_KeywordsDonut")
+        const svg = d3.select(elementId)
           .append("svg")
             .attr("width", width)
             .attr("height", height)
@@ -751,15 +787,23 @@
       const barColor2 = "#aaa"
       const circleColor = "#0084ba";
       const circleOutline = "#fff";
+      
+      const publicationTypeNames = new Map([
+            [ "conference", "Konferenzproceeding"],
+            [ "poster", "Poster/Demo"],
+            [ "journal", "Journal"],
+            [ "monography", "Monographie"]
+          ]);
+      const publicationTypeColors = ["#00425d", "#0077a7", "#339dc8", "#99cee3"];
 
       const url = "https://reworc.github.io/mtmu.github.io/assets/data/publications.json";
       
-      drawPublications(url);
-      drawAuthors(url, 1);
-      drawAuthorPeriod(url);
-      drawKeywords(url, 1);
-      drawKeywordsSpider(url);
-      drawKeywordsDonut(url);
+      drawPublications(url, "#dataVis_numPubYear");
+      drawAuthors(url, "#dataVis_Authors", 1);
+      drawAuthorPeriod(url, "#dataVis_AuthorPeriod");
+      drawKeywords(url, "#dataVis_Keywords", 1);
+      drawKeywordsSpider(url, "#dataVis_KeywordsSpider");
+      drawKeywordsDonut(url, "#dataVis_KeywordsDonut");
 
     </script>
   </body>
