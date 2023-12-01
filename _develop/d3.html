@@ -87,10 +87,6 @@
             .flat()                     // reduce array dimension
             .filter((value, index, array) => array.indexOf(value) === index); // remove duplicate values
 
-          
-
-          console.log(names);
-
           // color palette = one color per subgroup
           const color = d3.scaleOrdinal()
             .domain(subgroups)
@@ -105,14 +101,10 @@
             return Object.fromEntries(typeMap.entries());
           });
 
-          console.log(publications_by_type);
-
-          //stack the data? --> stack per subgroup
+          //stack the data --> stack per subgroup
           const stackedData = d3.stack()
             .keys(subgroups)
             (publications_by_type);
-
-          console.log(stackedData);
 
           // X axis
           const x = d3.scaleBand()
@@ -139,25 +131,26 @@
           // ----------------
           // Create a tooltip
           // ----------------
-          var tooltip = d3.select("#dataVis_numPubYear")
+          var tooltip = d3.select(elementId)
             .append("div")
             .style("opacity", 0)
-            .attr("class", "tooltip");
+            .attr("class", "d3-tooltip");
 
           // Three function that change the tooltip when user hover / move / leave a cell
           const mouseoverPubByType = function(event, d) {
             const subgroupName = d3.select(this.parentNode).datum().key;
             const subgroupValue = d.data[subgroupName];
             tooltip
-                .html("Typ: " + names.get(subgroupName) + "<br>" + "Anzahl: " + subgroupValue)
+                .html("Typ: " + publicationTypeNames.get(subgroupName) + "<br>" + "Anzahl: " + subgroupValue)
                 .style("opacity", 1)
 
           }
           const mousemovePubByType = function(event, d) {
-            tooltip//.style("transform","translateY(-55%)")
-                  // .style("left",(event.x)/2+"px")
-                  // .style("top",(event.y)/2-30+"px")
-                  .style("transform", `translate(${(event.x)}px, ${(event.y)}px`);
+
+            var rect = document.getElementById(elementId.replace('#', '')).getBoundingClientRect();
+            var x = event.clientX - rect.left; //x position within the element.
+            var y = event.clientY - rect.top;  
+            tooltip.style("transform", `translate(${(x)}px, ${(y)}px`);
           }
           const mouseleavePubByType = function(event, d) {
             tooltip
@@ -683,13 +676,10 @@
             }
           });
 
-          // dict.set(others.key, others.value);
 
           others.keywords.forEach(k => {
             dict.delete(k);
           });
-
-          console.log(others);
 
           const sorted = new Map([...dict].sort((a,b) => a[0].localeCompare(b[0])));
           const maxNum = Array.from(sorted.values()).max();
@@ -798,44 +788,28 @@
 
       const keywordColors = [
         "#000d13",
+        
         // "#001a25",
         // "#002838",
-        "#003823",
+        "#004a2e",
         "#00354a",
+        "#4a1a00",
         // "#00425d",
         // "#004f70",
         "#007046",
         "#005c82",
+        "#822e00",
         // "#006a95",
         // "#0077a7",
         "#0084ba",
         "#00a768",
+        "#ba4100",
 
         // "#1a90c1",
         // "#339dc8",
         "#339dc8",
-        "#33c890"
-
-// $color-green-100: #00130c;	
-// $color-green-150: #002517;	
-// $color-green-200: #003823;	
-// $color-green-250: #004a2e;	
-// $color-green-300: #005d3a;	
-// $color-green-350: #007046;	
-// $color-green-400: #008251;	
-// $color-green-450: #00955d;	
-// $color-green-500: #00a768;	
-
-// $color-green-550: #00ba74;	
-// $color-green-600: #1ac182;	
-// $color-green-650: #33c890;	
-// $color-green-700: #4dcf9e;	
-// $color-green-750: #66d6ac;	
-// $color-green-800: #80ddba;	
-// $color-green-850: #99e3c7;	
-// $color-green-900: #b3ead5;	
-// $color-green-950: #ccf1e3;	
-// $color-green-1000: #e6f8f1;
+        "#33c890",
+        "#c86733"
       ]
       
       const url = "https://reworc.github.io/mtmu.github.io/assets/data/publications.json";

@@ -50,8 +50,6 @@ const drawKeywordsDonut = (url, elementId) => {
       dict.delete(k);
     });
 
-    console.log(others);
-
     const sorted = new Map([...dict].sort((a, b) => a[0].localeCompare(b[0])));
     const maxNum = Array.from(sorted.values()).max();
 
@@ -59,7 +57,7 @@ const drawKeywordsDonut = (url, elementId) => {
     const color = d3
       .scaleOrdinal()
       .domain(Array.from(sorted.keys()))
-      .range(d3.schemeDark2);
+      .range(keywordColors);
 
     // Compute the position of each group on the pie:
     const pie = d3
