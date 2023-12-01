@@ -697,7 +697,7 @@
           // set the color scale
           const color = d3.scaleOrdinal()
             .domain(Array.from(sorted.keys()))
-            .range(d3.schemeDark2);
+            .range(keywordColors);
 
           // Compute the position of each group on the pie:
           const pie = d3.pie()
@@ -796,6 +796,23 @@
           ]);
       const publicationTypeColors = ["#00425d", "#0077a7", "#339dc8", "#99cee3"];
 
+      const keywordColors = [
+        "#000d13",
+        // "#001a25",
+        // "#002838",
+        "#00354a",
+        // "#00425d",
+        // "#004f70",
+        "#005c82",
+        // "#006a95",
+        // "#0077a7",
+        "#0084ba",
+
+        // "#1a90c1",
+        // "#339dc8",
+        "#339dc8"
+      ]
+      
       const url = "https://reworc.github.io/mtmu.github.io/assets/data/publications.json";
       
       drawPublications(url, "#dataVis_numPubYear");
