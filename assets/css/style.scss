@@ -44,6 +44,10 @@ svg text {
   color: $color-grey-dark;
 }
 
+#dataVis_numPubYear {
+  position: relative;
+}
+
 .d3-tooltip {
   position: absolute;
     top: -50%;
