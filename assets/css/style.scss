@@ -44,6 +44,19 @@ svg text {
   color: $color-grey-dark;
 }
 
+.d3-tooltip {
+  position: absolute;
+    top: -50%;
+    left: 2rem;
+    padding: 0.5rem 0.9rem;
+    background: $color-primary-dark;
+    color: $color-white;
+    font-weight: $font-weight-bold;
+    font-family: $font-secondary;
+    font-size: $font-size-default;
+    border-radius: 0.2rem;
+}
+
 .timeline {
   position: relative;
   margin-left: 2rem;
