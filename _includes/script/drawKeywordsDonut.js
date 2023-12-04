@@ -44,14 +44,11 @@ const drawKeywordsDonut = (url, elementId) => {
       }
     });
 
-    // dict.set(others.key, others.value);
-
     others.keywords.forEach((k) => {
       dict.delete(k);
     });
 
     const sorted = new Map([...dict].sort((a, b) => a[0].localeCompare(b[0])));
-    const maxNum = Array.from(sorted.values()).max();
 
     // set the color scale
     const color = d3
@@ -116,7 +113,7 @@ const drawKeywordsDonut = (url, elementId) => {
       .selectAll("allLabels")
       .data(data_ready)
       .join("text")
-      .text((d) => `${d.data[0]} [${d.data[1]}]`)
+      .text((d) => `${d.data[0]}`)
       .attr("transform", function (d) {
         const pos = outerArc.centroid(d);
         const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
@@ -139,14 +136,8 @@ const drawKeywordsDonut = (url, elementId) => {
       .text((d) => `${d.data[1]}`)
       .attr("transform", function (d) {
         const pos = arc.centroid(d);
-        //const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
-        //pos[0] = radius * (labelRadiusMultiplyer * 1.05) * (midangle < Math.PI ? 1 : -1);
         return `translate(${pos})`;
       })
       .attr("class", "visualization__keywords--diagram-label");
-      // .style("text-anchor", "middle")
-      // .style("dominant-baseline", "central")
-      // .style("font-weight", "700")
-      // .style("fill", "#fff");
   });
 };
