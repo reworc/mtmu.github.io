@@ -98,7 +98,47 @@ title: Publikationen
     </ul>
     <h1>Statistiken</h1>
     <h2>Publikationen nach Jahr</h2>
-    <div id="dataVis_numPubYear">
+    <div class="visualization__publications">
+      <div id="dataVis_numPubYear">
+      </div>
+      <div class="visualization__publications--legend">
+        <div class="legend-element">
+          <div class="legend-element__color publication-conference"></div>
+          <div class="legend-element__description">
+            Konferenzproceeding
+          </div>
+          <div class="legend-element__icon">
+            <div class="icon__publication--conference"></div>
+          </div>
+        </div>
+        <div class="legend-element">
+          <div class="legend-element__color publication-journal"></div>
+          <div class="legend-element__description">
+            Journal
+          </div>
+          <div class="legend-element__icon">
+            <div class="icon__publication--journal"></div>
+          </div>
+        </div>
+        <div class="legend-element">
+          <div class="legend-element__color publication-monography"></div>
+          <div class="legend-element__description">
+            Monographie
+          </div>
+          <div class="legend-element__icon">
+            <div class="icon__publication--book"></div>
+          </div>
+        </div>
+        <div class="legend-element">
+          <div class="legend-element__color publication-poster"></div>
+          <div class="legend-element__description">
+            Poster / Demo
+          </div>
+          <div class="legend-element__icon">
+            <div class="icon__publication--poster"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="visualization__authors">
       <div class="visualization__authors--simple">
@@ -163,8 +203,8 @@ title: Publikationen
             [ "monography", "Monographie"],
             [ "poster", "Poster/Demo"]
           ]);
-      
-      const publicationTypeColors = ["#00354a", "#006a95", "#339dc8", "#99cee3"];
+          
+      const publicationTypeColors = ["#002838", "#006a95", "#4da9cf", "#cce6f1"];
       const keywordColors = [
         "#000d13",
         "#004a2e",

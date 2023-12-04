@@ -71,8 +71,6 @@ svg text {
       overflow: visible;
       border-top: 15px solid transparent;
       border-bottom: 15px solid transparent; 
-    
-      border-right:15px solid $color-primary-dark; 
     }
 
     &.tooltip-monography {
@@ -80,7 +78,7 @@ svg text {
       color: $color-primary-dark;
 
       &:before {
-        border-right: $color-tooltip-monography;
+        border-right: 15px solid $color-tooltip-monography;
       }
     }
 
@@ -88,7 +86,7 @@ svg text {
       background: $color-tooltip-conference;
 
       &:before {
-        border-right: $color-tooltip-conference;
+        border-right: 15px solid $color-tooltip-conference;
       }
     }
 
@@ -97,7 +95,7 @@ svg text {
       color: $color-primary-dark;
 
       &:before {
-        background: $color-tooltip-poster;
+        border-right: 15px solid $color-tooltip-poster;
       }
     }
 
@@ -105,7 +103,7 @@ svg text {
       background: $color-tooltip-journal;
 
       &:before {
-        border-right: $color-tooltip-journal;
+        border-right: 15px solid $color-tooltip-journal;
       }
     }
 
@@ -363,6 +361,7 @@ svg text {
 }
 
 .visualization {
+
   &__authors {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -383,7 +382,7 @@ svg text {
 
       padding: 1rem;
 
-      border: 1px solid $color-primary;
+      border: 1px solid $color-primary-light;
       border-radius: 5px;
     }
   }
@@ -416,6 +415,57 @@ svg text {
          font-weight: $font-weight-bold;
       }
     }
+  }
+
+  &__publications {
+    display: grid;
+    grid-template-columns: $element-width-diagram 1fr;
+
+    &--legend {
+      border: 1px solid $color-primary-light;
+      border-radius: 5px;
+      padding: 1rem;
+    }
+  }
+}
+
+.legend-element {
+  display: grid;
+  grid-template-columns: 2rem 15rem 4rem;
+
+  &__color {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+
+    &.publication-conference {
+      background-color: $color-tooltip-conference;
+    }
+
+    &.publication-journal {
+      background-color: $color-tooltip-journal;
+    }
+
+    &.publication-monography {
+      background-color: $color-tooltip-monography;
+    }
+
+    &.publication-poster {
+      background-color: $color-tooltip-poster;
+    }
+  }
+
+  &__description {
+    margin: 2rem 0.5rem;
+    color: $color-grey-dark;
+
+    font-family: $font-secondary;
+    font-weight: $font-weight-default;
+    font-size: $font-size-medium;
+  }
+
+  &__icon {
+
   }
 }
 
