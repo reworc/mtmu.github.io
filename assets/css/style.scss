@@ -65,7 +65,7 @@ svg text {
 
     content: " ";
     position: absolute;
-    left: -15px;
+    left: -10px;
     top: 11px;
     width: 0; 
     height: 0; 
@@ -383,6 +383,17 @@ svg text {
 
       border: 1px solid $color-primary-light;
       border-radius: 5px;
+
+      & p {
+        font-size: $font-size-medium;
+        color: $color-primary;
+      }
+
+      & .form-check {
+        font-size: $font-size-default;
+        font-family: $font-secondary;
+        color: $color-grey-dark;
+      }
     }
   }
 
@@ -466,7 +477,7 @@ svg text {
 
     font-family: $font-secondary;
     font-weight: $font-weight-default;
-    font-size: $font-size-medium;
+    font-size: $font-size-default;
   }
 
   &__icon {

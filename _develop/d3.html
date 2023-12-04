@@ -15,11 +15,11 @@
     <div class="visualization__authors--buttons">
         <p>Sortierung</p>
         <fieldset>
-          <input type="radio" id="d" name="sort" value="0" onchange="drawAuthors(url, this.value)">
+          <input type="radio" id="d" name="sort" value="0" onchange="drawAuthors(url, '#dataVis_Authors', this.value)">
           <label for="d">Datum (neuste zuerst)</label> 
-          <input type="radio" id="h" name="sort" value="1" onchange="drawAuthors(url, this.value)" checked>
+          <input type="radio" id="h" name="sort" value="1" onchange="drawAuthors(url, '#dataVis_Authors', this.value)" checked>
           <label for="h">Häufigkeit</label>
-          <input type="radio" id="n" name="sort" value="2" onchange="drawAuthors(url, this.value)">
+          <input type="radio" id="n" name="sort" value="2" onchange="drawAuthors(url, '#dataVis_Authors', this.value)">
           <label for="n">Name</label> 
         </fieldset>
       </div>
