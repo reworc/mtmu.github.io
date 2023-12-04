@@ -20,7 +20,6 @@ $color-blue-900: #b3daea;
 $color-blue-950: #cce6f1;
 $color-blue-1000: #e6f3f8;
 
-
 $color-green-50: #000000;
 $color-green-100: #00130c;	
 $color-green-150: #002517;	
@@ -43,7 +42,6 @@ $color-green-900: #b3ead5;
 $color-green-950: #ccf1e3;	
 $color-green-1000: #e6f8f1;
 
-
 $color-red-50: #130600;
 $color-red-100: #250d00;	
 $color-red-150: #381300;	
@@ -65,6 +63,11 @@ $color-red-850: #e3b399;
 $color-red-900: #eac6b3;	
 $color-red-950: #f1d9cc;	
 $color-red-1000: #f8ece6;
+
+$color-tooltip-conference: $color-blue-250;
+$color-tooltip-journal: $color-blue-450;
+$color-tooltip-monography: $color-blue-650;
+$color-tooltip-poster: $color-blue-850;
 
 
 $color-primary-dark: $color-blue-300;
@@ -99,3 +102,5 @@ $font-size-large: 2.4rem;
 $font-size-medium: 1.8rem;
 $font-size-default: 1.6rem;
 $font-size-small: 1.4rem;
+
+$element-width-diagram: 80rem;

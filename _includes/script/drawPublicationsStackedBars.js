@@ -74,8 +74,7 @@ const drawPublications = (url, elementId, names) => {
     // ----------------
     var tooltip = d3.select(elementId)
       .append("div")
-      .style("opacity", 0)
-      .attr("class", "d3-tooltip");
+      .style("opacity", 0);
 
     // Three function that change the tooltip when user hover / move / leave a cell
     const mouseoverPubByType = function(event, d) {
@@ -84,6 +83,7 @@ const drawPublications = (url, elementId, names) => {
       tooltip
           .html("Typ: " + publicationTypeNames.get(subgroupName) + "<br>" + "Anzahl: " + subgroupValue)
           .style("opacity", 1)
+          .attr("class", `d3-tooltip tooltip-${subgroupName}`)
 
     }
     const mousemovePubByType = function(event, d) {

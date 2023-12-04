@@ -59,6 +59,55 @@ svg text {
     font-family: $font-secondary;
     font-size: $font-size-default;
     border-radius: 0.2rem;
+
+    &:before {
+
+      content: " ";
+      position: absolute;
+      left: -15px;
+      top: 5px;
+      width: 0; 
+      height: 0; 
+      overflow: visible;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent; 
+    
+      border-right:15px solid $color-primary-dark; 
+    }
+
+    &.tooltip-monography {
+      background: $color-tooltip-monography;
+
+      &:before {
+        background: $color-tooltip-monography;
+      }
+    }
+
+    &.tooltip-conference {
+      background: $color-tooltip-conference;
+
+      &:before {
+        background: $color-tooltip-conference;
+      }
+    }
+
+    &.tooltip-poster {
+      background: $color-tooltip-poster;
+
+      &:before {
+        background: $color-tooltip-poster;
+      }
+    }
+
+    &.tooltip-journal {
+      background: $color-tooltip-journal;
+
+      &:before {
+        background: $color-tooltip-journal;
+      }
+    }
+
+    
 }
 
 .timeline {
@@ -319,7 +368,7 @@ svg text {
     
     &--simple {
       position: relative;
-      max-width: 70rem;
+      max-width: $element-width-diagram;
     }
 
     &--timeline {
@@ -344,6 +393,7 @@ svg text {
     &--simple, &--spider {
       display: grid;
       grid-template-rows: 3rem 1fr;
+      max-width: $element-width-diagram;
     }
 
     &--spider {
