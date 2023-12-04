@@ -26,7 +26,8 @@ const drawPublications = (url, elementId, names) => {
       return(types)}
       )
       .flat()                     // reduce array dimension
-      .filter((value, index, array) => array.indexOf(value) === index); // remove duplicate values
+      .filter((value, index, array) => array.indexOf(value) === index) // remove duplicate values
+      .sort((a, b) => a[0].localeCompare(b[0]));
 
     // color palette = one color per subgroup
     const color = d3.scaleOrdinal()

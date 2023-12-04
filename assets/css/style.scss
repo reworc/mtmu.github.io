@@ -77,9 +77,10 @@ svg text {
 
     &.tooltip-monography {
       background: $color-tooltip-monography;
+      color: $color-primary-dark;
 
       &:before {
-        background: $color-tooltip-monography;
+        border-right: $color-tooltip-monography;
       }
     }
 
@@ -87,12 +88,13 @@ svg text {
       background: $color-tooltip-conference;
 
       &:before {
-        background: $color-tooltip-conference;
+        border-right: $color-tooltip-conference;
       }
     }
 
     &.tooltip-poster {
       background: $color-tooltip-poster;
+      color: $color-primary-dark;
 
       &:before {
         background: $color-tooltip-poster;
@@ -103,7 +105,7 @@ svg text {
       background: $color-tooltip-journal;
 
       &:before {
-        background: $color-tooltip-journal;
+        border-right: $color-tooltip-journal;
       }
     }
 

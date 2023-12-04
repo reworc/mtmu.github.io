@@ -85,7 +85,8 @@ const drawPublications = (url, elementId, names) => {
       return(types)}
       )
       .flat()                     // reduce array dimension
-      .filter((value, index, array) => array.indexOf(value) === index); // remove duplicate values
+      .filter((value, index, array) => array.indexOf(value) === index) // remove duplicate values
+      .sort((a, b) => a[0].localeCompare(b[0]));
 
     // color palette = one color per subgroup
     const color = d3.scaleOrdinal()
@@ -143,7 +144,7 @@ const drawPublications = (url, elementId, names) => {
       tooltip
           .html("Typ: " + publicationTypeNames.get(subgroupName) + "<br>" + "Anzahl: " + subgroupValue)
           .style("opacity", 1)
-          .attr("class", `tooltip-${subgroupName}`)
+          .attr("class", `d3-tooltip tooltip-${subgroupName}`)
 
     }
     const mousemovePubByType = function(event, d) {
@@ -783,7 +784,7 @@ const drawPublications = (url, elementId, names) => {
             [ "journal", "Journal"],
             [ "monography", "Monographie"]
           ]);
-      const publicationTypeColors = ["#00425d", "#0077a7", "#339dc8", "#99cee3"];
+      const publicationTypeColors = ["#00354a", "#006a95", "#339dc8", "#99cee3"];
 
       const keywordColors = [
         "#000d13",
