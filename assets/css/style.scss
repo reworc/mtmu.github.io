@@ -49,65 +49,64 @@ svg text {
 }
 
 .d3-tooltip {
+
   position: absolute;
-    top: 0;
-    left: 2rem;
-    padding: 0.5rem 0.9rem;
-    background: $color-primary-dark;
-    color: $color-white;
-    font-weight: $font-weight-bold;
-    font-family: $font-secondary;
-    font-size: $font-size-default;
-    border-radius: 0.2rem;
+  top: -20px;
+  left: 4rem;
+  padding: 0.5rem 0.9rem;
+  background: $color-primary-dark;
+  color: $color-white;
+  font-weight: $font-weight-bold;
+  font-family: $font-secondary;
+  font-size: $font-size-default;
+  border-radius: 0.2rem;
+
+  &:before {
+
+    content: " ";
+    position: absolute;
+    left: -15px;
+    top: 11px;
+    width: 0; 
+    height: 0; 
+    overflow: visible;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+  }
+
+  &.tooltip-monography {
+    background: $color-tooltip-monography;
+    color: $color-primary-dark;
 
     &:before {
-
-      content: " ";
-      position: absolute;
-      left: -15px;
-      top: 5px;
-      width: 0; 
-      height: 0; 
-      overflow: visible;
-      border-top: 15px solid transparent;
-      border-bottom: 15px solid transparent; 
+      border-right: 10px solid $color-tooltip-monography;
     }
+  }
 
-    &.tooltip-monography {
-      background: $color-tooltip-monography;
-      color: $color-primary-dark;
+  &.tooltip-conference {
+    background: $color-tooltip-conference;
 
-      &:before {
-        border-right: 15px solid $color-tooltip-monography;
-      }
+    &:before {
+      border-right: 10px solid $color-tooltip-conference;
     }
+  }
 
-    &.tooltip-conference {
-      background: $color-tooltip-conference;
+  &.tooltip-poster {
+    background: $color-tooltip-poster;
+    color: $color-primary-dark;
 
-      &:before {
-        border-right: 15px solid $color-tooltip-conference;
-      }
+    &:before {
+      border-right: 10px solid $color-tooltip-poster;
     }
+  }
 
-    &.tooltip-poster {
-      background: $color-tooltip-poster;
-      color: $color-primary-dark;
+  &.tooltip-journal {
+    background: $color-tooltip-journal;
 
-      &:before {
-        border-right: 15px solid $color-tooltip-poster;
-      }
+    &:before {
+      border-right: 10px solid $color-tooltip-journal;
     }
-
-    &.tooltip-journal {
-      background: $color-tooltip-journal;
-
-      &:before {
-        border-right: 15px solid $color-tooltip-journal;
-      }
-    }
-
-    
+  } 
 }
 
 .timeline {
@@ -419,7 +418,9 @@ svg text {
 
   &__publications {
     display: grid;
-    grid-template-columns: $element-width-diagram 1fr;
+    grid-template-columns: 80rem 1fr;
+    align-items: center;
+    justify-items: start;
 
     &--legend {
       border: 1px solid $color-primary-light;
@@ -431,7 +432,11 @@ svg text {
 
 .legend-element {
   display: grid;
-  grid-template-columns: 2rem 15rem 4rem;
+  grid-template-columns: 2rem 20rem 4rem;
+  align-items: center;
+  justify-items: start;
+  justify-content: start;
+  align-content: center;
 
   &__color {
     display: block;
@@ -456,7 +461,7 @@ svg text {
   }
 
   &__description {
-    margin: 2rem 0.5rem;
+    margin: 0.5rem 2rem;
     color: $color-grey-dark;
 
     font-family: $font-secondary;
@@ -465,7 +470,8 @@ svg text {
   }
 
   &__icon {
-
+    width: 3rem;
+    height: 3rem;
   }
 }
 
