@@ -48,6 +48,10 @@ svg text {
   position: relative;
 }
 
+#dataVis_KeywordsDonut {
+  margin: 2rem;
+}
+
 .d3-tooltip {
 
   position: absolute;
@@ -427,6 +431,14 @@ svg text {
          font-weight: $font-weight-bold;
       }
     }
+
+    &--diagram-label {
+      text-anchor: middle;
+      dominant-baseline: central;
+      font-weight: 700;
+      fill: rgb(255, 255, 255);
+      text-shadow: 0 0 3px black;
+    }
   }
 
   &__publications {
@@ -434,6 +446,7 @@ svg text {
     grid-template-columns: 80rem 1fr;
     align-items: center;
     justify-items: start;
+    margin: 2rem;
 
     &--legend {
       border: 1px solid $color-primary-light;

@@ -711,7 +711,7 @@ const drawPublications = (url, elementId, names) => {
             .data(data_ready)
             .join('path')
             .attr('d', arc)
-            .attr('fill', d => color(d.data[1]))
+            .attr('fill', d => color(d.data[0]))
             .attr("stroke", "white")
             .style("stroke-width", "2px")
             .style("opacity", 0.7)
@@ -786,30 +786,46 @@ const drawPublications = (url, elementId, names) => {
           ]);
       const publicationTypeColors = ["#002838", "#006a95", "#4da9cf", "#cce6f1"];
 
-      const keywordColors = [
-        "#000d13",
-        
-        // "#001a25",
-        // "#002838",
-        "#004a2e",
-        "#00354a",
-        "#4a1a00",
-        // "#00425d",
-        // "#004f70",
-        "#007046",
-        "#005c82",
-        "#822e00",
-        // "#006a95",
-        // "#0077a7",
-        "#0084ba",
-        "#00a768",
-        "#ba4100",
+      // const keywordColors = [
+      //   "#002838",  // blue-150
+      //   "#003823",  // green-150
+      //   "#381300",  // red-150
+      //   "#006a95",  // blue-400
+      //   "#00955d",  // green-400
+      //   "#953400",  // red-400
+      //   "#4da9cf",  // blue-650
+      //   "#4dcf9e",  // green-650
+      //   "#cf7a4d",  // red-650
+      //   "#cce6f1",  // blue-900
+      //   "#ccf1e3",  // green-900
+      //   "#f1d9cc"   // red-900
+      // ]
 
-        // "#1a90c1",
-        // "#339dc8",
-        "#339dc8",
-        "#33c890",
-        "#c86733"
+      // const keywordColors = [
+      //   "#000d13",  // blue-50
+      //   "#004a2e",  // green-200             
+      //   "#00354a",  // blue-200
+      //   "#008251",  // green-350              
+      //   "#005c82",  // blue-350
+      //   "#00ba74",  // green-500
+      //   "#0084ba",  // blue-500  
+      //   "#4dcf9e",  // green-650,
+      //   "#4da9cf",  // blue-650 
+      //   "#99e3c7",  // green-800   
+      //   "#99cee3",  // blue-800
+      //   "#e6f8f1",  // green-950
+      //   "#e6f3f8",  // blue-950       
+      //   "#00130c",  // green-50        
+      // ]
+
+      const keywordColors = [
+        "#000d13",  // blue-50
+        "#4da9cf",  // blue-650 
+        "#00354a",  // blue-200
+        "#99cee3",  // blue-800     
+        "#005c82",  // blue-350
+        "#e6f3f8",  // blue-950
+        "#0084ba",  // blue-500
       ]
       
       const url = "https://reworc.github.io/mtmu.github.io/assets/data/publications.json";

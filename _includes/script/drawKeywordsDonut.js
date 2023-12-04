@@ -84,7 +84,7 @@ const drawKeywordsDonut = (url, elementId) => {
       .data(data_ready)
       .join("path")
       .attr("d", arc)
-      .attr("fill", (d) => color(d.data[1]))
+      .attr("fill", (d) => color(d.data[0]))
       .attr("stroke", "white")
       .style("stroke-width", "2px")
       .style("opacity", 0.7);
@@ -143,9 +143,10 @@ const drawKeywordsDonut = (url, elementId) => {
         //pos[0] = radius * (labelRadiusMultiplyer * 1.05) * (midangle < Math.PI ? 1 : -1);
         return `translate(${pos})`;
       })
-      .style("text-anchor", "middle")
-      .style("dominant-baseline", "central")
-      .style("font-weight", "700")
-      .style("fill", "#fff");
+      .attr("class", "visualization__keywords--diagram-label");
+      // .style("text-anchor", "middle")
+      // .style("dominant-baseline", "central")
+      // .style("font-weight", "700")
+      // .style("fill", "#fff");
   });
 };
