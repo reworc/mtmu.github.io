@@ -384,6 +384,8 @@ svg text {
       border: 1px solid $color-primary-light;
       border-radius: 5px;
 
+      background: $color-white;
+
       & p {
         font-size: $font-size-medium;
         color: $color-primary;
