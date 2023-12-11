@@ -73,17 +73,23 @@ svg text {
     left: 4rem;
   }
 
+  &:after,
   &:before {
 
     content: " ";
     position: absolute;
     left: -10px;
-    top: 11px;
+    top: 16px;
     width: 0; 
     height: 0; 
     overflow: visible;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent; 
+  }
+
+  &::before {
+    left: -8px;
+    border-right: 10px solid $color-white;
   }
 
   &.tooltip-monography {
