@@ -84,7 +84,7 @@ const drawPublications = (url, elementId, names) => {
       tooltip
           .html("Typ: " + publicationTypeNames.get(subgroupName) + "<br>" + "Anzahl: " + subgroupValue)
           .style("opacity", 1)
-          .attr("class", `d3-tooltip tooltip-${subgroupName}`)
+          .attr("class", `d3-tooltip tooltip-vertical tooltip-${subgroupName}`)
 
     }
     const mousemovePubByType = function(event, d) {

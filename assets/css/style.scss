@@ -55,8 +55,6 @@ svg text {
 .d3-tooltip {
 
   position: absolute;
-  top: -20px;
-  left: 4rem;
   padding: 0.5rem 0.9rem;
   background: $color-primary-dark;
   color: $color-white;
@@ -64,6 +62,16 @@ svg text {
   font-family: $font-secondary;
   font-size: $font-size-default;
   border-radius: 0.2rem;
+
+  &.tooltip-vertical {
+    top: -20px;
+    left: 4rem;
+  }
+
+  &.tooltip-horizontal {
+    top: 20px;
+    left: 4rem;
+  }
 
   &:before {
 
