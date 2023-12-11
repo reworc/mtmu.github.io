@@ -119,6 +119,35 @@ const drawAuthors = (url, elementId, order) => {
       })
     );
 
+    // ----------------
+    // Create a tooltip
+    // ----------------
+    var tooltip = d3.select(elementId)
+      .append("div")
+      .style("opacity", 0);
+
+    // Three function that change the tooltip when user hover / move / leave a cell
+    const mouseoverAuthorByType = function(event, d) {
+      const subgroupName = d3.select(this.parentNode).datum().key;
+      const subgroupValue = d.data[subgroupName];
+      tooltip
+          .html("Typ: " + publicationTypeNames.get(subgroupName) + "<br>" + "Anzahl: " + subgroupValue)
+          .style("opacity", 1)
+          .attr("class", `d3-tooltip tooltip-${subgroupName}`)
+
+    }
+    const mousemoveAuthorByType = function(event, d) {
+
+      var rect = document.getElementById(elementId.replace('#', '')).getBoundingClientRect();
+      var x = event.clientX - rect.left; //x position within the element.
+      var y = event.clientY - rect.top;  
+      tooltip.style("transform", `translate(${(x)}px, ${(y)}px`);
+    }
+    const mouseleaveAuthorByType = function(event, d) {
+      tooltip
+        .style("opacity", 0)
+    }
+
     // draw the bars
     svg
       .append("g")
@@ -134,7 +163,10 @@ const drawAuthors = (url, elementId, order) => {
       .attr("x", (d) => 0)
       .attr("y", (d) => y(d.data.author))
       .attr("height", y.bandwidth())
-      .attr("width", (d) => 0);
+      .attr("width", (d) => 0)    
+    .on("mouseover", mouseoverAuthorByType)
+    .on("mousemove", mousemoveAuthorByType)
+    .on("mouseleave", mouseleaveAuthorByType);
 
     // draw horizontal lines on the start of the block as border between groups
     svg
