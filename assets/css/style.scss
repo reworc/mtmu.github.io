@@ -65,6 +65,7 @@ svg text {
   font-size: $font-size-default;
   border-radius: 0.2rem;
   border: 1px solid $color-white;
+  pointer-events: none;
 
   &.tooltip-vertical {
     top: -20px;
