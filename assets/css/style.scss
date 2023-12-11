@@ -44,6 +44,102 @@ svg text {
   color: $color-grey-dark;
 }
 
+#dataVis_numPubYear,
+#dataVis_Authors,
+#dataVis_Keywords {
+  position: relative;
+}
+
+#dataVis_KeywordsDonut {
+  margin: 2rem;
+}
+
+.d3-tooltip {
+
+  position: absolute;
+  padding: 0.5rem 0.9rem;
+  background: $color-primary-dark;
+  color: $color-white;
+  font-weight: $font-weight-bold;
+  font-family: $font-secondary;
+  font-size: $font-size-default;
+  border-radius: 0.2rem;
+  border: 1px solid $color-white;
+  pointer-events: none;
+
+  &.tooltip-vertical {
+    top: -20px;
+    left: 4rem;
+  }
+
+  &.tooltip-horizontal {
+    top: -25px;
+    left: 4rem;
+  }
+
+  &::after,
+  &::before {
+
+    content: " ";
+    position: absolute;    
+    width: 0; 
+    height: 0; 
+    overflow: visible;
+
+  }
+
+  &::before {
+    top: 14px;
+    left: -12px;
+    border-right: 12px solid $color-white;
+
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent; 
+  }
+
+  &::after {
+    left: -10px;
+    top: 16px;
+
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+  }
+
+  &.tooltip-monography {
+    background: $color-tooltip-monography;
+    color: $color-primary-dark;
+
+    &::after {
+      border-right: 10px solid $color-tooltip-monography;
+    }
+  }
+
+  &.tooltip-conference {
+    background: $color-tooltip-conference;
+
+    &::after {
+      border-right: 10px solid $color-tooltip-conference;
+    }
+  }
+
+  &.tooltip-poster {
+    background: $color-tooltip-poster;
+    color: $color-primary-dark;
+
+    &::after {
+      border-right: 10px solid $color-tooltip-poster;
+    }
+  }
+
+  &.tooltip-journal {
+    background: $color-tooltip-journal;
+
+    &::after {
+      border-right: 10px solid $color-tooltip-journal;
+    }
+  } 
+}
+
 .timeline {
   position: relative;
   margin-left: 2rem;
@@ -295,6 +391,7 @@ svg text {
 }
 
 .visualization {
+
   &__authors {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -302,7 +399,7 @@ svg text {
     
     &--simple {
       position: relative;
-      max-width: 70rem;
+      max-width: $element-width-diagram;
     }
 
     &--timeline {
@@ -315,8 +412,21 @@ svg text {
 
       padding: 1rem;
 
-      border: 1px solid $color-primary;
+      border: 1px solid $color-primary-light;
       border-radius: 5px;
+
+      background: $color-white;
+
+      & p {
+        font-size: $font-size-medium;
+        color: $color-primary;
+      }
+
+      & .form-check {
+        font-size: $font-size-default;
+        font-family: $font-secondary;
+        color: $color-grey-dark;
+      }
     }
   }
 
@@ -327,6 +437,7 @@ svg text {
     &--simple, &--spider {
       display: grid;
       grid-template-rows: 3rem 1fr;
+      max-width: $element-width-diagram;
     }
 
     &--spider {
@@ -347,6 +458,73 @@ svg text {
          font-weight: $font-weight-bold;
       }
     }
+
+    &--diagram-label {
+      text-anchor: middle;
+      dominant-baseline: central;
+      font-weight: 700;
+      fill: rgb(255, 255, 255);
+      text-shadow: 0 0 3px black;
+    }
+  }
+
+  &__publications {
+    display: grid;
+    grid-template-columns: 80rem 1fr;
+    align-items: center;
+    justify-items: start;
+    margin: 2rem;
+
+    &--legend {
+      border: 1px solid $color-primary-light;
+      border-radius: 5px;
+      padding: 1rem;
+    }
+  }
+}
+
+.legend-element {
+  display: grid;
+  grid-template-columns: 2rem 20rem 4rem;
+  align-items: center;
+  justify-items: start;
+  justify-content: start;
+  align-content: center;
+
+  &__color {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+
+    &.publication-conference {
+      background-color: $color-tooltip-conference;
+    }
+
+    &.publication-journal {
+      background-color: $color-tooltip-journal;
+    }
+
+    &.publication-monography {
+      background-color: $color-tooltip-monography;
+    }
+
+    &.publication-poster {
+      background-color: $color-tooltip-poster;
+    }
+  }
+
+  &__description {
+    margin: 0.5rem 2rem;
+    color: $color-grey-dark;
+
+    font-family: $font-secondary;
+    font-weight: $font-weight-default;
+    font-size: $font-size-default;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
   }
 }
 
