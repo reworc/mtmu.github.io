@@ -70,7 +70,7 @@ svg text {
   }
 
   &.tooltip-horizontal {
-    top: 20px;
+    top: 0px;
     left: 4rem;
   }
 
@@ -86,7 +86,7 @@ svg text {
   }
 
   &::before {
-    top: 15px;
+    top: 14px;
     left: -12px;
     border-right: 12px solid $color-white;
 

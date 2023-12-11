@@ -111,10 +111,39 @@ const drawKeywords = (url, elementId, order) => {
     const stackedData = d3.stack().keys(subgroups)(
       [...dict].map((elem) => {
         let result = Object.fromEntries(elem[1]);
-        result.author = elem[0];
+        result.keyword = elem[0];
         return result;
       })
     );
+
+     // ----------------
+    // Create a tooltip
+    // ----------------
+    var tooltip = d3.select(elementId)
+      .append("div")
+      .style("opacity", 0);
+
+    // Three function that change the tooltip when user hover / move / leave a cell
+    const mouseoverKeywordByType = function(event, d) {
+      const subgroupName = d3.select(this.parentNode).datum().key;
+      const subgroupValue = d.data[subgroupName];
+      tooltip
+          .html("Typ: " + publicationTypeNames.get(subgroupName) + "<br>" + "Anzahl: " + subgroupValue)
+          .style("opacity", 1)
+          .attr("class", `d3-tooltip tooltip-horizontal tooltip-${subgroupName}`)
+
+    }
+    const mousemoveKeywordByType = function(event, d) {
+
+      var rect = document.getElementById(elementId.replace('#', '')).getBoundingClientRect();
+      var x = event.clientX - rect.left; //x position within the element.
+      var y = event.clientY - rect.top;  
+      tooltip.style("transform", `translate(${(x)}px, ${(y)}px`);
+    }
+    const mouseleaveKeywordByType = function(event, d) {
+      tooltip
+        .style("opacity", 0)
+    }
 
     // draw the bars
     svg
@@ -129,9 +158,12 @@ const drawKeywords = (url, elementId, order) => {
       .data((d) => d)
       .join("rect")
       .attr("x", (d) => 0)
-      .attr("y", (d) => y(d.data.author))
+      .attr("y", (d) => y(d.data.keyword))
       .attr("height", y.bandwidth())
-      .attr("width", (d) => 0);
+      .attr("width", (d) => 0)       
+    .on("mouseover", mouseoverKeywordByType)
+    .on("mousemove", mousemoveKeywordByType)
+    .on("mouseleave", mouseleaveKeywordByType);
 
     // draw horizontal lines on the start of the block as border between groups
     svg
@@ -145,9 +177,9 @@ const drawKeywords = (url, elementId, order) => {
       .data((d) => d)
       .join("line")
       .attr("x1", (d) => x(d[0]) + 1)
-      .attr("y1", (d) => y(d.data.author))
+      .attr("y1", (d) => y(d.data.keyword))
       .attr("x2", (d) => x(d[0]) + 1)
-      .attr("y2", (d) => y(d.data.author) + y.bandwidth())
+      .attr("y2", (d) => y(d.data.keyword) + y.bandwidth())
       .attr("stroke", "#fff")
       .attr("stroke-width", (d) => (d[0] > 0 ? "2" : "0"));
 
