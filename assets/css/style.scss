@@ -44,7 +44,9 @@ svg text {
   color: $color-grey-dark;
 }
 
-#dataVis_numPubYear {
+#dataVis_numPubYear,
+#dataVis_Authors,
+#dataVis_Keywords {
   position: relative;
 }
 
@@ -70,7 +72,7 @@ svg text {
   }
 
   &.tooltip-horizontal {
-    top: 0px;
+    top: -25px;
     left: 4rem;
   }
 
