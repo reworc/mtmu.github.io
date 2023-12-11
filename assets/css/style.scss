@@ -62,6 +62,7 @@ svg text {
   font-family: $font-secondary;
   font-size: $font-size-default;
   border-radius: 0.2rem;
+  border: 1px solid $color-white;
 
   &.tooltip-vertical {
     top: -20px;
@@ -73,30 +74,39 @@ svg text {
     left: 4rem;
   }
 
-  &:after,
-  &:before {
+  &::after,
+  &::before {
 
     content: " ";
-    position: absolute;
-    left: -10px;
-    top: 16px;
+    position: absolute;    
     width: 0; 
     height: 0; 
     overflow: visible;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
+
   }
 
   &::before {
-    left: -8px;
-    border-right: 10px solid $color-white;
+    top: 15px;
+    left: -12px;
+    border-right: 12px solid $color-white;
+
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent; 
+  }
+
+  &::after {
+    left: -10px;
+    top: 16px;
+
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
   }
 
   &.tooltip-monography {
     background: $color-tooltip-monography;
     color: $color-primary-dark;
 
-    &:before {
+    &::after {
       border-right: 10px solid $color-tooltip-monography;
     }
   }
@@ -104,7 +114,7 @@ svg text {
   &.tooltip-conference {
     background: $color-tooltip-conference;
 
-    &:before {
+    &::after {
       border-right: 10px solid $color-tooltip-conference;
     }
   }
@@ -113,7 +123,7 @@ svg text {
     background: $color-tooltip-poster;
     color: $color-primary-dark;
 
-    &:before {
+    &::after {
       border-right: 10px solid $color-tooltip-poster;
     }
   }
@@ -121,7 +131,7 @@ svg text {
   &.tooltip-journal {
     background: $color-tooltip-journal;
 
-    &:before {
+    &::after {
       border-right: 10px solid $color-tooltip-journal;
     }
   } 
