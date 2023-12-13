@@ -159,7 +159,7 @@ svg text {
   &__year {
 
     &--list {
-      margin: 0 0 0 20px;
+      margin: 1rem 0 0 20px;
 	    padding: 0;
       list-style: none;
     
@@ -215,7 +215,7 @@ svg text {
 
   &__publication {
     &--list {
-      margin: 2rem 0 0 0;
+      margin: 0.5rem 0 0 0;
 	    padding: 0;
       list-style: none;
     }
@@ -259,7 +259,7 @@ svg text {
 
       &:hover, &:focus {
         border-color: $color-primary;
-        box-shadow: 0px -5px 10px 0px rgba(33, 33, 33, 0.05), 0px 5px 10px 0px rgba(33, 33, 33, 0.05);
+        box-shadow: 0px -5px 10px 0px $color-shadow-light, 0px 5px 10px 0px $color-shadow-light;
       }
     }
 
@@ -273,13 +273,13 @@ svg text {
     &--image-detail {
       display: none;
       position: absolute;
-      left: 8rem;
+      left: 9rem;
       top: 0;  
       z-index: -1;
-      pointer-events: none;
-      border: 1px solid $color-grey-dark;
+      pointer-events: none;      
       padding: 10px;
       background: $color-white;
+      box-shadow: 0 0 15px 3px $color-shadow-default;
 
       & img {
         max-width: 50vw;
