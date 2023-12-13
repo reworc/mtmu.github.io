@@ -97,12 +97,15 @@ title: Publikationen
         {% endfor %}
     </ul>
     <h1>Statistiken</h1>
-    <h2>Publikationen nach Jahr</h2>
+    <h2>Publikationen nach Jahr und Art der Publikation</h2>
     <div class="visualization__publications">
       <div id="dataVis_numPubYear">
       </div>
       <div class="visualization__publications--legend">
         <div class="legend-element">
+          <p>
+            Legende
+          </p>
           <div class="legend-element__color publication-conference"></div>
           <div class="legend-element__description">
             Konferenzproceeding
@@ -142,7 +145,7 @@ title: Publikationen
     </div>
     <div class="visualization__authors">
       <div class="visualization__authors--simple">
-        <h2>Co-Autoren</h2>
+        <h2>Co-Autoren und Art der Publikation</h2>
         <div class="visualization__authors--diagram" id="dataVis_Authors"></div>
         <div class="visualization__authors--buttons">
           <p>Sortierung</p>
@@ -161,22 +164,22 @@ title: Publikationen
         </div>
       </div>
       <div class="visualization__authors--timeline">
-        <h2>Timeline</h2>
+        <h2>Publikationszeiträume Co-Autoren</h2>
         <div class="visualization__authors--diagram" id="dataVis_AuthorPeriod"></div>
       </div>
     </div>
 
     <div class="visualization__keywords">
       <div class="visualization__keywords--spider">
-        <h2>H&auml;ufigste Keywords</h2>
+        <h2>H&auml;ufigste Schl&uuml;sselwörter</h2>
         <div id="dataVis_KeywordsSpider"></div>
       </div>
       <div class="visualization__keywords--simple">
-        <h2>Verteilung Keywords</h2>
+        <h2>Verteilung Schl&uuml;sselwörter</h2>
         <div id="dataVis_KeywordsDonut"></div>
       </div>
     </div>
-    <h2>Alle Keywords</h2>
+    <h2>Alle Schl&uuml;sselwörter mit Art der Publikation</h2>
     <div id="dataVis_Keywords"></div>
     <script> 
 
