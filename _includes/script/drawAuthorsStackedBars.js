@@ -92,10 +92,7 @@ const drawAuthors = (url, elementId, order) => {
     svg
       .append("g")
       .attr("transform", `translate(0, ${height})`)
-      .call(d3.axisBottom(x).ticks(maxNum).tickFormat(d3.format("d")))
-      .selectAll("text")
-      .attr("transform", "translate(-10,5)rotate(-45)")
-      .style("text-anchor", "end");
+      .call(d3.axisBottom(x).ticks(maxNum).tickFormat(d3.format("d")));
 
     // Y axis
     const y = d3
