@@ -403,15 +403,21 @@ svg text {
     &--simple {
       position: relative;
       max-width: $element-width-diagram;
+      grid-row: 1;
+      grid-column: 1;
     }
 
     &--timeline {
     }
 
     &--buttons {
-      position: absolute;
-      bottom: 14rem;
-      right: 10rem;
+      grid-row: 1;
+      grid-column: 1;
+
+      justify-self: end;
+      align-self: end;
+      margin: 10rem 6rem;
+      z-index: 1000;
 
       padding: 1rem 2rem;
 
