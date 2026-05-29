@@ -1,0 +1,13 @@
+<p>
+    This paper documents the implementation of a web-based
+    administration dashboard for data extraction pipeline management. The
+    system features an Angular frontend for process monitoring and a Proof
+    of Concept (PoC) mechanism for remote container management. The
+    Docker remote control subsystem exposes the Docker daemon’s REST
+    API via an Nginx reverse proxy bridging HTTPS to the Unix socket.
+    While the current implementation demonstrates functional feasibility,
+    this paper proposes a rigorous security architecture for production deployment,
+    recommending the integration of specialized socket proxies,
+    mutual TLS authentication, and strict endpoint whitelisting to safely
+    expose Docker management to browser clients.
+</p>

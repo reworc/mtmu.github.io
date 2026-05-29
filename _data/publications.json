@@ -1,5 +1,49 @@
 {
   "years": [
+    { 
+      "name": 2026,
+      "elements": [
+        {
+          "id": "2026_Dissertation",
+          "title": "Werkzeuge und Methoden zur Erforschung von Elastic Displays",
+          "authors": "Mathias Müller",
+          "reference": "Dissertation, TU Dresden, Juni 2026",
+          "image": "2026_Dissertation.jpg",
+          "preview": "2026_Dissertation_prev.jpg",
+          "keywords": [ "Shape-Changing Interfaces", "Elastic Displays", "Open Science", "Human-Computer Interaction", "Software Frameworks", "Development Tools" ],
+          "doi": "https://doi.org/10.69558/2026007",
+          "abstract": "2026_Dissertation.html",
+          "lang": "de",
+          "type": "monography"
+        },
+        {
+          "id": "2026_CTU",
+          "title": "ReFlex: An Open Science Approach for Research on Elastic Displays",
+          "authors": "Mathias Müller & Dietrich Kammer",
+          "reference": "28th Bilateral Student Workshop CTU Prague - HTW Dresden - User Interfaces & Visualization 2025, Dresden",
+          "image": "2026_CTU-Prag.jpg",
+          "preview": "2026_CTU-Prag_prev.jpg",
+          "keywords": [ "Shape-Changing Interfaces", "Elastic Displays", "Open Science", "Replication Crisis", "Human-Computer Interaction", "Software Frameworks", "Development Tools" ],
+          "doi": "https://doi.org/10.69558/2026007",
+          "abstract": "2026_CTU-Prag.html",
+          "lang": "en",
+          "type": "conference"
+        },
+        {
+          "id": "2026_CTU-2",
+          "title": "Web-based Pipeline Administration and Docker Remote Control for Extracting Open Access Journal Metadata",
+          "authors": "Gabriel Pechstein, Mathias Müller & Dietrich Kammer",
+          "reference": "28th Bilateral Student Workshop CTU Prague - HTW Dresden - User Interfaces & Visualization 2025, Dresden",
+          "image": "2026_CTU-Prag-2.jpg",
+          "preview": "2026_CTU-Prag_prev-2.jpg",
+          "keywords": [ "Angular", "Web Development", "Container Management", "REST API", "Docker", "Development Tools" ],
+          "doi": "https://doi.org/10.69558/2026007",
+          "abstract": "2026_CTU-Prag-2.html",
+          "lang": "en",
+          "type": "conference"
+        }
+      ]
+    },
     {
       "name": 2024,
       "elements": [
@@ -10,7 +54,7 @@
           "reference": "AVI - Advanced Visual Interfaces 2024, Genua",
           "image": "2024_AVI.jpg",
           "preview": "2024_AVI_prev.jpg",
-          "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "Haptics", "DIY hardware", "Open Science", "Frameworks"],
+          "keywords": ["Shape-Changing Interfaces", "Elastic Displays", "Haptics", "DIY Hardware", "Open Science", "Frameworks"],
           "doi": "https://doi.org/10.1145/3656650.3656678",
           "abstract": "2024_AVI.html",
           "lang": "en",
@@ -21,6 +65,19 @@
     { 
       "name": 2023,
       "elements": [
+        {
+          "id": "2023_CTU",
+          "title": "ReFlex - A Framework for Research on Elastic Displays",
+          "authors": "Mathias Müller & Dietrich Kammer",
+          "reference": "25th Bilateral Student Workshop CTU Prague - HTW Dresden - User Interfaces & Visualization 2022, Dresden",
+          "image": "2023_CTU-Prag.jpg",
+          "preview": "2023_CTU-Prag_prev.jpg",
+          "keywords": [ "Shape-Changing Interfaces", "Elastic Displays", "Software Frameworks", "Development Tools" ],
+          "doi": "https://nbn-resolving.org/urn:nbn:de:bsz:520-qucosa2-851474",
+          "abstract": "2023_CTU-Prag.html",
+          "lang": "en",
+          "type": "conference"
+        },
         {
           "id": "2023_WeL",
           "title": "Konzepte für die Organisation von Lerninhalten und -zielen für Studierende",
@@ -51,20 +108,7 @@
     },
     { 
       "name": 2022,
-      "elements": [
-        {
-          "id": "2022_CTU",
-          "title": "ReFlex - A Framework for Research on Elastic Displays",
-          "authors": "Mathias Müller & Dietrich Kammer",
-          "reference": "25th Bilateral Student Workshop CTU Prague - HTW Dresden - User Interfaces & Visualization 2022, Dresden",
-          "image": "2022_CTU-Prag.jpg",
-          "preview": "2022_CTU-Prag_prev.jpg",
-          "keywords": [ "Shape-Changing Interfaces", "Elastic Displays", "Software Frameworks", "Development Tools" ],
-          "doi": "",
-          "abstract": "2022_CTU-Prag.html",
-          "lang": "en",
-          "type": "conference"
-        },
+      "elements": [        
         {
           "id": "2022_GeNeMe",
           "title": "Bedarfsanalyse zur Darstellung von Daten im Bereich Learning Analytics aus Lernenden-Sicht",
@@ -148,6 +192,19 @@
           "abstract": "2021_MuC.html",
           "lang": "en",
           "type": "conference"
+        },
+        {
+          "id": "2021_models",
+          "title": "Model-Driven Development for Interactive Surface Prototypes",
+          "authors": "Everett M. Mthunzi, Mathias Müller, Dietrich Kammer & Florian Echtler",
+          "reference": "OSF Preprint",
+          "image": "2021_Models.jpg",
+          "preview": "2021_Models_prev.jpg",
+          "keywords": ["Elastic Displays", "Software Frameworks", "Model-Driven Development", "Software-Architektur"],
+          "doi": "10.31219/osf.io/2ux4p",
+          "abstract": "2021_Models.html",
+          "lang": "en",
+          "type": "journal"
         }
       ]
     },
