@@ -86,7 +86,7 @@
           "image": "2023_WeL.jpg",
           "preview": "2023_WeL_prev.jpg",
           "keywords": ["Learning Analytics", "Information Visualization", "User Interface", "Evaluation", "Interface Design"],
-          "doi": "",
+          "doi": "https://doi.org/10.33968/2024.71",
           "abstract": "2023_WeL.html",
           "lang": "de",
           "type": "conference"
@@ -117,7 +117,7 @@
           "image": "2022_GeNeMe.jpg",
           "preview": "2022_GeNeMe_prev.jpg",
           "keywords": ["Learning Analytics", "User Survey", "User Interface", "Interface Design"],
-          "doi": "",
+          "doi": "https://doi.org/10.25368/2023.15",
           "abstract": "2022_GeNeMe.html",
           "lang": "de",
           "type": "conference"
@@ -201,7 +201,7 @@
           "image": "2021_Artefact.jpg",
           "preview": "2021_Artefact_prev.jpg",
           "keywords": ["Elastic Displays", "Software Frameworks", "Model-Driven Development", "Software-Architektur"],
-          "doi": "10.31219/osf.io/2ux4p",
+          "doi": "https://doi.org/10.31219/osf.io/2ux4p",
           "abstract": "2021_Artefact.html",
           "lang": "en",
           "type": "journal"
@@ -315,7 +315,7 @@
           "image": "2018_AVI.jpg",
           "preview": "2018_AVI_prev.jpg",
           "keywords": ["Data Analysis", "Information Visualization", "Human-Computer Interaction", "Virtual Reality", "Immersive Analytics"],
-          "doi": "",
+          "doi": "https://nbn-resolving.org/urn:nbn:de:0074-2108-4",
           "abstract": "2018_AVI.html",
           "lang": "en",
           "type": "conference"
@@ -366,7 +366,7 @@
         },
         {
           "id": "2017_EuroVis",
-          "title": "Additional On-Demand Dimanesion for Data Visualization",
+          "title": "Additional On-Demand Dimension for Data Visualization",
           "authors": "Natalie Hube, Mathias Müller & Rainer Groh",
           "reference": "Eurographics Conference on Visualization (EuroVis) 2017, Barcelona",
           "image": "2017_EuroVis.jpg",
@@ -539,7 +539,7 @@
           "id": "2014_xCoAx",
           "title": "Visualization of Spatial Relations in Virtual Environments with Artificial Depth Cues",
           "authors": "Mathias Müller, Thomas Gründer, Ingmar S. Franke & Rainer Groh",
-          "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2014), porto",
+          "reference": "Conference on Computation, Communication, Aesthetics and X (xCoAx 2014), Porto",
           "image": "2014_xCoAx.jpg",
           "preview": "2014_xCoAx_prev.jpg",
           "keywords": ["Gesture-Based Interaction", "Depth Perception", "Virtual Environments"],
