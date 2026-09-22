@@ -15,7 +15,12 @@
           "abstract": "2026_Dissertation.html",
           "lang": "de",
           "type": "monography"
-        },
+        }
+      ]
+    },
+    {
+      "name": 2025,
+      "elements": [
         {
           "id": "2026_CTU",
           "title": "ReFlex: An Open Science Approach for Research on Elastic Displays",
